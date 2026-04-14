@@ -1,0 +1,78 @@
+---
+title: "Troubleshooting Notes"
+description: "Log các vấn đề đã gặp và cách giải quyết"
+---
+
+# Troubleshooting Notes
+
+<Callout kind="info">
+  Mỗi khi gặp và giải quyết vấn đề → ghi lại ở đây. Lần sau gặp lại → có solution ngay.
+</Callout>
+
+## Log Template
+
+| Ngày | Tool/Service | Vấn đề | Root Cause | Solution | Status |
+|------|-------------|--------|------------|----------|--------|
+| | | | | | ✅/🔧 |
+
+## Known Issues & Solutions
+
+### Claude Desktop
+
+| Vấn đề | Solution |
+|---------|----------|
+| MCP không load sau restart | Kiểm tra `claude_desktop_config.json`, restart Claude |
+| MCP timeout | Check API keys, internet connection |
+| Extension crash | Update Claude Desktop to latest version |
+| File access denied | Check filesystem MCP permissions |
+
+### HubSpot
+
+| Vấn đề | Solution |
+|---------|----------|
+| Contact không sync | Check API key, verify webhook URL |
+| Pipeline không update | Manual refresh, check permissions |
+| Email tracking off | Enable tracking trong HubSpot settings |
+
+### Late (Social Media)
+
+| Vấn đề | Solution |
+|---------|----------|
+| Post không publish | Re-authenticate channel, check character limits |
+| Image bị crop sai | Check platform-specific dimensions |
+| Schedule bị miss | Check timezone settings |
+
+### Docker (UM790)
+
+| Vấn đề | Solution |
+|---------|----------|
+| Container restart liên tục | Check logs: `docker logs <container>`, check memory limits |
+| Port conflict | `docker ps` check ports, stop conflicting container |
+| Disk full | `docker system prune`, delete unused images |
+| n8n down | `docker restart n8n`, check port 5678 |
+| GoClaw not responding | `docker restart goclaw`, check ports 18790/3001 |
+
+### MCP Docker Gateway
+
+| Vấn đề | Solution |
+|---------|----------|
+| Tool not found | `mcp__MCP_DOCKER__mcp-find` để search |
+| Server unavailable | Gateway restart, check individual container |
+| Rate limited | Wait and retry, check API key quotas |
+
+## Escalation Path
+
+| Level | Action |
+|-------|--------|
+| Self-fix | Check troubleshooting notes ở đây |
+| Claude help | Ask Claude to diagnose (có Docker access) |
+| Community | eXp Realty tech support, tool-specific forums |
+| Vendor support | Contact tool vendor directly |
+
+## Cách Claude sử dụng trang này
+
+Khi Phong gặp vấn đề tech, Claude sẽ:
+1. Search troubleshooting log cho known solution
+2. Nếu không tìm thấy → diagnose và fix
+3. Ghi solution mới vào log
+4. Recommend preventive measures
