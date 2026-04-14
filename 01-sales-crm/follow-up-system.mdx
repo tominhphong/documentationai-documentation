@@ -1,0 +1,153 @@
+---
+title: "Follow-up System"
+description: "Timeline chăm sóc khách + templates text/email tiếng Việt & Anh"
+icon: "repeat"
+---
+
+# Hệ Thống Follow-up
+
+Chăm sóc khách từ lần đầu gặp đến sau closing. Mỗi mốc có template sẵn — chỉ cần personalize và gửi.
+
+<Callout type="warning">
+  **Quy tắc #1:** Không bao giờ để khách tự hỏi "Realtor đang ở đâu rồi?" — luôn chủ động liên lạc trước.
+</Callout>
+
+## Timeline Follow-up — Từ Lead đến Active
+
+| Thời điểm | Hành động | Kênh | Template |
+|-----------|-----------|------|----------|
+| **Ngay sau gặp** | Cảm ơn + tóm tắt | Text | #1 |
+| **24h sau** | Check-in, hỏi câu hỏi thêm | Text | #2 |
+| **3 ngày** | Gửi tài liệu hữu ích | Email | #3 |
+| **1 tuần** | Check-in ngắn | Text | #4 |
+| **2 tuần** | Market update khu vực | Email | #5 |
+| **1 tháng** | Check-in + hỏi có thay đổi gì | Text | #6 |
+| **Mỗi tháng sau** | Market update auto | Email (HubSpot) | Auto |
+
+---
+
+## Templates Text (Tiếng Việt)
+
+### Template #1 — Ngay sau gặp
+```
+Chào anh/chị [TÊN], cảm ơn anh/chị đã dành thời gian 
+gặp em hôm nay!
+
+Tóm tắt:
+- Nhu cầu: [mua nhà khu Sherman / tìm hiểu thị trường]
+- Budget: [range]
+- Timeline: [X tháng]
+
+Em sẽ [set up MLS alert / kết nối lender / gửi thêm info] 
+trong ngày mai. Có gì anh/chị cứ text em bất cứ lúc nào!
+
+— Phong To, (737) 242-9999
+```
+
+### Template #2 — 24h sau
+```
+Chào anh/chị [TÊN]! Phong đây.
+Sau buổi gặp hôm qua, anh/chị có câu hỏi gì thêm không ạ?
+Em muốn chắc chắn anh/chị có đầy đủ thông tin.
+```
+
+### Template #4 — 1 tuần
+```
+Chào anh/chị [TÊN]! Tuần này có vài listing mới 
+trong khu vực [KHU VỰC] mà em thấy phù hợp.
+Anh/chị check email nhé — em đã gửi chi tiết rồi.
+Có căn nào thích thì mình đi xem cuối tuần này!
+```
+
+### Template #6 — 1 tháng
+```
+Chào anh/chị [TÊN]! Phong đây ạ.
+Một tháng rồi kể từ lần mình nói chuyện — 
+tình hình tìm nhà của anh/chị thế nào rồi?
+Có gì thay đổi về tiêu chí hay timeline không ạ?
+Em luôn sẵn sàng hỗ trợ!
+```
+
+---
+
+## Templates Email (Song ngữ)
+
+### Template #3 — Email tài liệu (3 ngày sau)
+
+**Subject:** Thông tin thị trường Sherman TX — dành cho anh/chị [TÊN]
+
+```
+Chào anh/chị [TÊN],
+
+Cảm ơn anh/chị đã tin tưởng chia sẻ nhu cầu mua nhà với em.
+
+Em gửi kèm một số thông tin hữu ích:
+
+📊 Thị trường Sherman TX hiện tại:
+- Giá trung bình: $XXX,XXX
+- Ngày bán trung bình: XX ngày
+- Xu hướng: [tăng/ổn định]
+
+🏡 Listings phù hợp với tiêu chí của anh/chị:
+[Link MLS Alert nếu đã set up]
+
+📋 Checklist mua nhà lần đầu:
+[Attach hoặc link]
+
+Nếu anh/chị có câu hỏi gì, cứ reply email này 
+hoặc text em tại (737) 242-9999.
+
+Best regards,
+Phong To
+Realtor | eXp Realty, LLC
+TREC# 843757
+(737) 242-9999 | phong.to@exprealty.com
+```
+
+### Template #5 — Monthly Market Update
+
+**Subject:** Sherman TX Market Update — Tháng [X]/[YEAR]
+
+```
+Chào anh/chị [TÊN],
+
+Đây là update thị trường tháng này:
+
+📈 Median Price: $XXX,XXX ([+/-X%] so với tháng trước)
+🏠 Active Listings: XXX căn
+⏱️ Average DOM: XX ngày
+💰 List-to-Sale Ratio: XX%
+
+Nhận xét:
+[1-2 câu về xu hướng thị trường]
+
+Nếu đây là thời điểm anh/chị muốn bắt đầu tìm nhà, 
+em sẵn sàng hỗ trợ. Không có áp lực — chỉ muốn anh/chị 
+có thông tin cập nhật.
+
+Best regards,
+Phong To
+```
+
+---
+
+## Hệ thống Tag trong HubSpot
+
+| Tag | Định nghĩa | Follow-up frequency |
+|-----|-----------|-------------------|
+| **🔴 Hot** | Sẵn sàng mua trong 30 ngày | 2-3 lần/tuần |
+| **🟡 Warm** | Quan tâm, 1-3 tháng | 1 lần/tuần |
+| **🔵 Cold** | Tìm hiểu, 3-6 tháng | 2 lần/tháng |
+| **⚪ Long-term** | Chưa sẵn sàng, 6-12+ tháng | 1 lần/tháng |
+
+<Callout type="info">
+  Tag phải được review **mỗi 2 tuần** — khách Cold có thể chuyển thành Hot bất cứ lúc nào.
+</Callout>
+
+## Automation
+
+| Công cụ | Automation |
+|---------|-----------|
+| **HubSpot** | Auto monthly market update email → Long-term leads |
+| **Late** | Schedule social posts — maintain visibility |
+| **Diaflow** | Auto-tag lead theo source (Facebook → Hot, Zillow → Warm) |
