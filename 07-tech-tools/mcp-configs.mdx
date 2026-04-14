@@ -1,0 +1,89 @@
+---
+title: "MCP Configs"
+description: "Claude MCP servers, web connectors, endpoints, troubleshooting"
+---
+
+# MCP Configs
+
+<Callout kind="info">
+  MCP (Model Context Protocol) cho phép Claude kết nối trực tiếp với các services. Phong có setup đa dạng trên cả Claude Desktop, Claude Web, và self-hosted Docker.
+</Callout>
+
+## Claude Desktop MCP Servers
+
+| MCP Server | Mục đích | Status |
+|-----------|---------|--------|
+| Documentation.AI | Knowledge base (site này) | ✅ |
+| HubSpot | CRM access | ✅ |
+| GitHub | Repos, issues, PRs | ✅ |
+| Filesystem | Local file access | ✅ |
+| iMessage | Read/search messages | ✅ |
+| Apple Notes | Access notes | ✅ |
+| Control Chrome | Browser automation | ✅ |
+| Control Mac | Mac automation | ✅ |
+| Desktop Commander | Terminal commands | ✅ |
+| Apify | Web scraping | ✅ |
+
+## Claude Web Connectors
+
+| Connector | Mục đích | Status |
+|-----------|---------|--------|
+| HubSpot | CRM trong web chat | ✅ |
+| Gmail | Email access | ✅ |
+| Google Calendar | Calendar access | ✅ |
+| Documentation.AI (custom) | Knowledge base | ✅ |
+| Exa | Neural search | ✅ |
+| Snoooz (custom) | Email management | ✅ |
+| Tavily | Web search | ✅ |
+| Supabase | Database | ✅ |
+| Vercel | Deployments | ✅ |
+| Netlify | Deployments | ✅ |
+| Canva | Design | ✅ |
+| Context7 | Library docs | ✅ |
+| Cloudflare | CDN/Workers | ✅ |
+| GitHub Integration | Code | ✅ |
+
+## Documentation.AI MCP Endpoint
+
+| | Chi tiết |
+|--|---------|
+| **Endpoint** | `phong-to.documentationai.com/_mcp` |
+| **Protocol** | Streamable HTTP |
+| **Content** | Toàn bộ knowledge base 10 phòng |
+| **Use case** | Claude có thể query KB trực tiếp |
+
+## Docker MCP Gateway (UM790)
+
+18 MCP servers chạy trên Docker, quản lý qua single gateway.
+
+| Category | Servers |
+|----------|---------|
+| Search | Brave, Exa, Tavily |
+| Browser | Playwright, Firecrawl |
+| Data | YouTube Transcript, Maps |
+| Memory | Knowledge Graph |
+| Productivity | Email (send-email) |
+| Media | FFmpeg, ImageMagick |
+| Files | Filesystem, PDF Writer |
+| Dev | Sequential Thinking, Code Mode |
+
+**Tool prefix:** `mcp__MCP_DOCKER__`
+**Find new servers:** `mcp__MCP_DOCKER__mcp-find`
+
+## Troubleshooting MCP
+
+| Vấn đề | Solution |
+|---------|----------|
+| MCP không load | Restart Claude Desktop |
+| Connection timeout | Check internet / VPN |
+| Tool not found | Verify config in claude_desktop_config.json |
+| Permission denied | Check API key / token |
+| Docker MCP down | Check Docker containers on UM790 |
+
+## Cách Claude sử dụng trang này
+
+Khi cần kết nối service, Claude sẽ:
+1. Check MCP servers available
+2. Dùng đúng MCP tool cho task
+3. Troubleshoot nếu connection fails
+4. Recommend thêm MCP server nếu cần capability mới
