@@ -36,6 +36,57 @@
             ]
           },
           {
+            "group": "Sales & CRM",
+            "icon": "users",
+            "pages": [
+              {
+                "title": "Overview",
+                "path": "01-sales-crm",
+                "icon": "users"
+              },
+              {
+                "title": "Hồ Sơ Khách Hàng",
+                "path": "01-sales-crm/ho-so-khach-hang",
+                "icon": "user"
+              },
+              {
+                "title": "Pipeline 7 Giai Đoạn",
+                "path": "01-sales-crm/pipeline-giai-doan",
+                "icon": "git-branch"
+              },
+              {
+                "title": "Scripts Tư Vấn",
+                "path": "01-sales-crm/scripts-tu-van",
+                "icon": "message-circle"
+              },
+              {
+                "title": "Xử Lý Phản Đối",
+                "path": "01-sales-crm/xu-ly-phan-doi",
+                "icon": "shield"
+              },
+              {
+                "title": "Chiến Lược Offer",
+                "path": "01-sales-crm/chien-luoc-offer",
+                "icon": "target"
+              },
+              {
+                "title": "Follow-up System",
+                "path": "01-sales-crm/follow-up-system",
+                "icon": "repeat"
+              },
+              {
+                "title": "Checklist Closing",
+                "path": "01-sales-crm/checklist-closing",
+                "icon": "check-square"
+              },
+              {
+                "title": "Referral Tracking",
+                "path": "01-sales-crm/referral-tracking",
+                "icon": "share-2"
+              }
+            ]
+          },
+          {
             "group": "Components",
             "icon": "layers",
             "pages": [
