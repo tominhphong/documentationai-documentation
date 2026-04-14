@@ -1,0 +1,131 @@
+---
+title: "Automation Workflows"
+description: "5 workflows chính — leads, content, market data, closing follow-up, community"
+---
+
+# Automation Workflows
+
+<Callout kind="info">
+  Mỗi workflow tiết kiệm 1-3 giờ/tuần. 5 workflows = 5-15 giờ/tuần freed up cho hoạt động tạo doanh thu.
+</Callout>
+
+## Workflow 1: New Lead Pipeline
+
+**Trigger:** New lead vào HubSpot (form, manual, referral)
+
+```
+New Lead → HubSpot (Stage: New Lead)
+  → Auto text: Welcome message + intro
+  → Auto email: Welcome email + TidyCal booking link
+  → Wait 24h → If no response → Follow-up text
+  → Wait 48h → If no response → Follow-up email
+  → Assign to Phong for manual follow-up
+```
+
+| Step | Tool | Status |
+|------|------|--------|
+| Lead capture | HubSpot | ✅ |
+| Auto text | Diaflow / n8n | 🔧 Setup |
+| Welcome email | Snoooz / HubSpot | 🔧 Setup |
+| Booking link | TidyCal | 🔧 Setup |
+| Follow-up sequence | Diaflow | 📋 Plan |
+
+## Workflow 2: Content → Social Distribution
+
+**Trigger:** New property tour video hoặc content piece
+
+```
+Video uploaded → Canva thumbnail
+  → Late: Post to 18 channels (scheduled)
+    → Facebook (Vietnamese + English)
+    → Instagram (Reels + Feed)
+    → YouTube (full video)
+    → TikTok (short version)
+    → LinkedIn
+    → Twitter/X
+  → Extract key frames → Social posts
+  → Track engagement after 48h
+```
+
+| Step | Tool | Status |
+|------|------|--------|
+| Video editing | CapCut | ✅ |
+| Thumbnail | Canva | ✅ |
+| Schedule 18 channels | Late | ✅ |
+| Engagement tracking | Late analytics | ✅ |
+
+## Workflow 3: Market Data → Content
+
+**Trigger:** Monthly (ngày 1-5 mỗi tháng)
+
+```
+Collect market data (MLS, HAR, Zillow)
+  → Claude: Generate market update content
+    → Blog post (Vietnamese + English)
+    → Social media carousel
+    → Email newsletter
+    → Video script
+  → Late: Schedule across channels
+  → Email: Send to subscriber list
+```
+
+| Step | Tool | Status |
+|------|------|--------|
+| Data collection | Manual (MLS) | 🔧 Semi-auto |
+| Content generation | Claude | ✅ |
+| Visual creation | Canva | ✅ |
+| Distribution | Late | ✅ |
+| Email | Acumbamail | 📋 Setup |
+
+## Workflow 4: Closing → Follow-up
+
+**Trigger:** Deal status → CLOSED trong HubSpot
+
+```
+Deal Closed
+  → Day 1: Congratulations email + gift order
+  → Day 3: Handwritten thank you note reminder
+  → Day 7: "How's the new home?" check-in
+  → Day 14: Google Review request (with QR code)
+  → Day 30: Homestead Exemption reminder
+  → Day 90: Check-in + referral ask
+  → Day 365: Closing anniversary card
+  → Boomerangme: Add loyalty stamp
+```
+
+| Step | Tool | Status |
+|------|------|--------|
+| Trigger (deal closed) | HubSpot | ✅ |
+| Email sequences | Diaflow / n8n | 📋 Setup |
+| Review request | ElkQR + template | 🔧 Setup |
+| Loyalty stamp | Boomerangme | 📋 Plan |
+| Anniversary remind | HubSpot reminders | 📋 Setup |
+
+## Workflow 5: Vietnamese Business Outreach
+
+**Trigger:** New business discovered hoặc monthly outreach
+
+```
+New Vietnamese business found
+  → Add to DFW Viet Biz database
+  → Categorize (nail, restaurant, temple, etc.)
+  → Generate personalized intro message
+  → Schedule visit (if local)
+  → After visit: Update status, add notes
+  → Monthly: Email newsletter to network
+```
+
+| Step | Tool | Status |
+|------|------|--------|
+| Database | GitHub repo (dfw-viet-biz) | 📋 Setup |
+| Categorization | Manual + Claude | ✅ |
+| Intro message | Claude templates | ✅ |
+| Newsletter | Acumbamail | 📋 Setup |
+
+## Cách Claude sử dụng trang này
+
+Khi Phong hỏi về automation, Claude sẽ:
+1. Check workflow nào đã active, đang setup, hoặc chưa bắt đầu
+2. Đề xuất next workflow cần setup
+3. Help implement workflow steps
+4. Troubleshoot workflow issues
