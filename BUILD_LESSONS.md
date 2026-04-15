@@ -198,5 +198,54 @@ phong-docs/du-an/
 
 ---
 
+---
+
+## L11 — Token Mac1 có thể tái sử dụng trong cùng session
+
+**Vấn đề:** Phải lấy token Mac1 mỗi lần push — tốn thêm 1 bước.
+
+**Quan sát:** Token `gho_xxxx` từ `gh auth token` là OAuth token dài hạn (không phải one-time), có thể dùng lại trong cùng session build cho nhiều lần push liên tiếp.
+
+**Quy trình tối ưu cho Phòng 02+:**
+1. Lấy token một lần ở đầu session: `gh auth token` qua Desktop Commander
+2. Dùng lại token đó cho mọi lần push trong session
+3. Xóa token khỏi remote URL ngay sau lần push cuối
+
+**Lưu ý:** KHÔNG lưu token vào bất kỳ file nào. Chỉ giữ trong RAM của session.
+
+---
+
+## L12 — 8 file MDX = 1 commit gọn thay vì commit từng file
+
+**Vấn đề:** Nếu commit từng file một → git history lộn xộn, khó trace.
+
+**Giải pháp đúng:** Tạo hết tất cả file trong 1 phòng ban → `git add [folder]/` → 1 commit duy nhất với message rõ ràng.
+
+**Template commit message cho phòng ban:**
+```
+feat: add Department 0X — [Tên Phòng]
+
+- [Số] MDX files for 0X-[folder]/ directory
+- [File 1]: [mô tả ngắn]
+- [File N]: [mô tả ngắn]
+- documentation.json: Added 0X group at [vị trí] of navigation
+```
+
+---
+
+## L13 — documentation.json: Thêm phòng mới VÀO TRƯỚC phòng cũ
+
+**Vấn đề:** Không rõ thứ tự ưu tiên trong navigation tabs.
+
+**Quyết định:** Phòng mới thêm VÀO TRƯỚC (insert before) phòng cũ trong groups array — vì người dùng thường cần phòng mới nhất trước.
+
+**Ví dụ:** Khi thêm Phòng 02, insert group Phòng 02 trước group Phòng 01 trong JSON.
+
+**Ngoại lệ:** Nếu có thứ tự logical (số thứ tự 01, 02, 03...) thì sort theo số — KHÔNG theo thứ tự thêm vào.
+
+*Quyết định sửa lại: Phòng 02 nên TRƯỚC Phòng 01 trong navigation vì số nhỏ hơn → đã implement đúng.*
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅*
+*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅*
