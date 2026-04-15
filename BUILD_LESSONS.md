@@ -247,5 +247,20 @@ feat: add Department 0X — [Tên Phòng]
 
 ---
 
+## L14 — GitHub username là `tominhphong`, không phải `phongrealtortx`
+
+**Vấn đề:** Khi push lần đầu trong session mới, dùng nhầm username `phongrealtortx` → "Repository not found".
+
+**Đúng:** GitHub account là `tominhphong` — confirmed từ `gh api /user` và danh sách repos.
+
+**Repo đúng:** `tominhphong/documentationai-documentation`
+
+**Kiểm tra nhanh nếu không chắc:**
+```bash
+curl -s -H "Authorization: token TOKEN" https://api.github.com/user | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['login'])"
+```
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅*
+*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅*
