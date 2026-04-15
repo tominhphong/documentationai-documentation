@@ -262,5 +262,45 @@ curl -s -H "Authorization: token TOKEN" https://api.github.com/user | python3 -c
 
 ---
 
+## L15 — Ký tự `<` trước số bị MDX parser hiểu nhầm là JSX tag
+
+**Vấn đề:** Trong MDX, `<20%`, `<10%`, `<50` v.v. bị parser hiểu là mở JSX tag → lỗi parse vì `2`, `1`, `5` không phải tên JSX hợp lệ.
+
+**Lỗi thực tế:**
+```
+Failed to parse MDX content: Unexpected character `2` (U+0032) before name,
+expected a character that can start a name, such as a letter, `$`, or `_`.
+```
+
+**Giải pháp:** Thay `<X%` bằng text thuần:
+- `<20% down` → `dưới 20% down`
+- `<10%` → `dưới 10%`
+- `<50` → `nhỏ hơn 50`
+
+**Kiểm tra trước khi push:**
+```bash
+grep -rn "<[0-9]" ./**/*.mdx
+```
+
+---
+
+## Template Kiểm Tra Mở Rộng — Trước Mỗi Commit
+
+```bash
+# Ký tự checkbox Unicode (L02)
+grep -rn "☐\|□" ./**/*.mdx
+
+# Ký tự < trước số (L15)
+grep -rn "<[0-9]" ./**/*.mdx
+
+# Verify frontmatter
+grep -rL "^title:" ./**/*.mdx
+
+# Xem files sắp commit
+git diff --name-only --cached
+```
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
 *Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅*
