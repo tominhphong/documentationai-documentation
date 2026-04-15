@@ -173,5 +173,30 @@ git diff --name-only --cached
 
 ---
 
+---
+
+## L10 — Lưu file vào đúng thư mục ngay khi tạo
+
+**Vấn đề:** File tạo ra trong scratchpad (repo clone tạm thời) không tự xuất hiện trong thư mục workspace của anh trên NAS. Phải copy thủ công mới anh thấy được.
+
+**Quy tắc:**
+- File tài liệu, notes, lessons → `phong-docs/du-an/` (cùng chỗ với `CLAUDE_DESKTOP_MISSION.md`)
+- File MDX từng phòng ban → `phong-docs/du-an/01-sales-crm/`, `02-marketing/`...
+- Sau khi tạo file trong scratchpad → **copy sang workspace ngay, không để sau**
+
+**Cấu trúc chuẩn:**
+```
+phong-docs/du-an/
+├── BUILD_LESSONS.md              ← notes, bài học (file này)
+├── CLAUDE_DESKTOP_MISSION.md     ← blueprint gốc
+├── Documentation_knowledge_base.md
+├── documentation.json            ← config site
+├── 01-sales-crm/                 ← MDX files từng phòng
+├── 02-marketing/
+└── ...
+```
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
 *Phòng ban đã hoàn thành: 01 — Sales & CRM ✅*
