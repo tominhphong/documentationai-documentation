@@ -1,0 +1,162 @@
+---
+title: "Interest Rate Tracker"
+description: "Theo dõi lãi suất thế chấp hàng tuần (30yr, 15yr, FHA, VA). Payment impact reference table, buy-now-vs-wait analysis, và nguồn Freddie Mac/Bankrate."
+---
+
+# Interest Rate Tracker
+
+## Cách Claude sử dụng trang này
+
+File này giúp Phong **tư vấn buyer về impact của lãi suất** đối với quyết định mua nhà. Quan trọng nhất là bảng payment reference và buy-now-vs-wait analysis.
+
+<Callout kind="warning">
+**Lãi suất thay đổi hàng ngày.** Bảng này chỉ là reference — Phong phải cập nhật hàng tuần và luôn recommend buyer contact lender để get pre-approval với rate hiện tại. Claude KHÔNG tự điền rate thực tế.
+</Callout>
+
+---
+
+## Bảng Lãi Suất Tuần Này
+
+*(Phong cập nhật mỗi thứ Hai — nguồn: Freddie Mac PMMS)*
+
+| Loan Type | Rate tuần này | Rate tuần trước | Điểm (0 pt) | Ghi chú |
+|-----------|--------------|----------------|-------------|---------|
+| **30-Year Fixed** | [UPDATE]% | [UPDATE]% | [UPDATE] | Conventional |
+| **15-Year Fixed** | [UPDATE]% | [UPDATE]% | [UPDATE] | Conventional |
+| **FHA 30-Year** | [UPDATE]% | [UPDATE]% | [UPDATE] | +MIP |
+| **VA 30-Year** | [UPDATE]% | [UPDATE]% | [UPDATE] | No PMI |
+| **5/1 ARM** | [UPDATE]% | [UPDATE]% | [UPDATE] | Variable sau 5 năm |
+
+**Ngày cập nhật:** [PHONG CẬP NHẬT MỖI THỨ HAI]
+**Nguồn:** Freddie Mac Primary Mortgage Market Survey
+
+---
+
+## Lịch Sử Rate — 12 Tháng Gần Nhất
+
+*(Phong cập nhật hàng tháng — 30-Year Fixed)*
+
+| Tháng | Rate 30yr Fixed | Thay đổi | Ghi chú |
+|-------|----------------|---------|---------|
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| [UPDATE] | [UPDATE]% | | |
+| **Tháng này** | **[UPDATE]%** | | |
+
+---
+
+## Payment Reference Table — 30-Year Fixed
+
+*(P&I chỉ — không bao gồm taxes, insurance, HOA)*
+
+Dùng để nhanh chóng trả lời câu hỏi "Mỗi tháng tôi phải trả bao nhiêu?"
+
+| Loan Amount | Rate 6.0% | Rate 6.5% | Rate 7.0% | Rate 7.5% | Rate 8.0% |
+|-------------|----------|----------|----------|----------|----------|
+| $150,000 | $899 | $948 | $998 | $1,049 | $1,101 |
+| $175,000 | $1,049 | $1,106 | $1,164 | $1,224 | $1,284 |
+| $200,000 | $1,199 | $1,264 | $1,331 | $1,398 | $1,468 |
+| $225,000 | $1,349 | $1,423 | $1,497 | $1,573 | $1,651 |
+| $250,000 | $1,499 | $1,580 | $1,663 | $1,748 | $1,834 |
+| $275,000 | $1,649 | $1,740 | $1,830 | $1,923 | $2,018 |
+| $300,000 | $1,799 | $1,896 | $1,996 | $2,098 | $2,201 |
+| $325,000 | $1,948 | $2,054 | $2,163 | $2,273 | $2,385 |
+| $350,000 | $2,098 | $2,212 | $2,329 | $2,447 | $2,568 |
+| $375,000 | $2,248 | $2,370 | $2,495 | $2,622 | $2,751 |
+| $400,000 | $2,398 | $2,528 | $2,661 | $2,797 | $2,935 |
+
+*(Số liệu tính toán dựa trên công thức P&I chuẩn — không thay đổi theo thị trường)*
+
+**Cách dùng:** Buyer có budget $2,000/tháng P&I, rate 7% → họ qualify cho khoảng $300,000 loan.
+
+---
+
+## Rate Impact Analysis — Ví Dụ Cụ Thể
+
+### Ví dụ: Nhà $300,000, Down 20% = Loan $240,000
+
+| Rate | Monthly P&I | Tổng trả trong 30 năm | Tổng lãi | So với rate 6% |
+|------|-------------|----------------------|---------|--------------|
+| 6.0% | $1,439 | $518,040 | $278,040 | Baseline |
+| 6.5% | $1,517 | $546,120 | $306,120 | +$93/tháng |
+| 7.0% | $1,597 | $574,920 | $334,920 | +$158/tháng |
+| 7.5% | $1,678 | $604,080 | $364,080 | +$239/tháng |
+| 8.0% | $1,761 | $633,960 | $393,960 | +$322/tháng |
+
+**Key message cho buyer:** "Mỗi 0.5% tăng lãi suất = thêm ~$80-100/tháng với loan $240K. Đây là lý do tại sao pre-approval sớm và lock rate quan trọng."
+
+---
+
+## Buy Now vs. Wait Analysis
+
+*(Framework tư vấn buyer đang do dự)*
+
+### Scenario: Buyer đang chờ rate giảm
+
+Giả sử buyer đang xét mua nhà $300K hôm nay ở rate 7%:
+
+| Quyết định | Nếu rate GIẢM 1% sau 1 năm | Nếu rate TĂNG 0.5% sau 1 năm | Nếu giá nhà tăng 5% |
+|-----------|---------------------------|------------------------------|---------------------|
+| **Mua ngay** | Có thể refinance → tiết kiệm ~$155/tháng | Đã lock rate tốt hơn | Equity ngay từ đầu |
+| **Chờ 1 năm** | Monthly payment thấp hơn $155 | Monthly payment cao hơn $78 | Giá nhà tăng $15K → cần thêm $15K tiền mặt |
+
+**Key message:** "Rate có thể giảm hoặc tăng — không ai biết chắc. Nhưng nếu giá nhà tiếp tục tăng trong lúc bạn chờ, bạn mất cả hai đầu. Câu hỏi tốt hơn là: bạn ở đây bao lâu? Nếu 5+ năm, mua ngay và refinance khi rate giảm thường là strategy tốt hơn chờ."
+
+### Khi Nào Nên Chờ
+
+- Buyer đang trong transition (job change, có thể chuyển thành phố trong 1-2 năm)
+- Credit score đang được rebuild (3-6 tháng sẽ qualify rate tốt hơn đáng kể)
+- Down payment chưa đủ — đang save thêm
+- Nếu có **cụ thể** timeline rate giảm từ Fed announcements
+
+---
+
+## Loan Types — So Sánh Nhanh
+
+| Loan Type | Down Min | Credit Score Min | PMI/MIP | Tốt cho ai |
+|-----------|---------|-----------------|---------|----------|
+| **Conventional** | 3-5% | 620+ | PMI nếu <20% down | Buyers có credit tốt, muốn flexibility |
+| **FHA** | 3.5% | 580+ | MIP bắt buộc (cả đời với <10% down) | First-time buyers, credit thấp hơn |
+| **VA** | 0% | Thường 620+ | Không có | Veterans và active military |
+| **USDA** | 0% | 640+ | Phí bảo hiểm | Rural areas, income limits apply |
+| **Jumbo** | 10-20% | 700+ | Varies | Nhà trên conforming limit (~$766,550 năm 2025) |
+
+---
+
+## Lenders Phong Thường Recommend
+
+<Callout kind="warning">
+**Phong điền danh sách lenders tin cậy của mình ở đây.** Claude KHÔNG tự recommend lender cụ thể.
+</Callout>
+
+*(Phong cập nhật danh sách preferred lenders — tên, điện thoại, chuyên về loan type gì)*
+
+| Lender | Contact | Chuyên về | Ghi chú |
+|--------|---------|---------|---------|
+| [Phong điền] | [Phong điền] | [Phong điền] | |
+| [Phong điền] | [Phong điền] | [Phong điền] | |
+| [Phong điền] | [Phong điền] | [Phong điền] | Vietnamese-speaking? |
+
+---
+
+## Nguồn Cập Nhật Rate
+
+**Freddie Mac PMMS** (chuẩn nhất — mỗi thứ Năm):
+- freddiemac.com/pmms → xem rate survey hàng tuần
+- Đây là benchmark được dùng rộng rãi nhất
+
+**Bankrate** (so sánh lenders):
+- bankrate.com/mortgages/mortgage-rates → today's average rates
+- Có breakdown theo loan type và credit score
+
+**Mortgage News Daily** (real-time):
+- mortgagenewsdaily.com → rate movements trong ngày
+- Dùng khi cần update ngay (trước buyer meeting)

@@ -1,0 +1,151 @@
+---
+title: "Inventory & DOM"
+description: "Theo dõi inventory (hàng tồn kho nhà đất) và Days on Market tại Sherman TX. Months of supply, DOM theo price range, tốc độ absorption, và seasonal patterns."
+---
+
+# Inventory & DOM
+
+## Cách Claude sử dụng trang này
+
+File này theo dõi **tốc độ bán nhà và lượng hàng tồn** — 2 chỉ số quan trọng nhất để đánh giá sức nóng của thị trường.
+
+<Callout kind="warning">
+**Dữ liệu phải được Phong cập nhật thủ công hàng tháng.** Tất cả ô `[UPDATE]` cần được điền từ HAR.com hoặc MLS trước khi Claude dùng để tư vấn khách hàng.
+</Callout>
+
+---
+
+## Bảng Tổng Quan Tháng Này — Sherman TX
+
+| Chỉ số | Tháng hiện tại | Tháng trước | Cùng kỳ năm ngoái |
+|--------|---------------|------------|------------------|
+| **Active Listings** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **New Listings** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Closed Sales** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Pending Sales** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Months of Supply** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Avg Days on Market** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Median DOM** | [UPDATE] | [UPDATE] | [UPDATE] |
+| **Absorption Rate** | [UPDATE]%/tháng | [UPDATE]%/tháng | [UPDATE]%/tháng |
+
+**Absorption Rate** = Closed Sales / Active Listings × 100
+*(VD: 20 closed / 100 active = 20%/tháng = 5 months of supply)*
+
+**Ngày cập nhật:** [PHONG CẬP NHẬT]
+
+---
+
+## Months of Supply — Ý Nghĩa
+
+| Months of Supply | Loại thị trường | Buyer nên làm gì | Seller nên làm gì |
+|-----------------|----------------|-----------------|------------------|
+| Dưới 2 tháng | Seller's Market cực mạnh | Offer nhanh, giảm contingency | Pricing aggressive, multiple offers |
+| 2-3 tháng | Seller's Market | Offer cạnh tranh, ít negotiate | Pricing chắc, DOM ngắn |
+| 3-4 tháng | Seller nhẹ | Negotiate nhẹ, inspection còn quan trọng | Pricing đúng là key |
+| 4-6 tháng | Balanced Market | Negotiate được 2-3% | Cần staged & priced đúng |
+| 6-8 tháng | Buyer's Market | Negotiate mạnh, price reduction | Phải price thấp hơn comparable |
+| Trên 8 tháng | Buyer's Market mạnh | Leverage cao, seller concession | Aggressive price reduction cần thiết |
+
+**Sherman TX hiện tại:** [Phong điền — loại thị trường]
+
+---
+
+## DOM Theo Price Range — Sherman TX
+
+*(Cập nhật hàng tháng)*
+
+| Price Range | Active | Avg DOM | Median DOM | Ghi chú |
+|-------------|--------|---------|------------|---------|
+| Dưới $200K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| $200K - $250K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| $250K - $300K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| $300K - $350K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| $350K - $400K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| $400K - $500K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+| Trên $500K | [UPDATE] | [UPDATE] ngày | [UPDATE] ngày | |
+
+**Insight:** Price range nào có DOM thấp nhất = segment đang hot nhất → ưu tiên listings trong range đó.
+
+---
+
+## New Listings vs. Closed Sales — Tracking Supply/Demand
+
+*(Theo dõi 6 tháng gần nhất)*
+
+| Tháng | New Listings | Closed Sales | Net Change | Trend |
+|-------|-------------|-------------|------------|-------|
+| [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | [Tăng/Giảm/Ổn định] |
+| [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | |
+| [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | |
+| [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | |
+| [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | |
+| **Tháng này** | **[UPDATE]** | **[UPDATE]** | **[UPDATE]** | |
+
+**Khi New Listings > Closed Sales:** Inventory đang tích lũy → thị trường đang nguội dần
+**Khi Closed Sales > New Listings:** Inventory đang giảm → thị trường đang nóng lên
+
+---
+
+## Seasonal Patterns — Sherman TX
+
+*(Phong bổ sung từ kinh nghiệm thực tế)*
+
+| Mùa | Thường thấy | Ghi chú cho Client |
+|-----|------------|-------------------|
+| **Jan - Feb** | Ít listings, ít buyer → DOM dài hơn | Buyers có leverage, sellers cần patient |
+| **Mar - May** | Mùa cao điểm — listings tăng, buyers tăng mạnh hơn | Competition cao, offer nhanh |
+| **Jun - Jul** | Tiếp tục hot — family buyers (school year) | Deadline pressure từ school enrollment |
+| **Aug - Sep** | Bắt đầu nguội — back to school | Buyers với kids đã xong, ít pressure hơn |
+| **Oct - Nov** | Chậm lại đáng kể | Tốt cho buyers muốn negotiate |
+| **Dec** | Ít nhất trong năm | Motivated sellers còn trên market → good deals |
+
+<Callout kind="info">
+**Lưu ý cho Phong:** Bổ sung nhận xét riêng từ kinh nghiệm địa phương — MLS data có thể không phản ánh đúng micro-trends trong từng subdivision của Sherman.
+</Callout>
+
+---
+
+## DOM Benchmarks — Khi Nào Cần Price Reduction?
+
+*(Hướng dẫn tư vấn seller)*
+
+| DOM hiện tại | Hành động đề xuất |
+|-------------|------------------|
+| 0-7 ngày | Giữ giá — thị trường cần thêm thời gian |
+| 8-21 ngày | Monitor showings — nếu ít showings thì review pricing |
+| 21-30 ngày | Xem xét giảm 1-2% nếu feedback chỉ về giá |
+| 30-45 ngày | Giảm 2-3% hoặc add incentives (closing costs, buy-down) |
+| 45-60 ngày | Giảm 3-5% và relist với photos mới nếu cần |
+| Trên 60 ngày | Strategy meeting với Phong — có thể cần withdraw và relist |
+
+---
+
+## So Sánh DOM Các Khu Vực Lân Cận
+
+*(Cập nhật hàng quý)*
+
+| Thành phố | Avg DOM | Median DOM | Ghi chú |
+|-----------|---------|------------|---------|
+| Sherman, TX | [UPDATE] ngày | [UPDATE] ngày | Focus market |
+| Denison, TX | [UPDATE] ngày | [UPDATE] ngày | |
+| Van Alstyne, TX | [UPDATE] ngày | [UPDATE] ngày | New construction nhiều |
+| Howe, TX | [UPDATE] ngày | [UPDATE] ngày | Ít listings |
+| Grayson County | [UPDATE] ngày | [UPDATE] ngày | County overview |
+
+---
+
+## Cách Lấy Dữ Liệu
+
+**HAR.com — chuẩn nhất:**
+1. har.com → Market Stats → Grayson County → Sherman
+2. Xem "Days on Market" và "Months of Supply"
+3. Có thể filter theo price range
+
+**Redfin (DOM nhanh):**
+1. redfin.com/city/17459/TX/Sherman
+2. Scroll xuống "Market Insights" → Median Days on Market
+
+**NTREIS Matrix (chi tiết nhất):**
+1. Matrix → Stats → Absorption Report
+2. Filter: City = Sherman, Property Type = Residential
+3. Export → lấy số theo tháng

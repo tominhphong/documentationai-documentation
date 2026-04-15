@@ -1,0 +1,103 @@
+---
+title: "Sherman TX Market Data"
+description: "Template cập nhật thị trường nhà đất Sherman TX hàng tháng. Median price, active listings, closed sales, DOM, và market condition indicator."
+---
+
+# Sherman TX Market Data
+
+## Cách Claude sử dụng trang này
+
+File này là **template** — Phong cập nhật số liệu thực tế hàng tháng từ HAR.com / MLS. Claude dùng dữ liệu này để trả lời câu hỏi thị trường và tư vấn khách hàng.
+
+<Callout kind="warning">
+**Dữ liệu phải được Phong cập nhật thủ công.** Claude không tự tra số liệu — nếu số liệu cũ hơn 30 ngày, phải nói rõ với khách hàng là "dữ liệu tháng [X]" và recommend verify lại.
+</Callout>
+
+---
+
+## Bảng Dữ Liệu Hàng Tháng
+
+*(Phong cập nhật bảng này đầu mỗi tháng)*
+
+| Chỉ số | Tháng hiện tại | Tháng trước | So sánh |
+|--------|---------------|------------|---------|
+| **Median Sale Price** | $[UPDATE] | $[UPDATE] | [+/-X%] |
+| **Active Listings** | [UPDATE] | [UPDATE] | [+/-X] |
+| **Closed Sales** | [UPDATE] | [UPDATE] | [+/-X] |
+| **Avg Days on Market** | [UPDATE] ngày | [UPDATE] ngày | [+/-X] |
+| **List-to-Sale Ratio** | [UPDATE]% | [UPDATE]% | [+/-X%] |
+| **Months of Supply** | [UPDATE] | [UPDATE] | [+/-X] |
+| **New Listings** | [UPDATE] | [UPDATE] | [+/-X] |
+| **Pending Sales** | [UPDATE] | [UPDATE] | [+/-X] |
+
+**Ngày cập nhật lần cuối:** [PHONG CẬP NHẬT NGÀY]
+**Nguồn:** HAR.com / NTREIS MLS
+
+---
+
+## Market Condition Indicator
+
+Dựa trên Months of Supply:
+
+| Months of Supply | Market Type | Ý nghĩa cho Buyer | Ý nghĩa cho Seller |
+|-----------------|------------|------------------|-------------------|
+| Dưới 3 tháng | Seller's Market 🔴 | Cạnh tranh cao, có thể cần offer trên giá | Thời điểm tốt để bán |
+| 3-6 tháng | Balanced Market 🟡 | Cân bằng, có thể negotiate | Giá ổn định |
+| Trên 6 tháng | Buyer's Market 🟢 | Nhiều lựa chọn, có thể negotiate mạnh | Cần pricing đúng |
+
+**Hiện tại:** [Phong điền — Seller's / Balanced / Buyer's Market]
+
+---
+
+## Phân tích ngắn của Phong
+
+*(Phong viết 2-3 câu nhận xét thật sự về thị trường tháng này — Claude sẽ dùng để trả lời khách)*
+
+> [PHONG NHẬN XÉT THÁNG NÀY]
+
+**Ví dụ:** "Tháng 4/2025: Thị trường Sherman đang chậm lại nhẹ — DOM tăng từ 32 lên 41 ngày. Giá giữ ổn định nhưng sellers đang chấp nhận offer thấp hơn list price 2-3%. Thời điểm tốt để buyers negotiate."
+
+---
+
+## Dữ liệu theo Price Range (Sherman TX)
+
+*(Cập nhật hàng quý)*
+
+| Price Range | Active | Avg DOM | Median Price |
+|-------------|--------|---------|-------------|
+| Dưới $200K | [UPDATE] | [UPDATE] | [UPDATE] |
+| $200K - $300K | [UPDATE] | [UPDATE] | [UPDATE] |
+| $300K - $400K | [UPDATE] | [UPDATE] | [UPDATE] |
+| $400K - $500K | [UPDATE] | [UPDATE] | [UPDATE] |
+| Trên $500K | [UPDATE] | [UPDATE] | [UPDATE] |
+
+---
+
+## So sánh với thị trường xung quanh
+
+*(Giúp Phong tư vấn buyer đang xem xét nhiều khu vực)*
+
+| Thành phố | Median Price | Avg DOM | Ghi chú |
+|-----------|-------------|---------|---------|
+| Sherman, TX | $[UPDATE] | [UPDATE] ngày | Focus market |
+| Denison, TX | $[UPDATE] | [UPDATE] ngày | Liền kề, thường rẻ hơn |
+| Van Alstyne, TX | $[UPDATE] | [UPDATE] ngày | Growing, nhiều new build |
+| Howe, TX | $[UPDATE] | [UPDATE] ngày | Affordable, xa hơn |
+| McKinney, TX | $[UPDATE] | [UPDATE] ngày | So sánh với DFW lớn |
+
+---
+
+## Cách lấy dữ liệu cập nhật
+
+**Từ HAR.com:**
+1. Vào har.com → Market Stats → Texas → Grayson County / Sherman
+2. Chọn tháng muốn xem
+3. Export hoặc copy số liệu vào bảng trên
+
+**Từ Redfin:**
+1. redfin.com/city/17459/TX/Sherman → Market Insights
+2. Xem median sale price, days on market, sale-to-list ratio
+
+**Từ MLS (NTREIS):**
+1. Matrix → Stats → Area: Sherman TX
+2. Report type: Monthly Statistics

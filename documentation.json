@@ -11,6 +11,20 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "03. Market Intelligence",
+            "icon": "trending-up",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "03-market-intelligence/index", "icon": "home" },
+              { "title": "Sherman TX Market Data", "path": "03-market-intelligence/sherman-tx-market-data", "icon": "map-pin" },
+              { "title": "Median Price Trends", "path": "03-market-intelligence/median-price-trends", "icon": "trending-up" },
+              { "title": "Inventory & DOM", "path": "03-market-intelligence/inventory-dom", "icon": "activity" },
+              { "title": "Neighborhood Profiles", "path": "03-market-intelligence/neighborhood-profiles", "icon": "map" },
+              { "title": "CMA & Comparable Sales", "path": "03-market-intelligence/cma-comparable-sales", "icon": "file-text" },
+              { "title": "Interest Rate Tracker", "path": "03-market-intelligence/interest-rate-tracker", "icon": "percent" }
+            ]
+          },
+          {
             "group": "02. Marketing & Content",
             "icon": "megaphone",
             "expandable": true,
