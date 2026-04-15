@@ -11,6 +11,21 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "02. Marketing & Content",
+            "icon": "megaphone",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "02-marketing-content/index", "icon": "home" },
+              { "title": "Brand Voice Guide", "path": "02-marketing-content/brand-voice-guide", "icon": "mic" },
+              { "title": "Social Media Hooks", "path": "02-marketing-content/social-media-hooks", "icon": "hash" },
+              { "title": "Video Scripts", "path": "02-marketing-content/video-scripts", "icon": "video" },
+              { "title": "Email Templates", "path": "02-marketing-content/email-templates", "icon": "mail" },
+              { "title": "Open House Promo", "path": "02-marketing-content/open-house-promo", "icon": "home" },
+              { "title": "Vietnamese Community", "path": "02-marketing-content/vietnamese-community-outreach", "icon": "users" },
+              { "title": "Content Calendar", "path": "02-marketing-content/content-calendar", "icon": "calendar" }
+            ]
+          },
+          {
             "group": "01. Sales & CRM",
             "icon": "handshake",
             "expandable": true,
