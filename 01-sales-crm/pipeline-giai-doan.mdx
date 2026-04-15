@@ -1,0 +1,168 @@
+---
+title: "Pipeline 7 Giai Đoạn — SOP"
+description: "Quy trình chuẩn cho từng stage trong HubSpot CRM. Mỗi stage có hành động cụ thể và timeline rõ ràng."
+---
+
+# Pipeline 7 Giai Đoạn
+
+<Callout kind="info">
+  Pipeline này được setup trong **HubSpot Free CRM**. Mỗi contact phải ở đúng stage và có next action rõ ràng.
+</Callout>
+
+## Sơ Đồ Pipeline
+
+```
+Lead → Contacted → Consultation → Active Search → Under Contract → Closed → Nurturing
+```
+
+---
+
+## Stage 1 — LEAD 🆕
+
+**Định nghĩa:** Có thông tin contact, chưa liên hệ được.
+
+**Hành động bắt buộc trong 24 giờ:**
+- [ ] Gửi text đầu tiên bằng tiếng Việt (xem template bên dưới)
+- [ ] Add vào HubSpot với tag phù hợp (Hot/Warm/Cold)
+- [ ] Ghi chú nguồn lead và người giới thiệu (nếu có)
+- [ ] Set reminder call lại nếu không trả lời sau 2 tiếng
+
+**Template text đầu tiên (tiếng Việt):**
+```
+Chào anh/chị [Tên]! Em là Phong To, Realtor tại eXp Realty vùng Sherman TX.
+[Tên người giới thiệu] có nhắn em liên hệ anh/chị ạ.
+Anh/chị đang tìm nhà mua hay muốn bán nhà vậy ạ? 🏡
+Em có thể hỗ trợ anh/chị không ạ?
+```
+
+**Template text (tiếng Anh):**
+```
+Hi [Name]! This is Phong To, Realtor at eXp Realty — Sherman TX area.
+[Referral name] mentioned you might be looking to buy/sell a home.
+I'd love to chat whenever you're ready. No pressure at all! 🏡
+```
+
+---
+
+## Stage 2 — CONTACTED 📞
+
+**Định nghĩa:** Đã liên lạc được, chưa có meeting/consultation.
+
+**Hành động:**
+- [ ] Hỏi nhu cầu cơ bản (mua/bán/timeline/ngân sách)
+- [ ] Gửi link TidyCal để book consultation: `[TidyCal link]`
+- [ ] Điền sơ bộ hồ sơ khách hàng
+- [ ] Move sang Stage 3 ngay khi có ngày hẹn
+
+**Câu hỏi khám phá nhu cầu:**
+1. "Anh/chị đang muốn mua nhà hay bán nhà ạ?"
+2. "Timeline của anh/chị khoảng khi nào muốn move?"
+3. "Khu vực nào anh/chị đang nhắm đến?"
+4. "Anh/chị đã làm pre-approval với ngân hàng chưa ạ?"
+
+---
+
+## Stage 3 — CONSULTATION 🤝
+
+**Định nghĩa:** Đã có meeting, đang hoàn thiện hồ sơ và ký agreement.
+
+**Hành động:**
+- [ ] Conduct buyer/seller consultation (45-60 phút)
+- [ ] Hoàn thiện hồ sơ khách hàng đầy đủ
+- [ ] Ký **Buyer Representation Agreement** (bắt buộc từ 8/2024 — NAR settlement)
+- [ ] Set MLS auto-alert theo tiêu chí khách
+- [ ] Gửi email confirmation với next steps
+
+<Callout kind="warning">
+  **Buyer Agreement bắt buộc** từ tháng 8/2024 trước khi dẫn khách xem nhà. Đây là yêu cầu của NAR settlement.
+</Callout>
+
+---
+
+## Stage 4 — ACTIVE SEARCH 🔍
+
+**Định nghĩa:** Đã ký agreement, đang tích cực tìm nhà.
+
+**Hành động:**
+- [ ] MLS auto-alert đã setup và khách nhận được
+- [ ] Check-in với khách **2 lần/tuần** (qua text hoặc call)
+- [ ] Tour nhà khi có listing phù hợp
+- [ ] Cập nhật hồ sơ nếu tiêu chí thay đổi
+- [ ] Gửi market update hàng tuần (dùng template từ Phòng 02)
+
+**Template check-in text:**
+```
+Chào anh/chị [Tên]! Tuần này MLS có vài listing mới trong vùng anh/chị quan tâm.
+Em gửi qua email rồi ạ. Mình có muốn đi xem cuối tuần này không? 🏠
+```
+
+---
+
+## Stage 5 — UNDER CONTRACT ✍️
+
+**Định nghĩa:** Offer đã được accepted, đang trong quá trình giao dịch.
+
+**Hành động:**
+- [ ] Earnest Money đã nộp đúng deadline
+- [ ] Book home inspection trong Option Period
+- [ ] Theo dõi appraisal từ lender
+- [ ] Update khách **mỗi 2-3 ngày** về tiến độ
+- [ ] Checklist đầy đủ: xem trang [Checklist Closing](/01-sales-crm/checklist-closing)
+
+**Timeline chuẩn từ Contract đến Closing:**
+| Ngày | Milestone |
+|------|-----------|
+| Day 0 | Offer accepted — ký contract |
+| Day 1-3 | Nộp Earnest Money |
+| Day 1-10 | Option Period — book & complete inspection |
+| Day 7-14 | Lender order appraisal |
+| Day 14-21 | Appraisal kết quả |
+| Day 21-25 | Clear to Close từ lender |
+| Day 28-30 | Final walk-through |
+| Day 30-45 | Closing Day |
+
+---
+
+## Stage 6 — CLOSED 🎉
+
+**Định nghĩa:** Giao dịch hoàn thành, khách đã nhận chìa khóa.
+
+**Hành động ngay sau closing:**
+- [ ] Chụp ảnh trao chìa khóa — post social media
+- [ ] Gửi closing gift (nếu có)
+- [ ] Add vào Boomerangme — tặng loyalty stamp
+- [ ] Gửi Google Review request sau **2 tuần** (không ngay lập tức)
+- [ ] Set reminder follow-up: 1 tuần / 1 tháng / 3 tháng / 6 tháng / 1 năm
+
+**Template chúc mừng closing:**
+```
+Chúc mừng anh/chị [Tên] đã chính thức có nhà mới rồi! 🏡🎉
+Cảm ơn anh/chị đã tin tưởng em trong hành trình này.
+Có gì cần hỗ trợ về nhà mới, cứ nhắn em nhé!
+— Phong To | (737) 242-9999
+```
+
+---
+
+## Stage 7 — NURTURING ❤️
+
+**Định nghĩa:** Đã closed, duy trì mối quan hệ lâu dài để tạo referral.
+
+**Lịch chăm sóc:**
+| Thời điểm | Hành động |
+|-----------|-----------|
+| Hàng tháng | Gửi market update email/text |
+| Tết, Giáng Sinh, 4th of July | Gửi holiday greeting |
+| Mỗi 3 tháng | Check-in cá nhân: "Nhà mới ổn không anh/chị?" |
+| 1 năm | Anniversary message + CMA report miễn phí |
+| Bất cứ khi nào | Khi khách giới thiệu người — thank you ngay lập tức |
+
+---
+
+## Cách Claude sử dụng trang này
+
+Khi Phong nói *"Khách Minh vừa accepted offer"* hoặc *"Tuần này em cần làm gì với khách đang ở Stage 4"*, Claude sẽ:
+1. Xác định đúng stage
+2. List ra hành động cần làm theo SOP
+3. Cung cấp template text/email nếu cần
+4. Nhắc deadline quan trọng

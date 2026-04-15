@@ -1,1 +1,67 @@
-{"name":"Starter Kit","colors":{"light":{"brand":"#F97316"},"dark":{"brand":"#FDBA74"}},"navigation":{"tabs":[{"tab":"Documentation","icon":"book","groups":[{"group":"Start Here","icon":"rocket","pages":[{"title":"Introduction","path":"introduction","icon":"home"},{"title":"Quickstart","path":"quickstart","icon":"zap"},{"title":"Components","path":"components","icon":"code"}]},{"group":"Components","icon":"layers","pages":[{"title":"Images","path":"components/images","icon":"image"},{"title":"Cards","path":"components/cards","icon":"square"},{"title":"Code","path":"components/code","icon":"code"},{"title":"Callouts","path":"components/callouts","icon":"message-square"},{"title":"Steps","path":"components/steps","icon":"list-ordered"},{"title":"Tabs","path":"components/tabs","icon":"columns"}]}]},{"tab":"API Reference","icon":"code","groups":[{"group":"Overview","icon":"file-text","pages":[{"title":"Authentication","path":"authentication","icon":"lock"}]},{"group":"Sample Endpoints","openapi":"openapi.yaml"}]},{"tab":"Help Center","icon":"help-circle","pages":[{"title":"Help Center","path":"help-center","icon":"home"},{"group":"FAQs","icon":"help-circle","expandable":false,"pages":[{"title":"Documentation Source","path":"help-center/faq/getting-started"}]},{"group":"Troubleshooting","icon":"alert-triangle","expandable":false,"pages":[{"title":"Page Missing in Sidebar","path":"help-center/troubleshooting/install-error"}]},{"group":"Guides","icon":"book-open","expandable":false,"pages":[{"title":"Create Your First Page","path":"help-center/guides/setup-project"}]}]},{"tab":"Changelog","icon":"clock","pages":[{"title":"Changelog","path":"changelog","icon":"history"}]}]}}
+{
+  "name": "Phong To — Realtor Knowledge Base",
+  "colors": {
+    "light": { "brand": "#1d4ed8" },
+    "dark": { "brand": "#60a5fa" }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Realtor Knowledge Base",
+        "icon": "briefcase",
+        "groups": [
+          {
+            "group": "01. Sales & CRM",
+            "icon": "handshake",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "01-sales-crm/index", "icon": "home" },
+              { "title": "Hồ Sơ Khách Hàng", "path": "01-sales-crm/ho-so-khach-hang", "icon": "user" },
+              { "title": "Pipeline 7 Giai Đoạn", "path": "01-sales-crm/pipeline-giai-doan", "icon": "git-branch" },
+              { "title": "Scripts Tư Vấn", "path": "01-sales-crm/scripts-tu-van", "icon": "message-circle" },
+              { "title": "Xử Lý Phản Đối", "path": "01-sales-crm/xu-ly-phan-doi", "icon": "shield" },
+              { "title": "Chiến Lược Offer", "path": "01-sales-crm/chien-luoc-offer", "icon": "target" },
+              { "title": "Follow-up System", "path": "01-sales-crm/follow-up-system", "icon": "repeat" },
+              { "title": "Checklist Closing", "path": "01-sales-crm/checklist-closing", "icon": "check-square" },
+              { "title": "Referral Tracking", "path": "01-sales-crm/referral-tracking", "icon": "share-2" }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Start Here",
+            "icon": "rocket",
+            "pages": [
+              { "title": "Introduction", "path": "introduction", "icon": "home" },
+              { "title": "Quickstart", "path": "quickstart", "icon": "zap" },
+              { "title": "Components", "path": "components", "icon": "code" }
+            ]
+          },
+          {
+            "group": "Components",
+            "icon": "layers",
+            "pages": [
+              { "title": "Images", "path": "components/images", "icon": "image" },
+              { "title": "Cards", "path": "components/cards", "icon": "square" },
+              { "title": "Code", "path": "components/code", "icon": "code" },
+              { "title": "Callouts", "path": "components/callouts", "icon": "message-square" },
+              { "title": "Steps", "path": "components/steps", "icon": "list-ordered" },
+              { "title": "Tabs", "path": "components/tabs", "icon": "columns" }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          { "title": "Changelog", "path": "changelog", "icon": "history" }
+        ]
+      }
+    ]
+  }
+}

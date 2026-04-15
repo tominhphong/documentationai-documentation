@@ -1,0 +1,124 @@
+---
+title: "Referral Tracking"
+description: "Theo dõi nguồn giới thiệu, chương trình loyalty Boomerangme, và script xin referral sau closing."
+---
+
+# Referral Tracking
+
+<Callout kind="info">
+  **85% business của Realtor thành công đến từ referral và repeat clients.** Đây là tài sản quan trọng nhất cần nuôi dưỡng.
+</Callout>
+
+## Bảng Theo Dõi Referral
+
+| Người giới thiệu | Khách được giới thiệu | Ngày | Kết quả | Thank-you gift | Đã gửi? |
+|-----------------|----------------------|------|---------|----------------|---------|
+| | | | ☐ Closed ☐ In progress ☐ Chưa mua | | ☐ Có ☐ Chưa |
+| | | | ☐ Closed ☐ In progress ☐ Chưa mua | | ☐ Có ☐ Chưa |
+| | | | ☐ Closed ☐ In progress ☐ Chưa mua | | ☐ Có ☐ Chưa |
+
+---
+
+## Chương Trình Boomerangme Loyalty
+
+### Cách Setup Stamp Card
+- Platform: Boomerangme (đã subscribe)
+- Card type: Stamp Card
+- Stamps cần để redeem: [điền số — ví dụ: 5 stamps]
+- Reward: [điền — ví dụ: $50 gift card / free home valuation / ...]
+
+### Khi Nào Tặng Stamp:
+| Sự kiện | Số stamps |
+|---------|-----------|
+| Referral lead (kể cả chưa close) | 1 stamp |
+| Referral close thành công | 3 stamps |
+| Tự mua/bán nhà (repeat client) | 2 stamps |
+| Review Google 5 sao | 1 stamp |
+
+### Cách Tặng Stamp:
+1. Mở Boomerangme app
+2. Scan QR card của khách hoặc gửi stamp link
+3. Note lý do stamp
+
+---
+
+## Script Xin Referral Sau Closing
+
+### Script Tiếng Việt (2 tuần sau closing)
+```
+"Chào anh/chị [Tên]! Hy vọng anh/chị đang tận hưởng nhà mới nhé 🏡
+
+Em muốn cảm ơn anh/chị một lần nữa vì đã tin tưởng em trong suốt quá trình.
+Thật sự rất vui được làm việc cùng anh/chị.
+
+Em có một nhờ nhỏ: nếu anh/chị có người quen — bạn bè, họ hàng,
+đồng nghiệp — đang nghĩ đến việc mua hay bán nhà tại vùng DFW/Sherman,
+anh/chị có thể giới thiệu em không?
+
+Em sẽ chăm sóc họ chu đáo như đã làm với anh/chị. 🙏"
+```
+
+### Script Tiếng Anh
+```
+"Hi [Name]! Hope you're enjoying your new home! 🏡
+
+I wanted to thank you again for trusting me throughout this process —
+it was truly a pleasure working with you.
+
+If you know anyone who's thinking about buying or selling in the
+Sherman/DFW area, I'd love if you could pass along my name.
+I promise to take great care of them!
+
+Here's my contact card: [link]"
+```
+
+### Script Sau Khi Nhận Referral
+```
+"Chào anh/chị [Tên người giới thiệu]! Em vừa nói chuyện với [Tên khách].
+Cảm ơn anh/chị đã giới thiệu — em sẽ chăm sóc họ thật tốt!
+
+Mình sẽ cập nhật anh/chị khi có tiến triển nhé. 😊"
+```
+
+---
+
+## Thank-you Gift Policy
+
+| Tình huống | Gift |
+|-----------|------|
+| Referral lead (chưa close) | Handwritten thank-you card + $[số] Starbucks gift card |
+| Referral đã close | $[số] gift card hoặc closing gift có giá trị hơn |
+| Repeat client | Closing gift + personal note |
+
+<Callout kind="warning">
+  **NAR guidelines:** Gifts cho referral phải disclosed nếu licensed agent. Với general public (không phải agent), không có hạn chế. Luôn check với broker nếu không chắc.
+</Callout>
+
+---
+
+## Top Referral Sources Cần Nuôi Dưỡng
+
+### Cộng đồng Việt Nam DFW
+- Khách đã closed → Họ biết hàng chục người Việt khác đang tìm nhà
+- Nail salon, nhà hàng, chợ Á → Partnership opportunity
+- Chùa, nhà thờ Việt → Community trust
+
+### Professional Network
+- Mortgage lenders → Họ gặp buyer trước mình
+- Contractors sau closing → Khách hỏi họ biết Realtor nào tốt
+- Insurance agents → Buyers mới cần insurance
+
+### Strategy Nuôi Dưỡng Top Referrers
+1. **Nhận ra và cảm ơn ngay** — không delay
+2. **Báo cáo tiến độ** — người giới thiệu muốn biết khách của họ đang được chăm sóc
+3. **Reciprocate khi có thể** — refer business lại cho họ
+4. **Annual touch** — nhắn tin vào dịp Tết, Tết Dương lịch
+
+---
+
+## Cách Claude sử dụng trang này
+
+Khi Phong nói: *"Anh Hùng vừa giới thiệu 1 khách, làm gì tiếp?"* hoặc *"Tháng này cần gửi gift cho ai đã giới thiệu rồi mà chưa gửi?"*, Claude sẽ:
+1. Gợi ý next action theo tình huống (cảm ơn ngay, Boomerangme stamp, gift)
+2. Cung cấp script phù hợp
+3. Nhắc update bảng tracking

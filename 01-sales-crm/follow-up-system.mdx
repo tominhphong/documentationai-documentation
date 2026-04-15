@@ -1,0 +1,156 @@
+---
+title: "Follow-up System"
+description: "Hệ thống chăm sóc khách hàng từ lần đầu liên hệ đến sau closing. Templates text/email bằng tiếng Việt và tiếng Anh."
+---
+
+# Follow-up System
+
+<Callout kind="info">
+  Phần lớn deals đến từ follow-up kiên trì, không phải từ lần liên hệ đầu tiên. **80% sales cần 5+ lần follow-up** — nhưng 92% agents bỏ cuộc sau lần thứ 4.
+</Callout>
+
+## Timeline Follow-up Chuẩn
+
+### Giai đoạn 1: Ngay Sau Gặp/Nói Chuyện Lần Đầu
+
+| Thời điểm | Hành động | Template |
+|-----------|-----------|----------|
+| Ngay sau cuộc gọi/gặp | Text cảm ơn | Template A |
+| 24 giờ sau | Email recap + MLS alert link | Template B |
+| 3 ngày sau | Check-in nhẹ | Template C |
+| 1 tuần sau | Value-add message (market update) | Template D |
+| 2 tuần sau | Nếu im lặng — soft ping | Template E |
+| 1 tháng sau | Long-term nurture | Template F |
+
+---
+
+## Templates Tiếng Việt
+
+### Template A — Text ngay sau gặp
+```
+Chào anh/chị [Tên]! Cảm ơn đã dành thời gian nói chuyện với em hôm nay.
+Em sẽ setup MLS alert cho anh/chị ngay và gửi email confirm nhé.
+Có gì cần hỗ trợ thêm cứ nhắn em ạ 🏡
+— Phong | (737) 242-9999
+```
+
+### Template B — Email 24 giờ sau
+```
+Tiêu đề: Recap buổi nói chuyện hôm qua + MLS alert đã setup
+
+Chào anh/chị [Tên],
+
+Cảm ơn anh/chị đã dành thời gian nói chuyện với em hôm qua.
+Tóm lại những gì mình đã thảo luận:
+
+✅ Tiêu chí nhà: [khu vực], [số phòng], ngân sách khoảng $[số]
+✅ Timeline: anh/chị muốn move khoảng [thời gian]
+✅ MLS alert: đã setup — anh/chị sẽ nhận email khi có nhà mới
+
+Bước tiếp theo: [điền theo tình huống — pre-approval / đi xem nhà / ...]
+
+Anh/chị có câu hỏi gì không? Em luôn sẵn sàng hỗ trợ.
+
+Phong To | Realtor
+eXp Realty, LLC | TREC# 843757
+(737) 242-9999 | phong.to@exprealty.com
+```
+
+### Template C — Check-in 3 ngày
+```
+Chào anh/chị [Tên]! Tuần này thế nào ạ?
+MLS có vài listing mới khá hay trong vùng anh/chị quan tâm —
+em gửi qua email rồi. Anh/chị có xem qua chưa ạ? 🏠
+```
+
+### Template D — Value-add 1 tuần
+```
+Chào anh/chị [Tên]!
+
+Em muốn chia sẻ update thị trường Sherman TX tuần này:
+📊 Median price: $[số]
+📈 DOM trung bình: [số] ngày
+🏘️ Inventory: [số] homes active
+
+Thị trường đang [trend] — [1 câu analysis ngắn gọn].
+
+Anh/chị vẫn đang xem xét khu vực đó không, hay có thay đổi gì không ạ?
+```
+
+### Template E — Soft ping 2 tuần
+```
+Chào anh/chị [Tên]! Lâu không liên lạc, không biết anh/chị dạo này thế nào?
+
+Em không muốn làm phiền — chỉ muốn check xem kế hoạch mua nhà
+của anh/chị có thay đổi gì không. Nếu chưa sẵn sàng thì hoàn toàn OK,
+em vẫn ở đây khi anh/chị cần nhé! 😊
+```
+
+### Template F — Long-term nurture (hàng tháng)
+```
+Chào anh/chị [Tên]!
+
+Tháng [X] rồi — cũng muốn check in xem anh/chị dạo này thế nào.
+
+Thị trường Sherman TX tháng này:
+[1-2 bullet points update ngắn gọn]
+
+Nếu anh/chị muốn biết thêm hoặc muốn đi xem nhà thử,
+cứ nhắn em nha. Không có áp lực gì cả! 🏡
+```
+
+---
+
+## Templates Tiếng Anh
+
+### Template A (English) — Right after meeting
+```
+Hi [Name]! Thank you for chatting with me today.
+I'll set up your MLS alert right away and send you a confirmation email.
+Feel free to reach out anytime — I'm here to help! 🏡
+— Phong | (737) 242-9999
+```
+
+### Template E (English) — 2-week soft ping
+```
+Hi [Name], hope you're doing well!
+
+Just wanted to check in and see if your home search plans have changed.
+No pressure at all — just here whenever you're ready.
+
+Let me know if you'd like to see any new listings that came up! 🏠
+```
+
+---
+
+## Hệ Thống Tag Trong HubSpot
+
+| Tag | Định nghĩa | Follow-up frequency |
+|-----|-----------|---------------------|
+| 🔥 **Hot** | Ready trong 0-3 tháng, tài chính sẵn sàng | Mỗi 2-3 ngày |
+| 🟡 **Warm** | Ready trong 3-6 tháng, đang chuẩn bị | Mỗi 1-2 tuần |
+| ❄️ **Cold** | Chưa rõ timeline, hoặc im lặng nhiều | Mỗi 1 tháng |
+| ⏳ **Long-term** | Sau 6 tháng trở lên, hoặc nurturing sau closing | Mỗi 3 tháng |
+
+---
+
+## Automation với Diaflow + Late
+
+### Workflow đang setup:
+- **Trigger:** New contact in HubSpot → Tag = Hot/Warm
+- **Action 1:** Send welcome text (Template A) ngay lập tức
+- **Action 2:** Sau 24h → Send email recap
+- **Action 3:** Sau 1 tuần → Send market update email
+- **Action 4:** Sau 2 tuần nếu không reply → Soft ping text
+
+*(Chi tiết workflow xem tại Phòng 07 — Tech & Tools)*
+
+---
+
+## Cách Claude sử dụng trang này
+
+Khi Phong nói: *"Khách Lan đang ở stage Warm, cần text gì?"* hoặc *"Em có 5 khách lâu không liên lạc cần follow up"*, Claude sẽ:
+1. Xác định tag và stage của từng khách
+2. Chọn template phù hợp
+3. Customize nội dung theo thông tin cụ thể của khách (tên, khu vực, timeline)
+4. Nhắc schedule gửi
