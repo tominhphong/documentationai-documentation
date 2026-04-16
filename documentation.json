@@ -11,6 +11,21 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "09. Buyer Journey & Representation",
+            "icon": "users",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "09-buyer-journey/index", "icon": "users" },
+              { "title": "Buyer Consultation SOP", "path": "09-buyer-journey/buyer-consultation-sop", "icon": "clipboard" },
+              { "title": "Home Search Strategy", "path": "09-buyer-journey/home-search-strategy", "icon": "search" },
+              { "title": "Showing Property SOP", "path": "09-buyer-journey/showing-property-sop", "icon": "key" },
+              { "title": "Offer Strategy", "path": "09-buyer-journey/offer-strategy", "icon": "file-text" },
+              { "title": "Due Diligence Checklist", "path": "09-buyer-journey/due-diligence-checklist", "icon": "check-square" },
+              { "title": "Buyer Financing Guide", "path": "09-buyer-journey/buyer-financing-guide", "icon": "dollar-sign" },
+              { "title": "Vietnamese Buyer Guide", "path": "09-buyer-journey/vietnamese-buyer-guide", "icon": "heart" }
+            ]
+          },
+          {
             "group": "08. Listing & Property Marketing",
             "icon": "home",
             "expandable": true,
