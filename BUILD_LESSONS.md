@@ -303,4 +303,4 @@ git diff --name-only --cached
 ---
 
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅*
+*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅*
