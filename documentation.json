@@ -11,6 +11,20 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "06. Legal & Compliance",
+            "icon": "scale",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "06-legal-compliance/index", "icon": "home" },
+              { "title": "TREC License Renewal", "path": "06-legal-compliance/trec-license-renewal", "icon": "award" },
+              { "title": "CE Hours Tracker", "path": "06-legal-compliance/ce-hours-tracker", "icon": "book-open" },
+              { "title": "Fair Housing Rules", "path": "06-legal-compliance/fair-housing-rules", "icon": "shield" },
+              { "title": "TREC Contract Forms", "path": "06-legal-compliance/trec-contract-forms-index", "icon": "file-text" },
+              { "title": "Texas Disclosure Laws", "path": "06-legal-compliance/texas-disclosure-laws", "icon": "alert-circle" },
+              { "title": "NAR Code of Ethics", "path": "06-legal-compliance/nar-code-of-ethics", "icon": "heart" }
+            ]
+          },
+          {
             "group": "05. Finance & Accounting",
             "icon": "dollar-sign",
             "expandable": true,
