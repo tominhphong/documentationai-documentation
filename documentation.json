@@ -11,6 +11,20 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "05. Finance & Accounting",
+            "icon": "dollar-sign",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "05-finance-accounting/index", "icon": "home" },
+              { "title": "Commission Tracker", "path": "05-finance-accounting/commission-tracker", "icon": "trending-up" },
+              { "title": "Business Expenses", "path": "05-finance-accounting/business-expenses", "icon": "credit-card" },
+              { "title": "Tax Deduction List", "path": "05-finance-accounting/tax-deduction-list", "icon": "file-minus" },
+              { "title": "Monthly P&L", "path": "05-finance-accounting/monthly-pnl", "icon": "bar-chart" },
+              { "title": "Goal vs Actual", "path": "05-finance-accounting/goal-vs-actual", "icon": "target" },
+              { "title": "Tool Subscriptions", "path": "05-finance-accounting/tool-subscriptions-budget", "icon": "package" }
+            ]
+          },
+          {
             "group": "04. Transaction Management",
             "icon": "file-signature",
             "expandable": true,

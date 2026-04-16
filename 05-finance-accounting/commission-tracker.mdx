@@ -1,0 +1,109 @@
+---
+title: "Commission Tracker"
+description: "Theo dõi từng deal bất động sản — GCI, split eXp, phí, và net income thực nhận."
+---
+
+# Commission Tracker
+
+Tracker này ghi lại **mọi deal** từ khi có offer đến khi nhận tiền. Mục tiêu: biết chính xác deal nào đang ở đâu và mình net được bao nhiêu.
+
+## Cách tính commission — eXp Realty
+
+<Callout kind="info">
+Phong đang ở cơ cấu eXp Realty. Cap hàng năm là **$16,000**. Trước khi cap: split 80/20 (Phong 80%, eXp 20%). Sau khi cap: Phong giữ 100% GCI trừ phí giao dịch.
+</Callout>
+
+### Công thức cơ bản
+
+```
+GCI (Gross Commission Income) = Sales Price × Commission Rate (thường 2.5%-3%)
+
+Pre-cap:
+  eXp giữ lại  = GCI × 20%
+  Phí giao dịch = $25 (E&O) + $250 (transaction fee) — xác nhận lại với broker
+  Net income    = GCI × 80% − phí giao dịch
+
+Post-cap (sau khi đã đóng $16,000 vào eXp):
+  Phí giao dịch = $250 (transaction fee only)
+  Net income    = GCI − $250
+```
+
+### Ví dụ tính toán
+
+| Kịch bản | Sales Price | Commission Rate | GCI | Net Pre-cap | Net Post-cap |
+|---|---|---|---|---|---|
+| Nhà $300K (buyer) | $300,000 | 2.5% | $7,500 | $5,725 | $7,250 |
+| Nhà $350K (listing) | $350,000 | 3.0% | $10,500 | $8,125 | $10,250 |
+| Nhà $250K (buyer) | $250,000 | 2.5% | $6,250 | $4,725 | $6,000 |
+| Nhà $420K (listing) | $420,000 | 3.0% | $12,600 | $9,805 | $12,350 |
+
+*Lưu ý: Kiểm tra phí thực tế với eXp Agent Services — có thể thay đổi*
+
+## Bảng theo dõi deals đang active
+
+| # | Khách hàng | Địa chỉ | Loại | Sales Price | GCI | Split/Phí | Net ước tính | Closing Date | Trạng thái |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | [Tên] | [Địa chỉ] | Buyer/Listing | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | [Trạng thái] |
+| 2 | [Tên] | [Địa chỉ] | Buyer/Listing | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | [Trạng thái] |
+| 3 | [Tên] | [Địa chỉ] | Buyer/Listing | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | [Trạng thái] |
+
+**Trạng thái codes:**
+- **LISTING** — Đã ký listing agreement, chưa có offer
+- **UNDER CONTRACT** — Đang trong giai đoạn contract
+- **PENDING** — Qua option period, chờ close
+- **CLOSED** — Đã close, chờ nhận tiền
+- **PAID** — Đã nhận commission
+
+## Log deals đã đóng — [Năm hiện tại]
+
+| Tháng | Khách hàng | Địa chỉ | Loại | Sales Price | GCI | Net Nhận | Ngày close | Ghi chú |
+|---|---|---|---|---|---|---|---|---|
+| Jan | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Feb | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Mar | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Apr | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| May | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Jun | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Jul | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Aug | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Sep | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Oct | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Nov | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+| Dec | [UPDATE] | [UPDATE] | [UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | [UPDATE] | |
+
+## Tóm tắt năm — Dashboard nhanh
+
+| Chỉ số | Q1 | Q2 | Q3 | Q4 | Cả năm |
+|---|---|---|---|---|---|
+| Số deals closed | [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] | [UPDATE] |
+| Tổng GCI | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] |
+| Tổng Net Income | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] |
+| Volume bán hàng | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] |
+| Avg commission/deal | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] | $[UPDATE] |
+| Cap status | — | — | — | — | [Chưa cap / Đã cap tháng X] |
+
+## Pipeline — Dự báo doanh thu
+
+| Giai đoạn | Số deals | Sales Price ước tính | GCI ước tính | Xác suất close | Net dự kiến |
+|---|---|---|---|---|---|
+| Listing chưa có offer | [UPDATE] | $[UPDATE] | $[UPDATE] | 60% | $[UPDATE] |
+| Under Contract | [UPDATE] | $[UPDATE] | $[UPDATE] | 85% | $[UPDATE] |
+| Pending (qua option) | [UPDATE] | $[UPDATE] | $[UPDATE] | 95% | $[UPDATE] |
+| **Tổng pipeline** | | | | | **$[UPDATE]** |
+
+## Referral deals
+
+<Callout kind="info">
+Nếu deal đến từ referral (giới thiệu từ agent khác), thường phải trả referral fee 25%-30% của GCI cho bên giới thiệu. Ghi rõ vào cột "Ghi chú".
+</Callout>
+
+| Deal | Người giới thiệu | Referral % | Referral fee | Net sau referral |
+|---|---|---|---|---|
+| [UPDATE] | [UPDATE] | [UPDATE]% | $[UPDATE] | $[UPDATE] |
+
+## Câu hỏi hay hỏi Claude
+
+- "Deal $350K listing, tôi net được bao nhiêu nếu chưa cap?"
+- "Tôi cần bao nhiêu deals nữa để đạt $[mục tiêu] năm nay?"
+- "Cap của tôi còn lại bao nhiêu?"
+- "Tháng này tôi nhận được bao nhiêu tiền thực sự?"
