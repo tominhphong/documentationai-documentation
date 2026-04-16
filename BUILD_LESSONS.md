@@ -316,5 +316,40 @@ git diff --name-only --cached
 
 ---
 
+## L17 — Dept 08: Listing marketing cần gắn kết chặt với seller psychology
+
+**Bối cảnh:** Department 08 (Listing & Property Marketing) là phòng đầu tiên hoàn toàn về seller-side — khác với các phòng trước chủ yếu là quy trình và công cụ.
+
+**Bài học:**
+- **Price reduction** là chủ đề nhạy cảm nhất — seller nghe "giảm giá" = thất bại. Frame lại là "điều chỉnh chiến lược theo market" và luôn dùng **3 options** để seller cảm thấy có quyền chọn
+- **Analytics cần được trình bày cho seller hàng tuần** — silence gây lo lắng hơn bad news. Dữ liệu thực, dù không tốt, vẫn tốt hơn im lặng
+- **DOM stigma bắt đầu sau 30 ngày** — cần proactive frame lại câu chuyện trước khi buyer hỏi "tại sao chưa bán?"
+- **4 chữ P trong listing:** Price + Photos + Presentation + Promotion — thiếu bất kỳ P nào đều ảnh hưởng kết quả
+- **Open house cho cộng đồng Việt** có điểm khác biệt thực sự: bilingual flyer, thông tin chợ Việt, Vietnamese refreshments → tạo trust và differentiation
+
+**Áp dụng:** Các phòng sau liên quan đến seller management → luôn nhớ seller psychology, không chỉ quy trình kỹ thuật.
+
+---
+
+## L18 — Dept 09: Buyer Journey — văn hóa Việt là competitive advantage thực sự
+
+**Bối cảnh:** Department 09 (Buyer Journey & Representation) bao gồm toàn bộ chu trình từ consultation đến closing. File cuối (`vietnamese-buyer-guide.mdx`) là file quan trọng nhất và độc đáo nhất của phòng này.
+
+**Bài học:**
+
+- **BMA-1 là luật bắt buộc từ 8/2024** — KHÔNG được skip. Frame với buyer là "bảo vệ quyền lợi của anh/chị", không phải "giấy tờ cho agent". Chuẩn bị sẵn FAQ để handle 4 objections phổ biến nhất
+- **Dynamics gia đình Việt quyết định deal** — bố mẹ thế hệ 1 thường có tiếng nói cuối, con cái là translator. Phải include cả gia đình khi showing, không chỉ người liên hệ ban đầu
+- **Silence ≠ đồng ý với buyer Việt** — "suy nghĩ thêm" thường nghĩa là có concern chưa được address. Phải dùng open-ended questions để uncover real objections
+- **Phong thủy là real** với nhiều buyer — không cần là expert, chỉ cần acknowledge và không dismiss
+- **Cash business + ITIN + gift funds = phổ biến trong cộng đồng Việt** — phải có lender partner có kinh nghiệm với các tình huống này. Referral lender quality = deal quality
+- **Seasoning requirement (60 ngày)** cho cash deposits — must address sớm trong quá trình, không đợi đến loan application
+- **Referral từ cộng đồng Việt là kênh lead mạnh nhất** — một buyer hài lòng = 3-5 referrals tiềm năng. Nurture plan sau closing cực kỳ quan trọng
+- **Option period tính CALENDAR DAYS** — set reminder ngay khi contract executed, không để quên HARD DEADLINE ngày 10
+- **Glossary tiếng Việt** cho thuật ngữ real estate là essential với thế hệ 1 — buyer không thể ra quyết định nếu không hiểu terminology
+
+**Áp dụng:** Bất kỳ content nào phục vụ cộng đồng Việt → yếu tố văn hóa phải được tích hợp, không phải thêm vào như afterthought.
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅*
+*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅ | 08 — Listing & Property Marketing ✅ | 09 — Buyer Journey & Representation ✅*
