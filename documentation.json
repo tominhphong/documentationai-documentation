@@ -11,6 +11,18 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "10. Quality & Reviews",
+            "icon": "star",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "10-quality-reviews/index", "icon": "star" },
+              { "title": "Client Testimonials", "path": "10-quality-reviews/client-testimonials", "icon": "message-square" },
+              { "title": "Post-Closing Survey SOP", "path": "10-quality-reviews/post-closing-survey-sop", "icon": "clipboard" },
+              { "title": "Google Review Requests", "path": "10-quality-reviews/google-review-requests", "icon": "thumbs-up" },
+              { "title": "Lessons Learned Log", "path": "10-quality-reviews/lessons-learned-log", "icon": "edit" }
+            ]
+          },
+          {
             "group": "09. Buyer Journey & Representation",
             "icon": "users",
             "expandable": true,
