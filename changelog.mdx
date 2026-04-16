@@ -1,22 +1,47 @@
 ---
-title: Sample Changelog
-description: Sample release notes you can replace with your real updates.
+title: Changelog
+description: Lịch sử các thay đổi trong Realtor Knowledge Base của Phong To — ghi lại từng update theo ngày.
 ---
 
-## Sample updates
+# Changelog
 
-<Callout kind="alert">
-This changelog is example content. Replace every entry with your real releases.
-</Callout>
+Ghi lại mọi thay đổi, cải tiến, và bài học học được trong quá trình xây dựng và vận hành KB này.
 
-<Update label="2026-01-26" description="Sample Update" tags={["sample"]}>
-## What changed
-- Cleaned up placeholder copy across the starter kit.
-- Added clearer "sample" messaging to avoid confusion.
+---
+
+<Update label="2026-04-15" description="Hoàn thiện toàn bộ 10 phòng ban + nâng cấp UI components" tags={["content", "components", "structure"]}>
+
+## ✅ Hoàn thành Knowledge Base 10/10 phòng ban
+
+### Nội dung được thêm mới
+- **Phòng 01 — Sales & CRM**: 9 trang (CRM setup, lead sources, follow-up scripts, referral system...)
+- **Phòng 02 — Marketing & Content**: 8 trang (social media SOP, AI image prompts, content calendar...)
+- **Phòng 03 — Market Intelligence**: 7 trang (CMA guide, interest rate tracker, market reports...)
+- **Phòng 04 — Transaction Management**: 8 trang (contract checklist, inspection SOP, closing day checklist...)
+- **Phòng 05 — Finance & Accounting**: 7 trang (commission tracker, tax deductions, expense management...)
+- **Phòng 06 — Legal & Compliance**: 7 trang (TREC license, fair housing, disclosure requirements...)
+- **Phòng 07 — Client Communication**: 7 trang (communication scripts, drip email, WhatsApp/iMessage templates...)
+- **Phòng 08 — Listing & Property Marketing**: 8 trang (listing checklist, MLS guide, photography SOP...)
+- **Phòng 09 — Buyer Journey**: 7 trang (buyer consultation, financing guide, offer strategy, closing guide...)
+- **Phòng 10 — Quality & Reviews**: 5 trang (post-closing survey, Google review requests, referral request scripts...)
+
+### Cải tiến cấu trúc
+- Fix thứ tự navigation: sắp xếp lại từ 01→10 ascending (trước đó bị ngược)
+- Thêm `<Steps>` component cho các SOP pages: inspection SOP, buyer consultation, post-closing survey
+- Thêm `<CardGroup cols={2}>` cho tất cả 10 trang index — dễ navigate hơn
+- Thêm `<Tabs>` cho các script song ngữ (Việt/English): Google review requests, communication scripts
+- Test `<Columns>` component: Conventional vs FHA loan comparison trên buyer financing guide
+
+### Lessons Learned (ghi vào BUILD_LESSONS.md)
+- Documentation.AI **không hỗ trợ Mermaid diagram** — dùng table thay thế
+- `<Callout>` dùng `kind=` không phải `type=` (warning, info, tip, alert)
+- Ký tự `<` trước số (ví dụ `<3%`) gây lỗi MDX parse — phải escape thành `&lt;`
+- `<Columns>` hoạt động tốt, responsive tự stack trên mobile
+- `<Tabs>` là UI-only cho human readers — AI agent đọc được toàn bộ nội dung không cần Tab
+
+### Sự cố & fix
+- `interest-rate-tracker.mdx`: lỗi MDX parse do ký tự `<` trước số — đã fix bằng escape
+- Navigation order bị ngược (10→1) — đã fix lại 01→10
+
 </Update>
 
-<Update label="2025-12-10" description="Sample Update" tags={["sample"]}>
-## What changed
-- Simplified the Quickstart steps.
-- Trimmed Help Center examples.
-</Update>
