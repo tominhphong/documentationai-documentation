@@ -11,6 +11,21 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "08. Listing & Property Marketing",
+            "icon": "home",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "08-listing-marketing/index", "icon": "home" },
+              { "title": "Listing Prep Checklist", "path": "08-listing-marketing/listing-prep-checklist", "icon": "check-square" },
+              { "title": "Photography & Staging", "path": "08-listing-marketing/photography-staging-sop", "icon": "camera" },
+              { "title": "MLS Listing SOP", "path": "08-listing-marketing/mls-listing-sop", "icon": "file-text" },
+              { "title": "Marketing Checklist", "path": "08-listing-marketing/marketing-checklist", "icon": "megaphone" },
+              { "title": "Open House SOP", "path": "08-listing-marketing/open-house-sop", "icon": "users" },
+              { "title": "Price Reduction Strategy", "path": "08-listing-marketing/price-reduction-strategy", "icon": "trending-down" },
+              { "title": "Listing Analytics", "path": "08-listing-marketing/listing-analytics", "icon": "bar-chart-2" }
+            ]
+          },
+          {
             "group": "07. Client Communication",
             "icon": "message-circle",
             "expandable": true,
