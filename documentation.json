@@ -11,6 +11,20 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "07. Client Communication",
+            "icon": "message-circle",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "07-client-communication/index", "icon": "home" },
+              { "title": "Communication Scripts", "path": "07-client-communication/communication-scripts", "icon": "mic" },
+              { "title": "Email Templates", "path": "07-client-communication/email-templates", "icon": "mail" },
+              { "title": "Follow-Up System", "path": "07-client-communication/follow-up-system", "icon": "repeat" },
+              { "title": "Referral System", "path": "07-client-communication/referral-system", "icon": "users" },
+              { "title": "Client Onboarding", "path": "07-client-communication/client-onboarding-checklist", "icon": "check-square" },
+              { "title": "Objection Handling", "path": "07-client-communication/objection-handling", "icon": "shield" }
+            ]
+          },
+          {
             "group": "06. Legal & Compliance",
             "icon": "scale",
             "expandable": true,
