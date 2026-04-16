@@ -284,6 +284,20 @@ grep -rn "<[0-9]" ./**/*.mdx
 
 ---
 
+## L16 — Dept 07: Scripts và email templates phải song ngữ cho cộng đồng Việt
+
+**Bối cảnh:** Department 07 (Client Communication) khác các phòng trước — không phải kiến thức kỹ thuật mà là công cụ sử dụng trực tiếp với client.
+
+**Bài học:**
+- Scripts và email templates cần **song ngữ hoặc ghi rõ ngôn ngữ ưu tiên** cho từng tình huống
+- Cộng đồng Việt DFW ra quyết định theo nhóm (bố mẹ, con cái) → scripts cần có phần xử lý "cần hỏi gia đình"
+- Kênh liên lạc ưu tiên: FB Messenger + iMessage + WhatsApp (Zalo là add-on, không phải kênh chính)
+- Referral là kênh lead chất lượng nhất cho Realtor phục vụ cộng đồng Việt → đáng có file riêng
+
+**Áp dụng:** Các phòng sau liên quan đến giao tiếp → luôn xem xét yếu tố văn hóa Việt và song ngữ.
+
+---
+
 ## Template Kiểm Tra Mở Rộng — Trước Mỗi Commit
 
 ```bash
@@ -303,4 +317,4 @@ git diff --name-only --cached
 ---
 
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅*
+*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅*
