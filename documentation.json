@@ -11,6 +11,21 @@
         "icon": "briefcase",
         "groups": [
           {
+            "group": "04. Transaction Management",
+            "icon": "file-signature",
+            "expandable": true,
+            "pages": [
+              { "title": "Overview", "path": "04-transaction-management/index", "icon": "home" },
+              { "title": "Active Deals Tracker", "path": "04-transaction-management/active-deals-tracker", "icon": "list" },
+              { "title": "Contract Checklist", "path": "04-transaction-management/contract-checklist", "icon": "check-square" },
+              { "title": "Inspection SOP", "path": "04-transaction-management/inspection-sop", "icon": "search" },
+              { "title": "Appraisal SOP", "path": "04-transaction-management/appraisal-sop", "icon": "dollar-sign" },
+              { "title": "Title & Escrow", "path": "04-transaction-management/title-escrow-notes", "icon": "shield" },
+              { "title": "Repair Negotiation", "path": "04-transaction-management/repair-negotiation-scripts", "icon": "tool" },
+              { "title": "Closing Day Checklist", "path": "04-transaction-management/closing-day-checklist", "icon": "key" }
+            ]
+          },
+          {
             "group": "03. Market Intelligence",
             "icon": "trending-up",
             "expandable": true,

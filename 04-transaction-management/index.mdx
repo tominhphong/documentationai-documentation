@@ -1,0 +1,67 @@
+---
+title: "Transaction Management — Overview"
+description: "Trung tâm quản lý giao dịch bất động sản của Phong To. Theo dõi active deals, checklists, SOP cho inspection/appraisal, và closing procedures."
+---
+
+# Transaction Management
+
+## Mục Đích Phòng Ban Này
+
+Phòng 04 là **hệ thống kiểm soát giao dịch** — đảm bảo mỗi deal từ lúc có contract đến closing đều được track đầy đủ, không bỏ sót deadline quan trọng.
+
+## Cách Claude Hỗ Trợ Trong Phòng Này
+
+Claude dùng các file dưới đây để:
+
+- Nhắc Phong về deadline sắp đến khi Phong mô tả trạng thái deal
+- Hướng dẫn từng bước trong inspection, appraisal, và title process
+- Cung cấp script đàm phán repairs/concessions
+- Checklist closing day để không bỏ sót bước nào
+
+<Callout kind="warning">
+**Thông tin giao dịch thực tế (tên buyer/seller, địa chỉ, giá)** phải do Phong cung cấp trong từng cuộc trò chuyện. Claude không lưu thông tin client giữa các session.
+</Callout>
+
+---
+
+## Điều Hướng Phòng 04
+
+| Trang | Nội dung | Khi nào dùng |
+|-------|---------|-------------|
+| [Active Deals Tracker](active-deals-tracker) | Template theo dõi tất cả deals đang mở | Đầu mỗi tuần review |
+| [Contract Checklist](contract-checklist) | Timeline & checklist từ contract đến closing | Ngay khi có executed contract |
+| [Inspection SOP](inspection-sop) | Quy trình inspection, negotiation repair | Sau khi schedule inspection |
+| [Appraisal SOP](appraisal-sop) | Quy trình appraisal, xử lý low appraisal | Khi appraisal được order |
+| [Title & Escrow](title-escrow-notes) | Title process, red flags, escrow procedures | Trong option period và trước closing |
+| [Repair Negotiation](repair-negotiation-scripts) | Scripts đàm phán repairs với đối phương | Sau khi nhận inspection report |
+| [Closing Day Checklist](closing-day-checklist) | Checklist ngày closing cho buyer và seller | 48-72 giờ trước closing |
+
+---
+
+## Texas Transaction Timeline — Tổng Quan
+
+*(Từ Executed Contract đến Closing — typical residential deal)*
+
+| Giai đoạn | Thời điểm | Key Deadlines |
+|-----------|----------|--------------|
+| **Executed Contract** | Ngày 0 | Option Fee và Earnest Money phải nộp đúng hạn |
+| **Option Period** | Ngày 1-7 (thường) | Inspection, negotiate repairs, có thể terminate |
+| **Loan Application** | Trong 3 ngày sau contract | Lender submit formal application |
+| **Appraisal** | Tuần 2-3 | Lender order appraisal |
+| **Title Search** | Tuần 2-3 | Title company run search |
+| **Loan Approval** | ~21-30 ngày | Underwriting clear to close |
+| **Final Walkthrough** | 24 giờ trước closing | Verify condition unchanged |
+| **Closing** | Ngày ~30-45 | Sign docs, fund, record, hand keys |
+
+---
+
+## Contacts Cần Có Trong Mỗi Transaction
+
+*(Phong điền cho từng deal cụ thể trong conversation)*
+
+- **Lender/Loan Officer:** _______________
+- **Title Company:** _______________
+- **Inspector:** _______________
+- **Buyer's Agent (nếu là listing side):** _______________
+- **Seller's Agent (nếu là buyer side):** _______________
+- **HOA Management (nếu có):** _______________

@@ -1,0 +1,116 @@
+---
+title: "Active Deals Tracker"
+description: "Template theo dõi tất cả giao dịch đang mở. Deal status, key dates, next actions, và contact info cho mỗi deal."
+---
+
+# Active Deals Tracker
+
+## Cách Sử Dụng
+
+Mỗi tuần (lý tưởng là sáng thứ Hai), Phong cập nhật bảng này và share với Claude để nhận:
+- Nhắc nhở về deadline sắp đến
+- Đề xuất next actions cho từng deal
+- Flag bất kỳ vấn đề nào cần attention ngay
+
+<Callout kind="info">
+**Cách nhanh nhất:** Phong copy bảng "Deal Status này" paste vào chat với Claude, Claude sẽ phân tích và đưa ra priority list cho tuần.
+</Callout>
+
+---
+
+## Deal Status Key
+
+| Status Code | Ý nghĩa |
+|------------|---------|
+| **ACTIVE** | Đang trong option period |
+| **UC-LOAN** | Under Contract — chờ loan approval |
+| **UC-TITLE** | Under Contract — chờ title clear |
+| **CTC** | Clear to Close — chờ closing date |
+| **CLOSED** | Đã đóng — follow up thank you |
+| **TERM** | Terminated — ghi lý do |
+| **LISTING** | Đang active listing, chưa có offer |
+| **PENDING-OFFER** | Đã submit offer, chờ response |
+
+---
+
+## Bảng Active Deals — [Tháng/Năm]
+
+*(Phong cập nhật và paste vào chat với Claude khi cần review)*
+
+| Deal | Vai trò | Status | Contract Date | Option Exp | Closing Date | Loan Deadline | Ghi chú |
+|------|---------|--------|--------------|-----------|-------------|--------------|---------|
+| [Địa chỉ 1] | Buyer Agent | [STATUS] | [DATE] | [DATE] | [DATE] | [DATE] | |
+| [Địa chỉ 2] | Listing Agent | [STATUS] | [DATE] | N/A | [DATE] | N/A | |
+| [Địa chỉ 3] | Buyer Agent | [STATUS] | [DATE] | [DATE] | [DATE] | [DATE] | |
+
+---
+
+## Template Chi Tiết Cho 1 Deal
+
+Dùng template dưới khi cần brief Claude đầy đủ về 1 giao dịch cụ thể:
+
+```
+DEAL BRIEF — [Địa chỉ property]
+=====================================
+Vai trò Phong: [Buyer Agent / Listing Agent / Dual Agent]
+Property Type: [SF / Condo / Townhome / Land]
+Sale Price: $[xxx,xxx]
+Closing Date: [MM/DD/YYYY]
+
+PARTIES:
+- Buyer: [Tên] | [Phone]
+- Seller: [Tên] | [Phone]
+- Lender: [Tên LO] | [Company] | [Phone]
+- Title: [Company] | [Contact]
+- Co-Agent (if any): [Tên] | [Phone]
+
+KEY DATES:
+- Contract Executed: [DATE]
+- Option Period Expires: [DATE] at 5PM
+- Option Fee: $[X] — Paid? [Y/N]
+- Earnest Money: $[X,XXX] — Deposited? [Y/N]
+- Loan Approval Deadline: [DATE]
+- Appraisal Deadline: [DATE]
+- HOA Docs Deadline: [DATE] (if applicable)
+- Closing Date: [DATE]
+
+CURRENT STATUS:
+- Inspection: [Not yet / Scheduled DATE / Done — X items]
+- Appraisal: [Not ordered / Ordered / Done — $X value]
+- Loan Status: [Pre-approved / In UW / CTC]
+- Title: [Ordered / Clear / Issues: X]
+
+PENDING ITEMS:
+1. [Item 1]
+2. [Item 2]
+
+NOTES:
+[Ghi chú bất kỳ — buyer lo lắng, seller motivation, concessions đã agree, v.v.]
+```
+
+---
+
+## Weekly Review Checklist
+
+Mỗi thứ Hai, Phong chạy qua list này:
+
+- [ ] Có deal nào Option Period hết hạn trong tuần này không?
+- [ ] Loan approval deadline nào trong 7 ngày?
+- [ ] Closing nào trong 14 ngày — đã confirm title clear chưa?
+- [ ] Buyer nào cần final walkthrough schedule?
+- [ ] Listing nào đã quá 21 DOM — có cần price review không?
+- [ ] Follow up với khách vừa closing tuần trước chưa?
+
+---
+
+## Logs — Deals Đã Closed
+
+*(Phong giữ record cho mục đích tax và referral tracking)*
+
+| Tháng | Địa chỉ | Vai trò | Sale Price | Commission | Referral từ |
+|-------|---------|---------|-----------|-----------|------------|
+| | | | $ | $ | |
+| | | | $ | $ | |
+
+**Tổng YTD Closed:** [Phong cập nhật]
+**Tổng Commission YTD:** [Phong cập nhật]
