@@ -351,5 +351,26 @@ git diff --name-only --cached
 
 ---
 
+---
+
+## L19 — Dept 10: Quality & Reviews — Hệ thống review là growth engine, không phải admin task
+
+**Bối cảnh:** Department 10 (Quality & Reviews) là phòng cuối cùng và khép lại vòng tròn: từ CRM (Phòng 01) đến reputation management (Phòng 10). Đây là phòng ít "exciting" nhất nhưng có compound effect lớn nhất theo thời gian.
+
+**Bài học:**
+
+- **Timing là tất cả với Google Review** — ngày closing là thời điểm vàng (peak emotion). Sau 3 tháng gần như không ai review vì đã nguội và không nhớ chi tiết
+- **NPS phải được đo systematically, không chỉ cảm tính** — nhiều agent nghĩ "khách hài lòng" nhưng thực ra có issues chưa được nói thẳng. Survey bắt buộc sau mỗi deal
+- **Detractors là cơ hội, không phải threat** — 1 cuộc gọi sau NPS thấp có thể turn hater thành referral source nếu handle đúng cách
+- **Với buyer/seller người Việt: review bằng tiếng Việt có sức ảnh hưởng gấp đôi** trong cộng đồng — prioritize xin review tiếng Việt từ client nói tiếng Việt
+- **Lessons Learned Log phải honest, không self-judgment** — ghi để học, không phải để phán xét bản thân. Pattern từ 10+ deals mới cho insight thực sự
+- **Best practices tích lũy dần = competitive advantage** — Phong sau 2 năm có log lessons đầy đủ sẽ handle deal complex nhanh hơn agent 10 năm không có hệ thống
+- **Annual review bắt buộc** — nhìn lại cả năm để thấy trend, không chỉ xử lý từng deal riêng lẻ
+
+**Bài học tổng kết toàn bộ Knowledge Base (10 phòng):**
+Một knowledge base tốt không phải là tập hợp thông tin — mà là **hệ thống hành động** được viết sao cho có thể dùng ngay trong công việc hàng ngày mà không cần giải thích thêm. Mỗi phòng phải có: quy trình rõ ràng + scripts sẵn + templates thực tế + tracker để đo kết quả.
+
+---
+
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
-*Phòng ban đã hoàn thành: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅ | 08 — Listing & Property Marketing ✅ | 09 — Buyer Journey & Representation ✅*
+*🏆 KNOWLEDGE BASE HOÀN THÀNH 10/10 PHÒNG: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅ | 08 — Listing & Property Marketing ✅ | 09 — Buyer Journey & Representation ✅ | 10 — Quality & Reviews ✅*
