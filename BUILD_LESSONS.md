@@ -452,3 +452,43 @@ Một knowledge base tốt không phải là tập hợp thông tin — mà là 
 
 **Quy tắc từ bài học này:** Khi dùng platform mới, luôn kiểm tra SAMPLE FILES của chính platform đó — chúng chính xác hơn documentation viết tay.
 
+
+---
+
+## L22 — Components hỗ trợ thực tế trên Documentation.AI
+
+**Bối cảnh:** Nhiều deployment errors liên tiếp sau khi thêm `<CardGroup>` và `<Column>` component.
+
+**Lỗi gặp phải:**
+1. `<CardGroup> is not a supported component` — 01-sales-crm/index.mdx line 18
+2. `<Column> is not a supported component` — 09-buyer-journey/buyer-financing-guide.mdx line 21
+
+**Root cause:** Tham khảo nhầm Mintlify docs. Mintlify dùng `<CardGroup cols={N}>`, còn Documentation.AI dùng `<Columns cols={N}>` với `<Card>` bên trong.
+
+**Components ĐƯỢC hỗ trợ (đã xác nhận):**
+
+| Component | Cách dùng đúng | Ghi chú |
+|---|---|---|
+| `<Callout kind="...">` | ✅ Standalone | `info`, `warning`, `alert`, `tip` |
+| `<Card>` | ✅ Standalone hoặc trong `<Columns>` | Có `title`, `icon`, `href` |
+| `<Columns cols={N}>` | ✅ Bọc nhiều `<Card>` | N = 2 hoặc 3 |
+| `<Steps>` / `<Step>` | ✅ Cho SOP / quy trình | `<Step icon="...">` |
+| `<Tabs>` / `<Tab>` | ✅ Cho nội dung song ngữ | `<Tab title="..." icon="...">` |
+| Code blocks | ✅ Syntax highlight | Không có Mermaid |
+
+**Components KHÔNG hỗ trợ:**
+
+| Component | Lý do | Thay bằng |
+|---|---|---|
+| `<CardGroup>` | Mintlify syntax | `<Columns cols={N}>` + `<Card>` |
+| `<Column>` | Child component không hỗ trợ | Plain table markdown |
+| Mermaid diagrams | Không có renderer | Plain table markdown |
+
+**Fix đã thực hiện:**
+- `sed` replace toàn bộ `<CardGroup>` → `<Columns>` trên 10 files cùng lúc
+- `<Columns>/<Column>` pattern trong buyer-financing-guide → table so sánh 1 bảng ngang
+
+**Quy tắc từ bài học này:** 
+- **LUÔN verify component names trong sample files của chính Documentation.AI** — không dùng Mintlify/Docusaurus docs để đoán
+- Khi gặp build error: đọc chính xác tên file + line number trong log → fix targeted, không fix mò
+- Dùng `grep -r "ComponentName" --include="*.mdx"` để tìm tất cả files bị ảnh hưởng trước khi fix hàng loạt
