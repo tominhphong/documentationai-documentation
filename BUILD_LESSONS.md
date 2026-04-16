@@ -374,3 +374,81 @@ Một knowledge base tốt không phải là tập hợp thông tin — mà là 
 
 *Cập nhật lần cuối: 2026-04-15 — Phong To / Claude*  
 *🏆 KNOWLEDGE BASE HOÀN THÀNH 10/10 PHÒNG: 01 — Sales & CRM ✅ | 02 — Marketing & Content ✅ | 03 — Market Intelligence ✅ | 04 — Transaction Management ✅ | 05 — Finance & Accounting ✅ | 06 — Legal & Compliance ✅ | 07 — Client Communication ✅ | 08 — Listing & Property Marketing ✅ | 09 — Buyer Journey & Representation ✅ | 10 — Quality & Reviews ✅*
+
+---
+
+## L21 — Platform Upgrade: `<Steps>` cho SOP pages, `<CardGroup>` cho Index pages
+
+**Bối cảnh:** Sau khi khám phá 5 components chưa dùng (L20), tiến hành nâng cấp KB theo 5 bước có hệ thống. Session này hoàn thành Bước 3 (Steps) và Bước 4 (CardGroup) cho 3 phòng đầu tiên.
+
+**Files đã nâng cấp:**
+
+| File | Thay đổi | Component |
+|------|----------|-----------|
+| `10-quality-reviews/post-closing-survey-sop.mdx` | Bảng 6 bước → visual Steps workflow | `<Steps>` |
+| `04-transaction-management/inspection-sop.mdx` | Thêm Steps overview trước nội dung chi tiết | `<Steps>` |
+| `09-buyer-journey/buyer-consultation-sop.mdx` | Thêm Steps overview (6 bước quy trình) | `<Steps>` |
+| `10-quality-reviews/index.mdx` | Bảng navigation → CardGroup 4 cards (2 cột) | `<CardGroup>` |
+| `09-buyer-journey/index.mdx` | Bảng navigation → CardGroup 7 cards (2 cột) | `<CardGroup>` |
+| `01-sales-crm/index.mdx` | Bảng navigation → CardGroup 8 cards (2 cột) | `<CardGroup>` |
+
+**Bài học kỹ thuật:**
+
+- **`<Steps>` syntax đúng:** `<Step title="..." icon="lucide-icon-name">` — icon là optional, title là required, nội dung bên trong là free-form markdown
+- **Steps tự đánh số:** Không cần ghi số 1, 2, 3 trong title — platform tự render. Đừng viết `title="Bước 1 — Schedule Inspector"`, chỉ cần `title="Schedule Inspector"`
+- **Steps phù hợp nhất cho:** Các trang SOP có từ 4–8 bước rõ ràng, tuần tự, không có branching logic phức tạp
+- **Pattern "overview → detail":** Thêm Steps block ngắn ở đầu trang SOP (overview nhanh), sau đó giữ nguyên nội dung chi tiết bên dưới. User đọc overview → biết bức tranh toàn cảnh → đọc detail theo nhu cầu
+- **`<CardGroup cols={2}>` syntax:** Wrap nhiều `<Card>` bên trong. Card có: `title`, `icon` (Lucide), `href` (đường dẫn), và body text mô tả
+- **CardGroup tốt hơn bảng cho index pages vì:** Visual hơn, có icon, có link có thể click trực tiếp, responsive tốt hơn, dễ scan
+- **Href format:** Dùng đường dẫn tuyệt đối `/ten-phong/ten-trang` — ví dụ `/01-sales-crm/pipeline-giai-doan`
+- **Edit tool yêu cầu Read trước:** Nếu chưa Read file trong session hiện tại → Edit sẽ báo lỗi "File has not been read yet". Fix: Read với `limit: 20` là đủ để unlock, không cần đọc toàn bộ file
+
+**Icons đã dùng (tham khảo nhanh):**
+
+| Icon | Ý nghĩa |
+|------|---------|
+| `calendar` | Timeline, ngày tháng, schedule |
+| `message-circle` | Chat, text, liên lạc |
+| `send` | Gửi, submit, deliver |
+| `bell` | Nhắc nhở, reminder, notification |
+| `zap` | Nhanh, urgent, act now |
+| `star` | Review, rating, đánh giá |
+| `phone` | Gọi điện, qualify call |
+| `clipboard` | Checklist, chuẩn bị, tài liệu |
+| `heart` | Rapport, cộng đồng Việt, văn hóa |
+| `search` | Tìm kiếm, qualify sâu, home search |
+| `map` | Hướng dẫn quy trình, navigation |
+| `pen-tool` | Ký hợp đồng, BMA-1 |
+| `users` | Buyer, client, người dùng |
+| `file-text` | Report, review tài liệu |
+| `edit` | Viết, amendment |
+| `handshake` | Negotiate, thỏa thuận |
+| `key` | Xem nhà, property access |
+| `target` | Chiến lược offer, mục tiêu |
+| `check-square` | Checklist, due diligence |
+| `dollar-sign` | Tài chính, financing |
+
+**Next steps còn lại:**
+- [ ] Upgrade 7 phòng còn lại (02–08) với CardGroup theo cùng pattern
+- [ ] Cân nhắc thêm `<Tabs>` cho các trang có nội dung song ngữ (Việt/English scripts)
+- [ ] Cân nhắc `<Expandable>` cho FAQ sections và glossary
+
+**Áp dụng:** Mỗi khi tạo hoặc edit trang SOP → dùng Steps. Mỗi index page của phòng → dùng CardGroup thay bảng. Đây là standard mới cho toàn bộ KB.
+
+---
+
+## L20 — Platform Audit: Callout syntax đúng, khám phá 5 components chưa dùng
+
+**Bối cảnh:** Đọc tài liệu chính thức Documentation.AI và kiểm tra toàn bộ 126 callouts trong KB.
+
+**Bài học:**
+
+- **`kind=` là ĐÚNG, không phải `type=`** — Tài liệu PDF đọc được mô tả `type="note|tip|warning|info"` nhưng đó là syntax của Mintlify (platform khác). Documentation.AI thực tế dùng `kind=` trong tất cả file mẫu của chính họ. KB của mình đang correct 100%.
+- **Valid `kind` values:** `info` (xanh dương), `warning` (vàng/cam), `alert` (đỏ), `tip` (xanh lá) — 4 loại, không phải 2 như đã dùng. KB chưa dùng `kind="alert"` và `kind="tip"`
+- **5 components chưa dùng nhưng rất có giá trị:** `<Steps>` (SOP pages), `<Tabs>` (song ngữ scripts), `<Card>/<CardGroup>` (index pages), `<Expandable>` (FAQ/glossary), `<Columns>` (so sánh side-by-side)
+- **Icons trên Groups và Pages:** Tất cả groups trong documentation.json có thể thêm `"icon"` Lucide. Frontmatter mỗi trang có thể có `icon:` để hiện trong sidebar
+- **Tabs có icon:** `<Tab title="..." icon="terminal">` — icon Lucide bên cạnh tab label
+- **MCP Server:** KB của mình có MCP endpoint tại `phong-to.documentationai.com/_mcp` — có thể add vào Claude Desktop để Claude search thẳng vào KB khi cần
+
+**Quy tắc từ bài học này:** Khi dùng platform mới, luôn kiểm tra SAMPLE FILES của chính platform đó — chúng chính xác hơn documentation viết tay.
+
