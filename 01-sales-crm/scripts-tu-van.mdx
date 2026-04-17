@@ -1,163 +1,728 @@
 ---
 title: "Scripts Tư Vấn Buyer"
-description: "Script cho buổi buyer consultation bằng tiếng Việt. Cấu trúc 45-60 phút để khám phá nhu cầu và xây dựng lòng tin."
+description: "Scripts tư vấn mua nhà song ngữ Việt-Anh cho mọi tình huống buyer. Chatbot KB-ready với Q&A pairs và decision trees."
+ai_context: "Đây là knowledge base chính cho chatbot tư vấn mua nhà. Khi khách hỏi bất kỳ câu hỏi nào về mua nhà, tìm script phù hợp theo: (1) loại buyer, (2) giai đoạn trong pipeline, (3) ngôn ngữ ưu tiên. Tone: thân thiện, chuyên nghiệp, không push bán. Luôn kết thúc bằng next action cụ thể."
+data_freshness: "2026-04"
+keywords_vi:
+  - script tư vấn mua nhà
+  - câu hỏi buyer consultation
+  - tư vấn khách Việt mua nhà Texas
+  - first-time buyer tiếng Việt
+  - USDA loan Sherman TX
+  - VA loan veteran
+  - ITIN mua nhà
+keywords_en:
+  - buyer consultation script
+  - real estate chatbot KB
+  - Vietnamese buyer consultation
+  - first-time homebuyer Texas
+  - USDA loan rural Texas
+  - VA loan buyer script
 ---
 
-# Scripts Tư Vấn Buyer
+# Scripts Tư Vấn Buyer — Chatbot Knowledge Base
 
-<Callout kind="info">
-  Tone luôn là: **Giáo dục, không sales.** Mục tiêu buổi tư vấn là giúp khách hiểu rõ hơn về quá trình mua nhà — không phải ép ký ngay.
+<Callout type="info">
+  Mục đích: Đây là knowledge base cho chatbot phục vụ khách hàng trực tiếp. Mỗi script có 2 phiên bản (Việt + Anh). Tone luôn là **giáo dục, không sales** — giúp khách hiểu rõ quy trình, không ép ký.
 </Callout>
 
-## Cấu Trúc Buổi Tư Vấn (45-60 phút)
+## Chatbot Routing — Khi Khách Hỏi Gì, Trả Lời Gì
 
-| Phần | Thời gian | Nội dung |
-|------|-----------|----------|
-| Mở đầu | 5 phút | Chào hỏi, tạo không khí thoải mái |
-| Khám phá nhu cầu | 15 phút | 5 câu hỏi must-ask |
-| Giáo dục quy trình | 15 phút | Giải thích từng bước mua nhà |
-| Trả lời câu hỏi | 10 phút | Xử lý lo ngại |
-| Next steps | 5 phút | Pre-approval, MLS alert, Buyer Agreement |
-
----
-
-## Phần 1 — Mở Đầu (5 phút)
-
-```
-"Chào anh/chị [Tên]! Em rất vui được gặp anh/chị hôm nay.
-
-Trước tiên em muốn nói là buổi hôm nay hoàn toàn không có áp lực gì cả.
-Em chỉ muốn tìm hiểu xem anh/chị đang cần gì, và mình cùng xem có giải pháp
-nào phù hợp không. Nếu cuối buổi anh/chị thấy chưa sẵn sàng thì cũng hoàn toàn OK.
-
-Anh/chị đang cân nhắc mua nhà khoảng bao lâu rồi ạ?"
-```
+| Khách hỏi | Dẫn đến section |
+|-----------|----------------|
+| "Tôi muốn mua nhà nhưng chưa biết bắt đầu từ đâu" | Quy Trình Mua Nhà A-Z |
+| "Tôi có ITIN, có mua được nhà không?" | Tình Huống: ITIN Buyer |
+| "Lãi suất đang cao quá, có nên chờ không?" | Tình Huống: Chờ Lãi Suất Giảm |
+| "Credit score tôi thấp, có qualify không?" | Tình Huống: Credit Thấp |
+| "Tôi là veteran, có chương trình gì đặc biệt không?" | Tình Huống: VA Loan |
+| "Nhà ở Sherman TX có chương trình USDA không?" | Tình Huống: USDA Loan |
+| "Tôi đang thuê, có nên mua nhà không?" | Tình Huống: First-Time Buyer |
+| "Tôi đang có nhà, muốn đổi nhà lớn hơn" | Tình Huống: Move-Up Buyer |
+| "Tôi đang ở state khác, muốn chuyển về Texas" | Tình Huống: Relocation Buyer |
+| "Gia đình tôi muốn mua nhà chung 3 thế hệ" | Tình Huống: Cộng Đồng Việt |
+| "Realtor có lấy phí không?" | Chi Phí & Commission |
+| "BMA-1 là gì?" | Buyer Representation Agreement |
+| "Quy trình mua nhà mất bao lâu?" | Quy Trình Mua Nhà A-Z |
+| "Tôi cần bao nhiêu tiền down?" | So Sánh Chương Trình Vay |
 
 ---
 
-## Phần 2 — 5 Câu Hỏi Must-Ask
+<Tabs>
+  <Tab title="🇻🇳 Tiếng Việt">
 
-### Câu 1: Timeline
+## Quy Trình Mua Nhà A-Z
+
+<Steps>
+  <Step title="Pre-Approval — Xác Nhận Ngân Sách">
+    Bước quan trọng nhất và phải làm đầu tiên. Ngân hàng sẽ dựa vào thu nhập, credit score, và nợ hiện tại để tính chính xác bạn qualify bao nhiêu. Pre-approval cũng giúp offer mạnh hơn khi cạnh tranh.
+
+    **Phong có thể kết nối bạn với mortgage specialist người Việt** — thoải mái trao đổi bằng tiếng Việt.
+  </Step>
+  <Step title="Ký Buyer Representation Agreement (BMA-1)">
+    Từ tháng 8/2024, theo quy định mới, Realtor phải có thỏa thuận bằng văn bản với bạn trước khi đưa bạn đi xem nhà. Đây là yêu cầu bắt buộc — bảo vệ quyền lợi của cả hai bên.
+
+    **Bạn không phải trả phí cho Realtor** — commission do seller trả trong đa số trường hợp.
+  </Step>
+  <Step title="Tìm Nhà — MLS Auto-Alert">
+    Phong sẽ setup MLS auto-alert theo đúng tiêu chí của bạn. Khi có nhà mới phù hợp, bạn nhận email tự động ngay lập tức — không bỏ lỡ cơ hội tốt.
+  </Step>
+  <Step title="Xem Nhà & Đánh Giá">
+    Đi xem nhà cùng Phong. Phong sẽ chỉ ra những điều cần chú ý mà bạn có thể không thấy: tình trạng mái, hệ thống nước, HVAC, foundation, và những vấn đề tiềm ẩn.
+  </Step>
+  <Step title="Offer — Đặt Giá Mua">
+    Phong phân tích dữ liệu thị trường (CMA) để giúp bạn đưa ra offer hợp lý. Bao gồm: giá offer, earnest money, option period, closing date, và seller concessions nếu cần.
+  </Step>
+  <Step title="Inspection — Kiểm Tra Nhà">
+    Sau khi offer được accepted, bạn có Option Period (thường 7-10 ngày) để thuê inspector kiểm tra nhà. Nếu phát hiện vấn đề lớn, bạn có quyền negotiate sửa chữa hoặc hủy hợp đồng.
+  </Step>
+  <Step title="Appraisal — Ngân Hàng Định Giá">
+    Ngân hàng sẽ thuê appraiser định giá nhà. Nếu giá appraisal thấp hơn giá mua, Phong sẽ giúp bạn negotiate với seller.
+  </Step>
+  <Step title="Closing — Nhận Chìa Khóa">
+    Ký giấy tờ cuối cùng tại title company và nhận chìa khóa nhà mới. Toàn bộ quá trình từ offer accepted đến closing thường mất 30-45 ngày.
+  </Step>
+</Steps>
+
+---
+
+## Scripts Buổi Tư Vấn — Cấu Trúc 45-60 Phút
+
+### Mở Đầu (5 phút)
+
+```
+"Chào anh/chị [Tên]! Em là Phong To, Realtor tại eXp Realty
+vùng Sherman TX.
+
+Trước tiên em muốn nói là buổi hôm nay hoàn toàn không có
+áp lực gì cả. Em chỉ muốn tìm hiểu xem anh/chị đang cần gì,
+và mình cùng xem có giải pháp nào phù hợp không.
+
+Anh/chị uống gì không? Gia đình anh/chị có ai tham gia
+quyết định mua nhà cùng không — nếu có, em muốn mời họ
+cùng nghe để mọi người đều nắm rõ."
+```
+
+<Callout type="tip">
+  Với khách Việt: luôn hỏi gia đình có ai tham gia quyết định không. Bố mẹ thế hệ 1 thường có tiếng nói cuối cùng, đặc biệt nếu đóng góp down payment.
+</Callout>
+
+### 5 Câu Hỏi Must-Ask (15 phút)
+
+**Câu 1 — Timeline:**
 ```
 "Anh/chị đang nghĩ khoảng khi nào muốn move vào nhà mới?
-Có deadline nào cụ thể không — ví dụ như hợp đồng thuê nhà sắp hết,
+Có deadline nào cụ thể không — ví dụ hợp đồng thuê sắp hết,
 hay con chuẩn bị vào năm học mới?"
 ```
 
-### Câu 2: Tài chính
+**Câu 2 — Tài chính:**
 ```
-"Anh/chị đã có cơ hội nói chuyện với ngân hàng hay mortgage lender chưa?
-Pre-approval rất quan trọng vì nó cho mình biết chính xác ngân sách,
-và cũng giúp offer của mình mạnh hơn khi cạnh tranh."
-```
-
-### Câu 3: Tiêu chí nhà
-```
-"Nếu anh/chị phải chọn 3 thứ quan trọng nhất trong ngôi nhà mới,
-anh/chị sẽ chọn gì? Ví dụ: khu vực an toàn, trường học tốt, garage,
-diện tích lớn..."
+"Anh/chị đã có cơ hội nói chuyện với ngân hàng hay
+mortgage lender chưa? Pre-approval rất quan trọng vì nó
+cho mình biết chính xác ngân sách, và cũng giúp offer
+mạnh hơn khi cạnh tranh."
 ```
 
-### Câu 4: Lo ngại lớn nhất
+**Câu 3 — Tiêu chí nhà:**
+```
+"Nếu anh/chị phải chọn 3 thứ quan trọng nhất trong
+ngôi nhà mới, anh/chị sẽ chọn gì? Ví dụ: khu vực an toàn,
+trường học tốt, garage 2 xe, diện tích lớn cho gia đình..."
+```
+
+**Câu 4 — Lo ngại lớn nhất:**
 ```
 "Điều gì khiến anh/chị chưa mua nhà cho đến bây giờ?
 Có lo lắng gì em có thể giúp giải đáp không?"
 ```
-<Callout kind="warning">
-  Đây là câu hỏi quan trọng nhất. **Lắng nghe kỹ và KHÔNG ngắt lời.** Câu trả lời sẽ cho biết objection chính của khách.
+
+<Callout type="warning">
+  Đây là câu hỏi quan trọng nhất. **Lắng nghe kỹ và KHÔNG ngắt lời.** Với khách Việt, im lặng sau câu hỏi này KHÔNG có nghĩa là đồng ý — có thể họ đang suy nghĩ hoặc có concern chưa nói ra. Chờ đợi và hỏi thêm nhẹ nhàng.
 </Callout>
 
-### Câu 5: Kỳ vọng với Realtor
+**Câu 5 — Kỳ vọng với Realtor:**
 ```
-"Anh/chị kỳ vọng gì ở một Realtor khi đi cùng trong quá trình này?
-Ví dụ: cần ai tìm nhà nhanh, hay cần ai giải thích kỹ từng bước,
-hay cần ai biết tiếng Việt để không bỏ sót gì?"
-```
-
----
-
-## Phần 3 — Giáo Dục Quy Trình Mua Nhà
-
-```
-"OK anh/chị, để em tóm tắt quá trình mua nhà tại Texas nha.
-
-Bước 1: Pre-approval — quan trọng nhất, làm trước tiên
-Bước 2: Tìm nhà — em sẽ setup MLS alert theo đúng tiêu chí anh/chị
-Bước 3: Xem nhà — mình sẽ đi xem cùng nhau, em sẽ chỉ những thứ cần chú ý
-Bước 4: Offer — em phân tích market, giúp anh/chị đưa ra offer hợp lý
-Bước 5: Inspection — quan trọng để biết tình trạng thực của nhà
-Bước 6: Appraisal — ngân hàng sẽ define value của nhà
-Bước 7: Closing — ký giấy tờ và nhận chìa khóa!
-
-Toàn bộ quá trình thường mất 30-45 ngày từ khi offer accepted.
-
-Và điều quan trọng: **dịch vụ của em với buyer là miễn phí** —
-commission của em do seller trả, không phải anh/chị."
+"Anh/chị kỳ vọng gì ở một Realtor khi đi cùng trong
+quá trình này? Ví dụ: cần ai tìm nhà nhanh, hay cần ai
+giải thích kỹ từng bước, hay cần ai biết tiếng Việt để
+không bỏ sót gì?"
 ```
 
----
-
-## Script Cho Các Tình Huống Đặc Biệt
-
-### Khách chưa biết ngân sách
-```
-"Không sao anh/chị ơi — đây là lý do tại sao pre-approval quan trọng.
-Ngân hàng sẽ dựa vào thu nhập, credit score, và nợ hiện tại để tính
-chính xác anh/chị qualify bao nhiêu. Em có thể kết nối anh/chị với
-một mortgage specialist người Việt — anh/chị thoải mái hơn khi nói
-chuyện bằng tiếng Việt không?"
-```
-
-### Khách đang có nhà muốn đổi (Move-up buyer)
-```
-"Với trường hợp của anh/chị, mình có 2 options:
-
-Option 1: Bán nhà cũ trước, rồi mua nhà mới — ít rủi ro hơn nhưng
-có thể phải ở tạm một thời gian.
-
-Option 2: Mua nhà mới trước rồi bán sau — cần qualify được 2 mortgage
-cùng lúc, hoặc dùng bridge loan.
-
-Em sẽ phân tích cả hai cho anh/chị xem cái nào phù hợp hơn với tình huống
-của mình."
-```
-
-### Khách investor
-```
-"Với mục tiêu đầu tư, em cần hỏi thêm một vài thứ:
-Anh/chị muốn fix-and-flip hay buy-and-hold cho thuê?
-Kỳ vọng cap rate là bao nhiêu?
-Có muốn tập trung vào khu vực nào cụ thể không?
-
-Thị trường Sherman TX và Grayson County đang có tiềm năng tốt vì
-giá còn thấp hơn DFW nhưng đang tăng trưởng."
-```
-
----
-
-## Phần 4 — Next Steps (5 phút cuối)
+### Giải Thích Chi Phí & Commission
 
 ```
-"OK, dựa vào những gì anh/chị chia sẻ, bước tiếp theo của mình là:
+"Nhiều người hỏi em: Realtor có lấy phí không?
 
-1. [Nếu chưa pre-approved]: Em kết nối anh/chị với lender uy tín —
-   anh/chị có muốn nói chuyện với người Việt không?
+Câu trả lời: Khi anh/chị mua nhà, dịch vụ của Realtor
+buyer's agent là hoàn toàn miễn phí với buyer.
+Commission của em do seller trả.
 
-2. Em setup MLS auto-alert ngay hôm nay — anh/chị sẽ nhận email
-   khi có nhà mới match tiêu chí.
+Từ tháng 8/2024, có một thay đổi: mình cần ký
+Buyer Representation Agreement trước khi đi xem nhà.
+Agreement ghi rõ mức commission — nhưng trong đa số
+trường hợp, seller offer compensation cho buyer agent.
+Nếu seller không offer đủ, em sẽ negotiate vào trong contract.
 
-3. Khi anh/chị ready đi xem nhà, mình sẽ ký Buyer Representation
-   Agreement — đây là yêu cầu mới từ 2024, em sẽ giải thích rõ hơn
-   khi đến bước đó.
+Tóm lại: anh/chị được một Realtor tư vấn, negotiate,
+và đại diện trong toàn bộ giao dịch."
+```
+
+### Next Steps (5 phút cuối)
+
+```
+"OK, dựa vào những gì anh/chị chia sẻ, bước tiếp theo
+của mình là:
+
+1. Em kết nối anh/chị với lender uy tín để làm pre-approval
+   — anh/chị muốn nói chuyện với người Việt không?
+
+2. Em setup MLS auto-alert ngay hôm nay — anh/chị sẽ nhận
+   email khi có nhà mới match tiêu chí.
+
+3. Khi anh/chị ready đi xem nhà, mình sẽ ký Buyer Agreement.
 
 Anh/chị có câu hỏi gì thêm không?"
 ```
 
 ---
 
-## Cách Claude sử dụng trang này
+## Tình Huống Đặc Biệt
 
-Khi Phong nói: *"Mai em có buổi tư vấn với khách mới, anh cần chuẩn bị gì?"* hoặc *"Khách hỏi X, em trả lời thế nào?"*, Claude sẽ:
-1. Lấy script phù hợp với tình huống cụ thể
-2. Điều chỉnh theo thông tin đã có trong hồ sơ khách hàng
-3. Gợi ý cách xử lý câu hỏi hoặc objection đó
+### First-Time Buyer — Lần Đầu Mua Nhà
+
+```
+"Chào mừng anh/chị đến với hành trình mua nhà đầu tiên!
+Em hiểu đây là quyết định lớn và có thể hơi choáng ngợp.
+
+Tin tốt: có nhiều chương trình hỗ trợ first-time buyer
+mà anh/chị nên biết:
+
+- FHA loan: chỉ cần 3.5% down payment
+- Conventional 3% down (với credit score từ 620+)
+- Texas Down Payment Assistance — có thể được hỗ trợ
+  thêm 3-5% cho down và closing costs
+- USDA loan: 0% down nếu mua ở khu vực rural
+  (Sherman TX qualify cho USDA!)
+
+Bước đầu tiên: nói chuyện với lender để biết chính xác
+anh/chị qualify cho chương trình nào. Em có partner
+người Việt chuyên giúp first-time buyer."
+```
+
+### Move-Up Buyer — Đang Có Nhà, Muốn Đổi
+
+```
+"Với trường hợp đang có nhà muốn đổi, mình có vài options:
+
+Option 1: Bán nhà cũ trước, rồi mua mới
+— An toàn nhất, biết chính xác budget
+— Nhưng có thể phải ở tạm một thời gian
+
+Option 2: Mua nhà mới trước, bán sau
+— Cần qualify được 2 mortgage cùng lúc
+— Hoặc dùng bridge loan
+
+Option 3: Contingency offer
+— Offer có điều kiện bán nhà cũ thành công
+— Seller có thể không thích option này
+
+Em sẽ phân tích equity nhà hiện tại và tình hình
+tài chính để recommend option tốt nhất cho anh/chị."
+```
+
+### Relocation Buyer — Từ State Khác Chuyển Về
+
+```
+"Chào mừng anh/chị đến Texas!
+
+Mua nhà từ xa hoàn toàn khả thi — em đã giúp nhiều
+gia đình Việt relocate về đây. Quy trình như sau:
+
+1. Consultation qua video call — tìm hiểu nhu cầu
+2. Pre-approval với lender Texas
+3. Em quay video tour nhà và gửi anh/chị xem
+4. Khi anh/chị chọn được nhà, có thể ký offer
+   và hợp đồng điện tử qua DocuSign
+5. Inspection: em attend thay anh/chị và gửi report
+6. Closing: có thể ký tại title company ở state
+   anh/chị đang ở (remote closing)
+
+Ưu điểm Sherman TX so với DFW:
+- Giá nhà thấp hơn khoảng 20-25%
+- Đang phát triển nhanh (Texas Instruments đang xây nhà máy lớn)
+- Qualify cho USDA loan (0% down)
+- Trường học tốt, cộng đồng an toàn"
+```
+
+### USDA Loan — Buyer Khu Vực Rural
+
+```
+"Tin tốt cho anh/chị: Sherman TX và hầu hết Grayson County
+nằm trong vùng USDA eligible — nghĩa là anh/chị có thể
+mua nhà với 0% down payment!
+
+USDA loan hoạt động thế nào:
+- Down payment: 0% (không cần tiền down)
+- Lãi suất: thường thấp hơn conventional
+- Mortgage insurance: thấp hơn FHA
+- Income limit: tùy theo size gia đình
+  (thường dưới khoảng $110,000 cho 4 người)
+- Nhà phải là primary residence (không phải investment)
+
+Yêu cầu:
+- Credit score tối thiểu 640
+- Thu nhập ổn định 2 năm
+- Debt-to-income ratio hợp lý
+- Nhà trong khu vực USDA eligible
+
+Em sẽ check xem anh/chị qualify không —
+bước đầu tiên là nói chuyện với lender."
+```
+
+### VA Loan — Veteran / Quân Nhân
+
+```
+"Cảm ơn anh/chị vì đã phục vụ đất nước!
+VA loan là benefit tuyệt vời cho veteran:
+
+- Down payment: 0%
+- Mortgage insurance: KHÔNG CÓ (tiết kiệm
+  $100-300/tháng so với FHA/conventional)
+- Lãi suất: thường thấp nhất trên thị trường
+- Closing costs: có giới hạn — seller có thể trả phần lớn
+- Không có penalty trả sớm
+
+Cần gì để apply:
+- Certificate of Eligibility (COE) từ VA
+- DD-214 (nếu đã xuất ngũ)
+- Credit score tối thiểu 580-620 (tùy lender)
+- Thu nhập ổn định
+
+VA loan cũng có thể dùng lại (reuse entitlement) nếu
+anh/chị đã từng dùng VA loan trước đây.
+
+Em có partner lender chuyên VA loan — muốn em kết nối không?"
+```
+
+### ITIN Buyer — Không Có SSN
+
+```
+"Có, anh/chị hoàn toàn có thể mua nhà với ITIN!
+
+Nhiều người nghĩ không có SSN là không mua được nhà —
+điều đó không đúng. Có chương trình loan dành riêng
+cho ITIN buyers:
+
+Yêu cầu thường gặp:
+- ITIN number hợp lệ
+- Tax return 2 năm gần nhất (filed with ITIN)
+- Down payment 15-20% (cao hơn conventional nhưng
+  hoàn toàn khả thi nếu plan sớm)
+- Lãi suất cao hơn một chút so với conventional
+
+Quan trọng: nếu anh/chị có cash business, có thể
+dùng Bank Statement Loan — lender xem 12-24 tháng
+bank statement thay vì tax return.
+
+Em có lender partner chuyên làm ITIN loans và nói
+tiếng Việt — bảo mật thông tin 100%.
+Anh/chị muốn em kết nối không?"
+```
+
+### Credit Thấp — Cải Thiện Để Qualify
+
+```
+"Đừng lo anh/chị ơi — credit thấp không có nghĩa
+là không bao giờ mua được nhà.
+
+Mức credit tối thiểu tùy chương trình:
+- FHA: 580 (với 3.5% down) hoặc 500 (với 10% down)
+- Conventional: 620+
+- VA: 580-620 (tùy lender)
+- USDA: 640+
+
+Nếu hiện tại chưa đủ, em có thể kết nối anh/chị với
+mortgage specialist để họ chỉ cách cải thiện credit
+trong 6-12 tháng. Các bước thường gặp:
+
+1. Check credit report — fix lỗi nếu có
+2. Trả credit card xuống dưới 30% limit
+3. Không mở account mới
+4. Trả bill đúng hạn mỗi tháng
+
+Và quan trọng: soft pull (check thử) KHÔNG ảnh hưởng
+credit score. Chỉ hard pull mới ảnh hưởng.
+
+Anh/chị muốn em kết nối với lender để check thử không?"
+```
+
+### Cộng Đồng Việt — Mua Nhà Cho Gia Đình Nhiều Thế Hệ
+
+```
+"Em hiểu văn hóa mình — nhiều gia đình Việt muốn mua
+nhà chung 3 thế hệ: ông bà, bố mẹ, và con cháu.
+Đây là điều rất bình thường và hoàn toàn có giải pháp.
+
+Khi tìm nhà cho gia đình lớn, em chú ý:
+- Phòng ngủ: tối thiểu 4-5 phòng
+- Phòng tắm: tối thiểu 3 (tốt nhất có 1 phòng tắm
+  riêng tầng dưới cho ông bà)
+- Bếp lớn (nấu ăn nhiều, cần ventilation tốt)
+- Garage 2 xe trở lên
+- Sân sau rộng
+
+Về phong thủy: anh/chị có quan tâm đến hướng nhà
+hoặc phong thủy không? Nếu có, em sẽ lưu ý khi
+lọc danh sách nhà.
+
+Về tài chính chung:
+- Nhiều người trong gia đình có thể cùng đứng tên
+  trên mortgage (co-borrower)
+- Gift fund từ bố mẹ: hoàn toàn OK — chỉ cần
+  gift letter theo yêu cầu của lender
+- Nếu bố mẹ có cash business: Bank Statement Loan
+  có thể là option tốt"
+```
+
+### Chờ Lãi Suất Giảm
+
+```
+"Câu hỏi này rất nhiều người hỏi!
+
+Thực tế: không ai biết chính xác khi nào lãi suất
+giảm hay giảm bao nhiêu.
+
+Trong khi đó, nhiều chuyên gia hay nói:
+'Marry the house, date the rate.'
+(Chọn nhà đúng, refinance rate sau.)
+
+Nghĩa là: mua nhà đúng tiêu chí của mình bây giờ,
+khi lãi suất giảm thì refinance. Chi phí refi thường
+khoảng $3,000-5,000 — nhưng nếu giá nhà tăng $20,000
+trong thời gian chờ thì tốn hơn.
+
+So sánh nhanh:
+- Thuê nhà 3BR ở Sherman: khoảng $1,500-1,800/tháng
+  → 100% tiền mất đi
+- Mortgage nhà tương tự: khoảng $1,600-1,900/tháng
+  → phần lớn xây dựng equity cho anh/chị
+
+Cuối cùng vẫn là quyết định của anh/chị — em chỉ muốn
+đảm bảo anh/chị có đủ thông tin."
+```
+
+---
+
+## So Sánh Chương Trình Vay
+
+| Chương trình | Down Payment | Credit tối thiểu | Mortgage Insurance | Phù hợp cho |
+|-------------|-------------|-------------------|-------------------|-------------|
+| Conventional | 3-20% | 620+ | Có (nếu dưới 20% down) | Credit tốt, thu nhập ổn định |
+| FHA | 3.5% | 580+ | Có (suốt đời loan) | First-time buyer, credit trung bình |
+| VA | 0% | 580-620 | Không | Veteran, quân nhân |
+| USDA | 0% | 640+ | Có (thấp) | Khu vực rural (Sherman TX eligible!) |
+| ITIN Loan | 15-20% | Varies | Tùy lender | Buyer có ITIN, không có SSN |
+| Bank Statement | 10-20% | 620+ | Tùy lender | Self-employed, cash business |
+
+<Callout type="tip">
+  Sherman TX và hầu hết Grayson County qualify cho USDA loan — 0% down payment. Đây là lợi thế lớn so với mua nhà trong DFW metro.
+</Callout>
+
+  </Tab>
+
+  <Tab title="🇺🇸 English">
+
+## Home Buying Process A-Z
+
+<Steps>
+  <Step title="Pre-Approval — Know Your Budget">
+    The most important first step. Your lender will review your income, credit score, and existing debts to determine exactly how much you qualify for. Pre-approval also makes your offer stronger in competitive situations.
+
+    **Phong can connect you with a Vietnamese-speaking mortgage specialist** if you prefer.
+  </Step>
+  <Step title="Sign Buyer Representation Agreement (BMA-1)">
+    Since August 2024, Realtors are required to have a written agreement with you before showing homes. This protects both sides and clearly outlines services and compensation.
+
+    **You typically pay nothing as a buyer** — the seller covers the agent's commission in most cases.
+  </Step>
+  <Step title="Home Search — MLS Auto-Alerts">
+    Phong will set up MLS auto-alerts matching your exact criteria. You will receive email notifications instantly when new homes hit the market — so you never miss a good opportunity.
+  </Step>
+  <Step title="Home Tours & Evaluation">
+    Tour homes together with Phong. He will point out things you might not notice: roof condition, plumbing, HVAC systems, foundation issues, and potential concerns.
+  </Step>
+  <Step title="Making an Offer">
+    Phong analyzes market data (CMA) to help you submit a competitive yet fair offer. This includes: offer price, earnest money, option period, closing date, and seller concessions if needed.
+  </Step>
+  <Step title="Home Inspection">
+    After your offer is accepted, you have an Option Period (typically 7-10 days) to hire a professional inspector. If major issues are found, you can negotiate repairs or walk away.
+  </Step>
+  <Step title="Appraisal">
+    Your lender orders an independent appraisal to confirm the home's value. If the appraisal comes in low, Phong will help you negotiate with the seller.
+  </Step>
+  <Step title="Closing — Get Your Keys">
+    Sign final paperwork at the title company and receive your keys. The entire process from accepted offer to closing typically takes 30-45 days.
+  </Step>
+</Steps>
+
+---
+
+## Consultation Scripts — 45-60 Minute Structure
+
+### Opening (5 minutes)
+
+```
+"Hi [Name]! I'm Phong To, Realtor at eXp Realty
+in the Sherman TX area.
+
+First, I want you to know there's absolutely no pressure
+today. I just want to understand what you're looking for
+and see if there's a good fit.
+
+Will anyone else be involved in the home buying decision?
+If so, I'd love to include them in our conversation
+so everyone is on the same page."
+```
+
+### 5 Must-Ask Questions (15 minutes)
+
+**Question 1 — Timeline:**
+```
+"When are you hoping to move into your new home?
+Any specific deadline — like a lease ending or
+kids starting a new school year?"
+```
+
+**Question 2 — Finances:**
+```
+"Have you had a chance to speak with a lender yet?
+Getting pre-approved is important because it tells us
+your exact budget and makes your offer stronger."
+```
+
+**Question 3 — Home criteria:**
+```
+"If you had to pick the 3 most important things in your
+new home, what would they be? For example: good schools,
+safe neighborhood, large kitchen, big garage..."
+```
+
+**Question 4 — Biggest concern:**
+```
+"What's been holding you back from buying until now?
+Is there anything I can help address?"
+```
+
+**Question 5 — Expectations:**
+```
+"What do you expect from your Realtor? For example:
+someone who finds homes fast, someone who explains
+every step, or someone who speaks your language?"
+```
+
+### Cost & Commission Explanation
+
+```
+"Many people ask: does the buyer pay the Realtor?
+
+The answer: buyer agent services are typically free
+for buyers. My commission is paid by the seller.
+
+Since August 2024, we do sign a Buyer Representation
+Agreement before touring homes. It states the commission
+amount — but in most cases, the seller offers compensation
+to cover it. If not, we negotiate it into the contract.
+
+Bottom line: you get a Realtor who advises, negotiates,
+and represents you — at no cost to you."
+```
+
+---
+
+## Special Situations
+
+### First-Time Buyer
+
+```
+"Welcome to your first home buying journey!
+I understand it can feel overwhelming.
+
+Great news — there are several programs for
+first-time buyers:
+
+- FHA loan: only 3.5% down payment
+- Conventional 3% down (with 620+ credit score)
+- Texas Down Payment Assistance — up to 3-5% help
+- USDA loan: 0% down in rural areas
+  (Sherman TX qualifies for USDA!)
+
+First step: talk to a lender to see which program
+fits your situation best."
+```
+
+### USDA Loan — Rural Area Buyers
+
+```
+"Great news: Sherman TX and most of Grayson County
+are USDA eligible — meaning you could buy a home
+with 0% down payment!
+
+USDA loan basics:
+- Down payment: 0%
+- Interest rates: often lower than conventional
+- Mortgage insurance: lower than FHA
+- Income limits: depends on household size
+  (typically under ~$110,000 for family of 4)
+- Must be primary residence (not investment)
+
+Requirements:
+- Minimum 640 credit score
+- Stable income for 2 years
+- Reasonable debt-to-income ratio
+- Home in USDA eligible area
+
+Let's check if you qualify — first step is
+talking to a lender."
+```
+
+### VA Loan — Veterans & Service Members
+
+```
+"Thank you for your service!
+VA loan is one of the best benefits available:
+
+- Down payment: 0%
+- Mortgage insurance: NONE (saves $100-300/month
+  compared to FHA or conventional)
+- Interest rates: typically the lowest available
+- Closing costs: limited — seller can pay most
+- No prepayment penalty
+
+What you'll need:
+- Certificate of Eligibility (COE) from VA
+- DD-214 (if separated from service)
+- Minimum 580-620 credit score (varies by lender)
+- Stable income
+
+VA loan benefits can be reused if you've had
+a VA loan before.
+
+I have a lender partner who specializes in VA loans
+— would you like me to connect you?"
+```
+
+### ITIN Buyer — No Social Security Number
+
+```
+"Yes, you can absolutely buy a home with an ITIN!
+
+Many people think no SSN means no home ownership —
+that's not true. There are loan programs specifically
+for ITIN buyers:
+
+Typical requirements:
+- Valid ITIN number
+- 2 years of tax returns (filed with ITIN)
+- 15-20% down payment
+- Interest rates slightly higher than conventional
+
+Important: if you have a cash business, a Bank Statement
+Loan may work — the lender reviews 12-24 months of
+bank statements instead of tax returns.
+
+I have a lender partner who specializes in ITIN loans
+and speaks Vietnamese — 100% confidential.
+Would you like me to connect you?"
+```
+
+### Move-Up Buyer
+
+```
+"Moving up from your current home? Here are your options:
+
+Option 1: Sell first, then buy
+— Safest — you know your exact budget
+— May need temporary housing
+
+Option 2: Buy first, then sell
+— Need to qualify for two mortgages
+— Or use a bridge loan
+
+Option 3: Contingency offer
+— Offer contingent on selling your current home
+— Some sellers may not accept this
+
+I'll analyze your current home's equity and finances
+to recommend the best option for you."
+```
+
+### Relocation Buyer
+
+```
+"Welcome to Texas!
+
+Buying from out of state is very doable —
+I've helped many families relocate here.
+
+The process:
+1. Video call consultation to understand your needs
+2. Pre-approval with a Texas lender
+3. I'll send you video tours of homes
+4. Offers and contracts signed electronically (DocuSign)
+5. I attend inspection on your behalf and send the report
+6. Remote closing available at a title company in your state
+
+Sherman TX advantages vs. DFW metro:
+- Home prices ~20-25% lower
+- Growing fast (Texas Instruments building major facility)
+- USDA eligible (0% down)
+- Good schools, safe community"
+```
+
+---
+
+## Loan Program Comparison
+
+| Program | Down Payment | Min Credit | Mortgage Insurance | Best For |
+|---------|-------------|-----------|-------------------|----------|
+| Conventional | 3-20% | 620+ | Yes (if under 20% down) | Good credit, stable income |
+| FHA | 3.5% | 580+ | Yes (life of loan) | First-time, average credit |
+| VA | 0% | 580-620 | None | Veterans, service members |
+| USDA | 0% | 640+ | Yes (low) | Rural areas (Sherman TX eligible!) |
+| ITIN Loan | 15-20% | Varies | Varies | Buyers with ITIN, no SSN |
+| Bank Statement | 10-20% | 620+ | Varies | Self-employed, cash business |
+
+<Callout type="tip">
+  Sherman TX and most of Grayson County qualify for USDA loans — 0% down payment. This is a major advantage compared to buying in the DFW metro area.
+</Callout>
+
+  </Tab>
+</Tabs>
+
+---
+
+## Buyer Representation Agreement (BMA-1) — FAQ
+
+| Câu hỏi / Question | Trả lời / Answer |
+|-------|---------|
+| Tại sao phải ký trước khi xem nhà? / Why sign before touring? | Đây là yêu cầu bắt buộc từ 08/2024 theo quy định NAR. Bảo vệ quyền lợi cả hai bên. / Required since 08/2024 per NAR rules. Protects both parties. |
+| Nếu không thích Realtor thì sao? / What if I don't like my Realtor? | Agreement có thể cancel nếu hai bên đồng ý. Phong muốn earn sự tin tưởng của bạn. / Agreement can be cancelled by mutual consent. Phong wants to earn your trust. |
+| Commission có thể thương lượng không? / Is commission negotiable? | Có thể thảo luận — nhưng Phong muốn bạn hiểu giá trị trước khi nói về con số. / We can discuss — but Phong wants you to understand the value first. |
+| Seller trả hay mình phải trả? / Does seller pay or do I? | Trong đa số trường hợp seller offer compensation. Nếu không, sẽ negotiate vào contract. / In most cases seller offers compensation. If not, we negotiate it into the contract. |
+
+---
+
+## Phong To — Thông Tin Liên Hệ
+
+| | |
+|---|---|
+| **Tên** | Phong To |
+| **Brokerage** | eXp Realty |
+| **Khu vực** | Sherman TX, Grayson County, North Texas |
+| **Điện thoại** | (737) 242-9999 |
+| **Ngôn ngữ** | Tiếng Việt, English |
+| **TREC License** | #843757 |
+
+<Callout type="info">
+  Phong To chuyên phục vụ cộng đồng Việt-Mỹ tại North Texas. Tư vấn miễn phí, không áp lực. Gọi hoặc nhắn tin bất cứ lúc nào.
+</Callout>
