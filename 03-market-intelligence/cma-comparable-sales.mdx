@@ -1,189 +1,105 @@
 ---
 title: "CMA & Comparable Sales"
-description: "Template CMA cho buyer và seller tại Sherman TX. Quy tắc chọn comps, adjustment factors, presentation script, và red flags cần kiểm tra."
+description: "Phương pháp phân tích giá so sánh (CMA) và hướng dẫn tìm comparable sales tại Sherman TX"
+icon: "scale-balanced"
+ai_context: "Comparative Market Analysis (CMA) methodology for Sherman TX. Covers how to pull comps, adjustment factors, and pricing strategy. CMA is the primary tool for pricing listings and evaluating offers. Key factors: location, sqft, age, condition, lot size, garage, pool. Sherman-specific adjustments included. Use to answer CMA questions, pricing strategy, and comp selection."
+data_freshness: "Q1 2026"
+keywords_vi: ["CMA Sherman TX", "phân tích giá so sánh", "comparable sales", "định giá nhà", "comps Sherman"]
+keywords_en: ["CMA Sherman TX", "comparative market analysis", "comparable sales", "home pricing", "comp selection"]
 ---
 
 # CMA & Comparable Sales
 
-## Cách Claude sử dụng trang này
+Comparative Market Analysis (CMA) là công cụ quan trọng nhất để định giá listing và đánh giá offer. Trang này hướng dẫn phương pháp CMA cho thị trường Sherman TX.
 
-File này cung cấp **khung làm việc để chuẩn bị CMA** (Comparative Market Analysis) cho cả buyer lẫn seller. Claude dùng để guide Phong qua process, nhưng **số liệu thực tế phải lấy từ MLS/NTREIS** — Claude không tự điền giá.
+## CMA Là Gì?
 
-<Callout kind="info">
-**CMA là nghệ thuật kết hợp với khoa học.** Đây là framework — judgment của Phong về local knowledge và property condition luôn override con số thuần túy.
-</Callout>
+CMA so sánh property cần định giá (subject) với các property tương tự đã bán gần đây (comparables/comps) để xác định giá trị thị trường hợp lý.
 
----
+## Tiêu Chí Chọn Comps
 
-## Quy Tắc Chọn Comparable Sales (Comps)
+### Bắt buộc
+| Tiêu chí | Yêu cầu | Lý do |
+|----------|---------|-------|
+| Thời gian bán | Trong 6 tháng gần nhất | Phản ánh thị trường hiện tại |
+| Khoảng cách | Trong 1-2 miles | Cùng khu vực, cùng school |
+| Diện tích | +/- 20% so subject | Tương đồng về size |
+| Năm xây | +/- 10 năm | Tương đồng về condition |
+| Loại nhà | Cùng loại (SFR, townhome) | So sánh đúng segment |
 
-### Tiêu Chí Bắt Buộc
+### Ưu tiên thêm
+- Cùng subdivision (nếu có)
+- Cùng số phòng ngủ (+/- 1)
+- Cùng số garage
+- Cùng school district
+- Giao dịch arm's length (không phải foreclosure, family sale)
 
-| Tiêu chí | Yêu cầu | Ghi chú |
-|---------|---------|---------|
-| **Khoảng cách** | Trong vòng 1 mile | Trong cùng subdivision = tốt nhất |
-| **Thời gian** | Closed trong 6 tháng gần nhất | Ưu tiên 3 tháng gần nhất nếu có |
-| **Diện tích sàn** | ±15% so với subject property | VD: Subject 1,800 sqft → Comps 1,530-2,070 sqft |
-| **Số phòng ngủ** | ±1 BR | 3BR subject → tìm 2-4BR comps |
-| **Property type** | Cùng type (SF, townhome, v.v.) | Không mix SF với townhome |
+## Bảng Điều Chỉnh (Sherman TX Specific)
 
-### Số Lượng Comps Tối Thiểu
+Giá trị điều chỉnh ước tính cho thị trường Sherman TX Q1 2026:
 
-- **Seller CMA (Listing):** Tối thiểu 3 comps đã sold + 2-3 active listings
-- **Buyer CMA (Offer):** Tối thiểu 3 comps đã sold
-- **Ideal:** 5-6 comps đã sold, range giá không quá rộng
+| Yếu tố | Điều chỉnh | Ghi chú |
+|--------|-----------|---------|
+| Diện tích (per sqft) | +/- $80-120/sqft | Tùy phân khúc giá |
+| Phòng ngủ | +/- $8,000-12,000/phòng | Ảnh hưởng ít hơn sqft |
+| Phòng tắm (full) | +/- $6,000-10,000/phòng | Full bath giá trị hơn half bath |
+| Garage (2-car vs 1-car) | +$12,000-18,000 | 2-car garage là standard |
+| Pool | +$15,000-25,000 | Giá trị thấp hơn chi phí xây |
+| Lot size (per acre) | +/- $20,000-40,000 | Tùy zoning và location |
+| Năm xây (per năm) | +/- $500-1,500/năm | Nhà mới = premium |
+| Condition (remodeled) | +$10,000-30,000 | Kitchen/bath remodel có giá trị nhất |
+| Location (busy road) | -$5,000-15,000 | Nhà trên đường lớn bị trừ |
 
-### Ưu Tiên Khi Chọn Comps
+<Warning>
+Bảng điều chỉnh chỉ là ước tính. Giá trị thực tế phụ thuộc vào từng property cụ thể. Appraiser có thể dùng giá trị điều chỉnh khác.
+</Warning>
 
-1. **Cùng subdivision** — sold trong 6 tháng (best)
-2. **Cùng school zone** — sold trong 6 tháng
-3. **Cùng zip code** — sold trong 6 tháng
-4. **Expand radius đến 1.5 miles** nếu không đủ comps
-5. **Extend đến 12 tháng** nếu thị trường ít activity
+## Quy Trình Làm CMA
 
----
+<Steps>
+  <Step title="Thu thập dữ liệu Subject">
+    Lấy thông tin chi tiết property: sqft, beds, baths, year built, lot size, upgrades, condition. Nếu listing mới — đi tour nhà để đánh giá condition.
+  </Step>
+  <Step title="Tìm Comps trên MLS">
+    Search trên NTREIS MLS: filter theo tiêu chí bắt buộc (6 tháng, 2 miles, +/-20% sqft). Lấy 3-6 comps tốt nhất.
+  </Step>
+  <Step title="Điều chỉnh giá">
+    Với mỗi comp, điều chỉnh giá bán dựa trên sự khác biệt với subject. Comp tốt hơn = trừ giá, comp kém hơn = cộng giá.
+  </Step>
+  <Step title="Phân tích kết quả">
+    Lấy range giá sau điều chỉnh. Median của các adjusted price = giá trị thị trường ước tính. Range nên trong +/- 5%.
+  </Step>
+  <Step title="Xem xét Active Listings">
+    Check active listings tương tự — đây là cạnh tranh trực tiếp. Nếu nhiều active ở giá thấp hơn, cần điều chỉnh xuống.
+  </Step>
+  <Step title="Đề xuất giá">
+    Đưa ra 3 mức: Aggressive (bán nhanh, dưới market), Market Value (giá hợp lý), Aspirational (giá cao, cần kiên nhẫn).
+  </Step>
+</Steps>
 
-## Adjustment Factors — Sherman TX
+## Ví Dụ CMA
 
-*(Dùng để điều chỉnh giá comp về "apples-to-apples" với subject property)*
+**Subject:** 3bd/2ba, 1,800 sqft, built 2018, 2-car garage, no pool, 0.2 acre, Stone Creek subdivision
 
-<Callout kind="warning">
-**Adjustment là ước tính.** Con số dưới đây là starting point — Phong cần điều chỉnh dựa trên thực tế thị trường hiện tại. Appraisers và local market có thể có adjustment khác.
-</Callout>
+| Comp | Address | Sold Price | Sqft | Year | Adjustments | Adjusted Price |
+|------|---------|-----------|------|------|-------------|---------------|
+| 1 | 123 Stone Creek Dr | $310,000 | 1,850 | 2019 | -$4,000 (sqft) -$1,000 (year) | $305,000 |
+| 2 | 456 Stone Creek Ln | $295,000 | 1,750 | 2018 | +$4,000 (sqft) | $299,000 |
+| 3 | 789 Park Place Blvd | $285,000 | 1,820 | 2017 | -$1,600 (sqft) +$1,500 (year) -$5,000 (location) | $279,900 |
 
-| Yếu tố | Adjustment ước tính | Ví dụ |
-|--------|--------------------|----|
-| **Garage** (mỗi bay thêm/thiếu) | +/- $8,000 - $12,000 | Comp không có garage, subject có 2-car → +$16-24K |
-| **Pool** | +/- $15,000 - $25,000 | Tùy condition và size |
-| **Diện tích sàn** (mỗi 100 sqft) | +/- $8,000 - $15,000 | Dựa trên price/sqft của khu vực |
-| **Lot size** (mỗi 1,000 sqft thêm) | +/- $1,000 - $3,000 | Lot lớn = premium nhỏ ở Sherman |
-| **Condition** (Updated vs. không) | +/- $10,000 - $20,000 | Kitchen/bath updated = premium đáng kể |
-| **New roof** | +/- $5,000 - $8,000 | |
-| **HVAC mới** | +/- $3,000 - $5,000 | |
-| **Fireplace** | +/- $2,000 - $5,000 | |
-| **Covered patio** | +/- $3,000 - $8,000 | |
-| **Assumable VA/FHA loan** | + premium | Tùy rate differential |
+**Kết quả:** Range $279,900 - $305,000. Median adjusted: $299,000.
+**Đề xuất:** List at $299,900 (market value), review after 14 days.
 
----
+## Nguồn Dữ Liệu Comps
 
-## Template CMA — Seller (Listing Price)
+| Nguồn | Truy cập | Ưu điểm |
+|-------|---------|---------|
+| NTREIS MLS | Qua agent login | Chính xác nhất, đầy đủ nhất |
+| HAR.com | Public + agent portal | Good secondary source |
+| Redfin | redfin.com | Public data, easy to search |
+| County Records | Grayson County CAD | Official sale prices, tax records |
+| Zillow | zillow.com | Zestimate reference (không dùng cho CMA chính thức) |
 
-### Bước 1: Thu Thập Thông Tin Subject Property
-
-```
-Địa chỉ: _______________
-Sqft: _______  BR: ___  BA: ___  Garage: ___  Year Built: ___
-Lot size: _______  Pool: Y/N  Condition: _______________
-Recent updates: _______________________________________________
-```
-
-### Bước 2: Bảng Comps Đã Sold
-
-| # | Địa chỉ | Closed Date | Sqft | BR/BA | Sold Price | $/Sqft | Adj từ Subject | Adj Price |
-|---|---------|------------|------|-------|-----------|--------|---------------|-----------|
-| 1 | | | | | $ | $ | $ | $ |
-| 2 | | | | | $ | $ | $ | $ |
-| 3 | | | | | $ | $ | $ | $ |
-| 4 | | | | | $ | $ | $ | $ |
-| 5 | | | | | $ | $ | $ | $ |
-| **Average** | | | | | **$** | **$** | | **$** |
-| **Median** | | | | | **$** | **$** | | **$** |
-
-### Bước 3: Active Listings (Competition)
-
-| # | Địa chỉ | List Date | Sqft | List Price | $/Sqft | DOM | Ghi chú |
-|---|---------|----------|------|-----------|--------|-----|---------|
-| 1 | | | | $ | $ | | |
-| 2 | | | | $ | $ | | |
-| 3 | | | | $ | $ | | |
-
-### Bước 4: Xác Định Range Giá
-
-```
-Sold Comps Range:  $_______ - $_______
-Adjusted Average:  $_______
-Active Competition: $_______ - $_______
-
-RECOMMENDED LISTING PRICE: $_______
-Aggressive (top of range):  $_______
-Conservative (easier sell):  $_______
-```
-
-### Bước 5: Presentation Script Cho Seller
-
-> "Dựa trên [X] căn nhà tương đương đã bán trong vòng [X] tháng gần đây trong khu vực này, giá thị trường cho căn nhà của bạn rơi vào khoảng $_____ đến $_____.
->
-> Tôi đề xuất list ở mức $_____ vì [lý do cụ thể: condition tốt / vị trí / recent upgrades]. Đây là giá giúp bạn [attract multiple offers / sell trong [X] tuần / tối đa hóa net proceeds].
->
-> Nếu bạn cần bán nhanh hơn, chúng ta có thể xem xét $_____ để capture tất cả buyers trong phân khúc này."
-
----
-
-## Template CMA — Buyer (Offer Strategy)
-
-### Bước 1: Thu Thập Thông Tin Property Buyer Muốn Mua
-
-```
-Địa chỉ: _______________
-List Price: $_______  List Date: ___  DOM: ___
-Sqft: _______  BR: ___  BA: ___  Year Built: ___
-Condition: _______________  Recent Updates: _______________
-```
-
-### Bước 2: Comps Analysis
-
-*(Dùng cùng bảng như Seller CMA ở trên)*
-
-**Tính Market Value:** $_______ (từ adjusted comps)
-
-### Bước 3: Offer Strategy Matrix
-
-| Tình huống | Offer Strategy |
-|-----------|---------------|
-| List price **thấp hơn** market value >3% | Có thể expect multiple offers — offer at/above list |
-| List price **gần bằng** market value (±3%) | Offer tại list hoặc nhẹ dưới, tùy DOM |
-| List price **cao hơn** market value 3-5% | Offer tại market value với data để back it up |
-| List price **cao hơn** market value >5% | Offer thấp hơn list, có CMA để present cho seller |
-| DOM > 30 ngày | Có thể negotiate 2-5% dưới list |
-| DOM > 60 ngày | Motivated seller — negotiate mạnh hơn + concessions |
-
-### Bước 4: Trình Bày Offer Strategy Cho Buyer
-
-> "Dựa trên [X] căn tương đương đã bán gần đây, giá thị trường thực của căn này khoảng $_____.
->
-> Căn này đang list ở $_____. [Đây là giá hợp lý / Đây là X% cao hơn market value / Đây là X% thấp hơn market value].
->
-> Tôi đề xuất offer ở $_____ với lý do: [DOM còn thấp — cần competitive / DOM cao — có room negotiate / Seller đã reduce giá rồi — có thể close thêm].
->
-> Worst case nếu offer không được chấp nhận, chúng ta có thể counter ở $_____."
-
----
-
-## Red Flags Khi Làm CMA
-
-Những dấu hiệu cần investigate thêm trước khi hoàn thành CMA:
-
-| Red Flag | Ý nghĩa | Action |
-|---------|---------|--------|
-| Comp sold giá cực thấp so với rest | Có thể distressed sale (foreclosure/estate) | Exclude hoặc note trong CMA |
-| Comp sold rất nhanh với giá cao | Có thể unique buyer/situation | Weight ít hơn trong average |
-| Không đủ comps trong 1 mile | Market ít activity | Expand radius + note caveat cho client |
-| Giá/sqft spread rộng (>20%) | Market inconsistent | Cần phân tích thêm, present range |
-| Active listings đã reduce nhiều lần | Overpriced market — expect softening | Tư vấn seller pricing dựa trên reduced comps |
-| Subject property unique feature | Pool, acreage, commercial-adjacent | Tìm comps tương tự đặc biệt, adjust carefully |
-
----
-
-## Nguồn Dữ Liệu CMA
-
-**NTREIS Matrix (bắt buộc — chuẩn nhất):**
-1. Matrix → Search → Sold Properties
-2. Filter: Area, Date Range, Sqft range, Property Type
-3. Export CMA Report → lấy adjustment grid
-
-**Redfin (cross-check nhanh):**
-- redfin.com → specific property → Nearby Sales tab
-- Nhanh nhưng không đầy đủ như MLS
-
-**HAR.com (thêm context):**
-- Xem neighborhood trends để add context vào CMA presentation
+<Note>
+Luôn dùng MLS data làm nguồn chính cho CMA. Public sources (Zillow, Redfin) chỉ là tham khảo bổ sung.
+</Note>

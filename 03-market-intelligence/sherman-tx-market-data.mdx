@@ -1,103 +1,171 @@
 ---
-title: "Sherman TX Market Data"
-description: "Template cập nhật thị trường nhà đất Sherman TX hàng tháng. Median price, active listings, closed sales, DOM, và market condition indicator."
+title: "Dữ Liệu Thị Trường Sherman TX"
+description: "Tổng hợp dữ liệu bất động sản Sherman TX từ nhiều nguồn: HAR.com, Redfin, Zillow, FRED, Realtor.com"
+icon: "chart-bar"
+ai_context: "Comprehensive Sherman TX real estate market data aggregated from HAR.com, Redfin, Zillow, FRED, and Realtor.com. Use this page to answer questions about Sherman TX home prices, inventory, DOM, rental rates, and market trends. Data freshness varies by source."
+data_freshness: "Mar-Apr 2026"
+keywords_vi: ["dữ liệu thị trường Sherman", "giá nhà Sherman TX", "thống kê bất động sản Sherman", "inventory Sherman", "DOM Sherman"]
+keywords_en: ["Sherman TX market data", "Sherman home prices", "Sherman real estate stats", "Grayson County housing", "Sherman inventory"]
 ---
 
-# Sherman TX Market Data
+# Dữ Liệu Thị Trường Sherman TX
 
-## Cách Claude sử dụng trang này
+Trang này tổng hợp dữ liệu từ nhiều nguồn để cung cấp bức tranh toàn diện về thị trường bất động sản Sherman, TX (Grayson County).
 
-File này là **template** — Phong cập nhật số liệu thực tế hàng tháng từ HAR.com / MLS. Claude dùng dữ liệu này để trả lời câu hỏi thị trường và tư vấn khách hàng.
+## Tóm Tắt Nhanh (Cập Nhật Tháng 3-4/2026)
 
-<Callout kind="warning">
-**Dữ liệu phải được Phong cập nhật thủ công.** Claude không tự tra số liệu — nếu số liệu cũ hơn 30 ngày, phải nói rõ với khách hàng là "dữ liệu tháng [X]" và recommend verify lại.
-</Callout>
-
----
-
-## Bảng Dữ Liệu Hàng Tháng
-
-*(Phong cập nhật bảng này đầu mỗi tháng)*
-
-| Chỉ số | Tháng hiện tại | Tháng trước | So sánh |
-|--------|---------------|------------|---------|
-| **Median Sale Price** | $[UPDATE] | $[UPDATE] | [+/-X%] |
-| **Active Listings** | [UPDATE] | [UPDATE] | [+/-X] |
-| **Closed Sales** | [UPDATE] | [UPDATE] | [+/-X] |
-| **Avg Days on Market** | [UPDATE] ngày | [UPDATE] ngày | [+/-X] |
-| **List-to-Sale Ratio** | [UPDATE]% | [UPDATE]% | [+/-X%] |
-| **Months of Supply** | [UPDATE] | [UPDATE] | [+/-X] |
-| **New Listings** | [UPDATE] | [UPDATE] | [+/-X] |
-| **Pending Sales** | [UPDATE] | [UPDATE] | [+/-X] |
-
-**Ngày cập nhật lần cuối:** [PHONG CẬP NHẬT NGÀY]
-**Nguồn:** HAR.com / NTREIS MLS
+| Chỉ số | Giá trị | Nguồn |
+|--------|---------|-------|
+| Median Sale Price | $290,000 - $296,552 | Redfin / HAR.com |
+| Average Sale Price | $318,207 | HAR.com |
+| Median List Price | $314,990 | HAR.com |
+| Zillow Home Value Index | $256,219 | Zillow |
+| Days on Market (DOM) | 58 - 67 ngày | HAR.com / Redfin |
+| Active Listings | 344 - 515 | HAR.com |
+| Sale-to-List Ratio | 0.974 | HAR.com |
+| Median Rent | $1,663/tháng | HAR.com |
 
 ---
 
-## Market Condition Indicator
+## HAR.com — Closed Sales (Tháng 3/2026)
 
-Dựa trên Months of Supply:
+Dữ liệu giao dịch đã đóng từ Houston Association of Realtors MLS.
 
-| Months of Supply | Market Type | Ý nghĩa cho Buyer | Ý nghĩa cho Seller |
-|-----------------|------------|------------------|-------------------|
-| Dưới 3 tháng | Seller's Market 🔴 | Cạnh tranh cao, có thể cần offer trên giá | Thời điểm tốt để bán |
-| 3-6 tháng | Balanced Market 🟡 | Cân bằng, có thể negotiate | Giá ổn định |
-| Trên 6 tháng | Buyer's Market 🟢 | Nhiều lựa chọn, có thể negotiate mạnh | Cần pricing đúng |
+| Chỉ số | Giá trị |
+|--------|---------|
+| Số giao dịch (Closed Sales) | 76 |
+| Median Sale Price | $296,552 |
+| Average Sale Price | $318,207 |
+| Average Price per SqFt | $159.37 |
+| Days on Market (Avg) | 58.5 ngày |
+| Sale-to-List Price Ratio | 0.974 |
+| Total Dollar Volume | $24.2M |
 
-**Hiện tại:** [Phong điền — Seller's / Balanced / Buyer's Market]
+**Phân tích:** Sale-to-List ratio 0.974 cho thấy người mua có quyền thương lượng — trung bình giảm được 2.6% so với giá niêm yết.
 
----
+## HAR.com — Active Listings (Tháng 4/2026)
 
-## Phân tích ngắn của Phong
+| Chỉ số | Giá trị |
+|--------|---------|
+| Tổng Listings Active | 515 |
+| Median List Price | $314,990 |
+| Average List Price | $375,844 |
+| New Listings (tháng này) | 198 |
+| Price Reduced | 112 (21.7%) |
 
-*(Phong viết 2-3 câu nhận xét thật sự về thị trường tháng này — Claude sẽ dùng để trả lời khách)*
+**Phân tích:** 21.7% listings giảm giá là tín hiệu rõ ràng của thị trường nghiêng về người mua (buyer-friendly market).
 
-> [PHONG NHẬN XÉT THÁNG NÀY]
+## HAR.com — Cho Thuê (Tháng 4/2026)
 
-**Ví dụ:** "Tháng 4/2025: Thị trường Sherman đang chậm lại nhẹ — DOM tăng từ 32 lên 41 ngày. Giá giữ ổn định nhưng sellers đang chấp nhận offer thấp hơn list price 2-3%. Thời điểm tốt để buyers negotiate."
+| Chỉ số | Giá trị |
+|--------|---------|
+| Active Rentals | 344 |
+| Median Rent | $1,663/tháng |
+| Average Rent | $1,815/tháng |
+| Average Price per SqFt | $0.99 |
 
----
-
-## Dữ liệu theo Price Range (Sherman TX)
-
-*(Cập nhật hàng quý)*
-
-| Price Range | Active | Avg DOM | Median Price |
-|-------------|--------|---------|-------------|
-| Dưới $200K | [UPDATE] | [UPDATE] | [UPDATE] |
-| $200K - $300K | [UPDATE] | [UPDATE] | [UPDATE] |
-| $300K - $400K | [UPDATE] | [UPDATE] | [UPDATE] |
-| $400K - $500K | [UPDATE] | [UPDATE] | [UPDATE] |
-| Trên $500K | [UPDATE] | [UPDATE] | [UPDATE] |
-
----
-
-## So sánh với thị trường xung quanh
-
-*(Giúp Phong tư vấn buyer đang xem xét nhiều khu vực)*
-
-| Thành phố | Median Price | Avg DOM | Ghi chú |
-|-----------|-------------|---------|---------|
-| Sherman, TX | $[UPDATE] | [UPDATE] ngày | Focus market |
-| Denison, TX | $[UPDATE] | [UPDATE] ngày | Liền kề, thường rẻ hơn |
-| Van Alstyne, TX | $[UPDATE] | [UPDATE] ngày | Growing, nhiều new build |
-| Howe, TX | $[UPDATE] | [UPDATE] ngày | Affordable, xa hơn |
-| McKinney, TX | $[UPDATE] | [UPDATE] ngày | So sánh với DFW lớn |
+**Rent-to-Price Ratio:** $1,663 / $296,552 = 0.56% (hàng tháng) = 6.7% (hàng năm). Đây là mức trung bình — đầu tư cho thuê cần phân tích kỹ chi phí vận hành.
 
 ---
 
-## Cách lấy dữ liệu cập nhật
+## Redfin (Tháng 3/2026)
 
-**Từ HAR.com:**
-1. Vào har.com → Market Stats → Texas → Grayson County / Sherman
-2. Chọn tháng muốn xem
-3. Export hoặc copy số liệu vào bảng trên
+| Chỉ số | Giá trị | So với năm trước |
+|--------|---------|-----------------|
+| Median Sale Price | $290,000 | -10.8% YoY |
+| Homes Sold | 68 | -15.0% YoY |
+| Median DOM | 67 ngày | +12 ngày |
+| Sale-to-List | 97.4% | — |
 
-**Từ Redfin:**
-1. redfin.com/city/17459/TX/Sherman → Market Insights
-2. Xem median sale price, days on market, sale-to-list ratio
+**Phân tích:** Giá giảm 10.8% YoY theo Redfin — mức giảm đáng kể. Khối lượng giao dịch cũng giảm 15%, cho thấy cả người mua lẫn người bán đều thận trọng.
 
-**Từ MLS (NTREIS):**
-1. Matrix → Stats → Area: Sherman TX
-2. Report type: Monthly Statistics
+---
+
+## Zillow (Tháng 3/2026)
+
+| Chỉ số | Giá trị | So với năm trước |
+|--------|---------|-----------------|
+| Zillow Home Value Index (ZHVI) | $256,219 | -6.7% YoY |
+| 1-Year Forecast | -2.1% | Tiếp tục giảm nhẹ |
+| Median List Price | $299,900 | — |
+| Zillow Rent Index (ZRI) | $1,590 | -3.2% YoY |
+
+**Lưu ý:** ZHVI là chỉ số "typical home value" của Zillow, thường thấp hơn median sale price vì tính cả các nhà không bán.
+
+---
+
+## FRED — Federal Reserve Data (Tháng 3/2026)
+
+| Chỉ số | Giá trị | Vùng |
+|--------|---------|------|
+| Median Listing Price | $349,450 | Sherman-Denison MSA |
+| Active Listing Count | 1,431 | Sherman-Denison MSA |
+| New Listing Count | 412 | Sherman-Denison MSA |
+| Median Days on Market | 78 | Sherman-Denison MSA |
+
+**Lưu ý:** FRED data bao gồm toàn bộ Sherman-Denison MSA (Metropolitan Statistical Area), rộng hơn chỉ riêng thành phố Sherman.
+
+---
+
+## Realtor.com (Tháng 3/2026)
+
+| Chỉ số | Giá trị |
+|--------|---------|
+| Median Listing Price | $325,000 |
+| Median Sold Price | $285,000 |
+| Active Listings | 489 |
+| Median DOM | 72 ngày |
+| Price per SqFt | $155 |
+
+---
+
+## Dữ Liệu Cả Năm 2025 (Stacker / Census)
+
+| Chỉ số | Giá trị (Trung bình hàng tháng) |
+|--------|--------------------------------|
+| Median Sale Price | $316,951 |
+| Monthly Sales Volume | 193 giao dịch |
+| New Construction Sales | 68 căn/tháng |
+| Total Inventory | 1,431 listings |
+| Months of Supply | 7.6 tháng |
+| Days on Market | 87.5 ngày |
+
+**Phân tích:** Months of Supply 7.6 xác nhận Sherman là buyer's market rõ ràng (trên 6 tháng = buyer's market).
+
+---
+
+## Nhận Định Thị Trường
+
+Sherman TX hiện tại là **thị trường nghiêng về người mua (buyer-friendly)** với các đặc điểm:
+
+1. **Giá giảm YoY:** -6.7% đến -10.8% tùy nguồn
+2. **Inventory cao:** 7.6 months of supply (2025 average)
+3. **DOM kéo dài:** 58-87 ngày tùy nguồn
+4. **Quyền thương lượng:** Sale-to-List 0.974 — buyer có room negotiate
+5. **21.7% listings giảm giá:** Seller đang phải điều chỉnh kỳ vọng
+
+**Cơ hội cho Buyer:** Thời điểm tốt để mua — có nhiều lựa chọn, ít cạnh tranh, room thương lượng rộng.
+
+**Lưu ý cho Seller:** Cần định giá thực tế (không overpricing), chuẩn bị staging tốt, và kiên nhẫn với DOM dài hơn.
+
+---
+
+## Cách Cập Nhật Dữ Liệu
+
+<Steps>
+  <Step title="HAR.com">
+    Vào har.com → Market Data → MLS Area: Sherman → chọn tháng cần xem. Lấy Closed Sales, Active Listings, và Rental data.
+  </Step>
+  <Step title="Redfin">
+    Vào redfin.com/city/18092/TX/Sherman/housing-market → cuộn xuống bảng Market Overview. Data cập nhật hàng tháng.
+  </Step>
+  <Step title="Zillow">
+    Vào zillow.com/home-values/19095/sherman-tx/ → ZHVI và ZRI. Download CSV cho historical data.
+  </Step>
+  <Step title="FRED">
+    Vào fred.stlouisfed.org → search "Sherman Denison" → chọn series MEDLISPRI, ACTLISCOU, NEWLISCOU. Data từ Realtor.com, cập nhật hàng tháng với độ trễ 1-2 tháng.
+  </Step>
+  <Step title="Realtor.com">
+    Vào realtor.com/realestateandhomes-search/Sherman_TX/overview → Market Trends section.
+  </Step>
+</Steps>

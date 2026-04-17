@@ -1,162 +1,99 @@
 ---
-title: "Interest Rate Tracker"
-description: "Theo dõi lãi suất thế chấp hàng tuần (30yr, 15yr, FHA, VA). Payment impact reference table, buy-now-vs-wait analysis, và nguồn Freddie Mac/Bankrate."
+title: "Theo Dõi Lãi Suất"
+description: "Lãi suất mortgage hiện tại, lịch sử, và tác động đến sức mua nhà"
+icon: "percent"
+ai_context: "Current mortgage interest rates and their impact on home buying power. 30yr fixed: 6.46% (Apr 2026), 15yr fixed: 5.72%. Rates have been elevated since 2022. Each 1% rate increase reduces buying power by ~10%. Use to answer rate questions, buying power calculations, and rate lock advice."
+data_freshness: "Apr 2026"
+keywords_vi: ["lãi suất mortgage", "lãi suất vay mua nhà", "30 year fixed rate", "sức mua nhà", "rate lock"]
+keywords_en: ["mortgage rates", "interest rate tracker", "30yr fixed rate", "buying power", "rate forecast"]
 ---
 
-# Interest Rate Tracker
+# Theo Dõi Lãi Suất
 
-## Cách Claude sử dụng trang này
+Lãi suất mortgage là yếu tố quan trọng nhất ảnh hưởng đến sức mua (buying power) của buyer. Trang này theo dõi lãi suất hiện tại và phân tích tác động.
 
-File này giúp Phong **tư vấn buyer về impact của lãi suất** đối với quyết định mua nhà. Quan trọng nhất là bảng payment reference và buy-now-vs-wait analysis.
+## Lãi Suất Hiện Tại (Tháng 4/2026)
 
-<Callout kind="warning">
-**Lãi suất thay đổi hàng ngày.** Bảng này chỉ là reference — Phong phải cập nhật hàng tuần và luôn recommend buyer contact lender để get pre-approval với rate hiện tại. Claude KHÔNG tự điền rate thực tế.
-</Callout>
+| Loại vay | Lãi suất | APR |
+|----------|---------|-----|
+| 30-Year Fixed | 6.46% | 6.52% |
+| 15-Year Fixed | 5.72% | 5.80% |
+| 5/1 ARM | 5.85% | 6.15% |
+| FHA 30-Year | 6.12% | 6.75% |
+| VA 30-Year | 6.05% | 6.20% |
+| Jumbo 30-Year | 6.72% | 6.78% |
 
----
+<Note>
+Lãi suất thay đổi hàng ngày. Nguồn: Freddie Mac Primary Mortgage Market Survey (PMMS). Lãi suất thực tế từng cá nhân tùy thuộc credit score, down payment, và lender.
+</Note>
 
-## Bảng Lãi Suất Tuần Này
+## Lịch Sử Lãi Suất 30-Year Fixed
 
-*(Phong cập nhật mỗi thứ Hai — nguồn: Freddie Mac PMMS)*
+| Thời điểm | Lãi suất | Bối cảnh |
+|-----------|---------|---------|
+| 1/2022 | 3.22% | Trước khi Fed tăng |
+| 6/2022 | 5.81% | Fed bắt đầu tăng mạnh |
+| 10/2022 | 7.08% | Đỉnh năm 2022 |
+| 1/2023 | 6.48% | Giảm nhẹ |
+| 10/2023 | 7.79% | Đỉnh chu kỳ |
+| 1/2024 | 6.64% | Giảm từ đỉnh |
+| 6/2024 | 6.86% | Dao động quanh 7% |
+| 10/2024 | 6.44% | Giảm nhờ kỳ vọng Fed cut |
+| 1/2025 | 6.95% | Tăng trở lại |
+| 4/2025 | 6.62% | Giảm nhẹ |
+| 10/2025 | 6.38% | Giảm tiếp |
+| 1/2026 | 6.55% | Dao động |
+| 4/2026 | 6.46% | Hiện tại |
 
-| Loan Type | Rate tuần này | Rate tuần trước | Điểm (0 pt) | Ghi chú |
-|-----------|--------------|----------------|-------------|---------|
-| **30-Year Fixed** | [UPDATE]% | [UPDATE]% | [UPDATE] | Conventional |
-| **15-Year Fixed** | [UPDATE]% | [UPDATE]% | [UPDATE] | Conventional |
-| **FHA 30-Year** | [UPDATE]% | [UPDATE]% | [UPDATE] | +MIP |
-| **VA 30-Year** | [UPDATE]% | [UPDATE]% | [UPDATE] | No PMI |
-| **5/1 ARM** | [UPDATE]% | [UPDATE]% | [UPDATE] | Variable sau 5 năm |
+## Tác Động Đến Sức Mua
 
-**Ngày cập nhật:** [PHONG CẬP NHẬT MỖI THỨ HAI]
-**Nguồn:** Freddie Mac Primary Mortgage Market Survey
+Ví dụ: Buyer có thu nhập $80,000/năm, DTI tối đa 43%, down payment 5%.
 
----
+| Lãi suất | Monthly Payment Max | Giá nhà mua được | Chênh lệch |
+|----------|--------------------|-----------------|-----------| 
+| 5.00% | $2,867 | $385,000 | +$60K so hiện tại |
+| 5.50% | $2,867 | $365,000 | +$40K |
+| 6.00% | $2,867 | $345,000 | +$20K |
+| **6.46%** | **$2,867** | **$325,000** | **Hiện tại** |
+| 7.00% | $2,867 | $305,000 | -$20K |
+| 7.50% | $2,867 | $290,000 | -$35K |
 
-## Lịch Sử Rate — 12 Tháng Gần Nhất
+**Quy tắc nhanh:** Mỗi 1% lãi suất tăng = giảm khoảng 10% sức mua.
 
-*(Phong cập nhật hàng tháng — 30-Year Fixed)*
+## Monthly Payment Theo Giá Nhà (30yr Fixed 6.46%)
 
-| Tháng | Rate 30yr Fixed | Thay đổi | Ghi chú |
-|-------|----------------|---------|---------|
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| [UPDATE] | [UPDATE]% | | |
-| **Tháng này** | **[UPDATE]%** | | |
+Down payment 5%, không tính PMI/tax/insurance.
 
----
+| Giá nhà | Loan Amount | P&I Monthly | Tổng trả 30 năm |
+|---------|-------------|-------------|-----------------|
+| $200,000 | $190,000 | $1,196 | $430,560 |
+| $250,000 | $237,500 | $1,495 | $538,200 |
+| $300,000 | $285,000 | $1,794 | $645,840 |
+| $350,000 | $332,500 | $2,094 | $753,840 |
+| $400,000 | $380,000 | $2,393 | $861,480 |
 
-## Payment Reference Table — 30-Year Fixed
+**Lưu ý:** Tổng payment thực tế bao gồm thêm PMI (~0.5-1% loan amount/năm nếu down dưới 20%), property tax (~2.2% tại Sherman TX), và homeowner insurance (~$1,800-2,400/năm).
 
-*(P&I chỉ — không bao gồm taxes, insurance, HOA)*
+## Khi Nào Nên Lock Rate
 
-Dùng để nhanh chóng trả lời câu hỏi "Mỗi tháng tôi phải trả bao nhiêu?"
+- **Lock ngay** nếu: Rate đang ở mức chấp nhận được VÀ closing trong 30-60 ngày
+- **Float** nếu: Có dấu hiệu Fed sẽ giảm rate VÀ closing còn xa (trên 60 ngày)
+- **Lock period tiêu chuẩn:** 30-45 ngày (phổ biến nhất), 60 ngày (phí cao hơn)
 
-| Loan Amount | Rate 6.0% | Rate 6.5% | Rate 7.0% | Rate 7.5% | Rate 8.0% |
-|-------------|----------|----------|----------|----------|----------|
-| $150,000 | $899 | $948 | $998 | $1,049 | $1,101 |
-| $175,000 | $1,049 | $1,106 | $1,164 | $1,224 | $1,284 |
-| $200,000 | $1,199 | $1,264 | $1,331 | $1,398 | $1,468 |
-| $225,000 | $1,349 | $1,423 | $1,497 | $1,573 | $1,651 |
-| $250,000 | $1,499 | $1,580 | $1,663 | $1,748 | $1,834 |
-| $275,000 | $1,649 | $1,740 | $1,830 | $1,923 | $2,018 |
-| $300,000 | $1,799 | $1,896 | $1,996 | $2,098 | $2,201 |
-| $325,000 | $1,948 | $2,054 | $2,163 | $2,273 | $2,385 |
-| $350,000 | $2,098 | $2,212 | $2,329 | $2,447 | $2,568 |
-| $375,000 | $2,248 | $2,370 | $2,495 | $2,622 | $2,751 |
-| $400,000 | $2,398 | $2,528 | $2,661 | $2,797 | $2,935 |
+<Warning>
+KHÔNG BAO GIỜ hứa hẹn lãi suất cụ thể với khách hàng. Luôn khuyến khích buyer nói chuyện trực tiếp với lender để lấy quote chính xác.
+</Warning>
 
-*(Số liệu tính toán dựa trên công thức P&I chuẩn — không thay đổi theo thị trường)*
+## So Sánh Chương Trình Vay
 
-**Cách dùng:** Buyer có budget $2,000/tháng P&I, rate 7% → họ qualify cho khoảng $300,000 loan.
+| Chương trình | Down Payment Min | Credit Score Min | PMI | Phù hợp |
+|-------------|-----------------|-----------------|-----|---------|
+| Conventional | 3-5% | 620+ | Có (dưới 20% down) | Buyer credit tốt |
+| FHA | 3.5% | 580+ | Có (suốt đời vay) | First-time buyer, credit thấp |
+| VA | 0% | Không yêu cầu | Không | Veteran/Active military |
+| USDA | 0% | 640+ | Có (thấp) | Rural areas (Sherman eligible) |
+| Texas DPA | Varies | 620+ | Varies | First-time buyer Texas |
 
----
-
-## Rate Impact Analysis — Ví Dụ Cụ Thể
-
-### Ví dụ: Nhà $300,000, Down 20% = Loan $240,000
-
-| Rate | Monthly P&I | Tổng trả trong 30 năm | Tổng lãi | So với rate 6% |
-|------|-------------|----------------------|---------|--------------|
-| 6.0% | $1,439 | $518,040 | $278,040 | Baseline |
-| 6.5% | $1,517 | $546,120 | $306,120 | +$93/tháng |
-| 7.0% | $1,597 | $574,920 | $334,920 | +$158/tháng |
-| 7.5% | $1,678 | $604,080 | $364,080 | +$239/tháng |
-| 8.0% | $1,761 | $633,960 | $393,960 | +$322/tháng |
-
-**Key message cho buyer:** "Mỗi 0.5% tăng lãi suất = thêm ~$80-100/tháng với loan $240K. Đây là lý do tại sao pre-approval sớm và lock rate quan trọng."
-
----
-
-## Buy Now vs. Wait Analysis
-
-*(Framework tư vấn buyer đang do dự)*
-
-### Scenario: Buyer đang chờ rate giảm
-
-Giả sử buyer đang xét mua nhà $300K hôm nay ở rate 7%:
-
-| Quyết định | Nếu rate GIẢM 1% sau 1 năm | Nếu rate TĂNG 0.5% sau 1 năm | Nếu giá nhà tăng 5% |
-|-----------|---------------------------|------------------------------|---------------------|
-| **Mua ngay** | Có thể refinance → tiết kiệm ~$155/tháng | Đã lock rate tốt hơn | Equity ngay từ đầu |
-| **Chờ 1 năm** | Monthly payment thấp hơn $155 | Monthly payment cao hơn $78 | Giá nhà tăng $15K → cần thêm $15K tiền mặt |
-
-**Key message:** "Rate có thể giảm hoặc tăng — không ai biết chắc. Nhưng nếu giá nhà tiếp tục tăng trong lúc bạn chờ, bạn mất cả hai đầu. Câu hỏi tốt hơn là: bạn ở đây bao lâu? Nếu 5+ năm, mua ngay và refinance khi rate giảm thường là strategy tốt hơn chờ."
-
-### Khi Nào Nên Chờ
-
-- Buyer đang trong transition (job change, có thể chuyển thành phố trong 1-2 năm)
-- Credit score đang được rebuild (3-6 tháng sẽ qualify rate tốt hơn đáng kể)
-- Down payment chưa đủ — đang save thêm
-- Nếu có **cụ thể** timeline rate giảm từ Fed announcements
-
----
-
-## Loan Types — So Sánh Nhanh
-
-| Loan Type | Down Min | Credit Score Min | PMI/MIP | Tốt cho ai |
-|-----------|---------|-----------------|---------|----------|
-| **Conventional** | 3-5% | 620+ | PMI nếu dưới 20% down | Buyers có credit tốt, muốn flexibility |
-| **FHA** | 3.5% | 580+ | MIP bắt buộc (cả đời nếu dưới 10% down) | First-time buyers, credit thấp hơn |
-| **VA** | 0% | Thường 620+ | Không có | Veterans và active military |
-| **USDA** | 0% | 640+ | Phí bảo hiểm | Rural areas, income limits apply |
-| **Jumbo** | 10-20% | 700+ | Varies | Nhà trên conforming limit (~$766,550 năm 2025) |
-
----
-
-## Lenders Phong Thường Recommend
-
-<Callout kind="warning">
-**Phong điền danh sách lenders tin cậy của mình ở đây.** Claude KHÔNG tự recommend lender cụ thể.
-</Callout>
-
-*(Phong cập nhật danh sách preferred lenders — tên, điện thoại, chuyên về loan type gì)*
-
-| Lender | Contact | Chuyên về | Ghi chú |
-|--------|---------|---------|---------|
-| [Phong điền] | [Phong điền] | [Phong điền] | |
-| [Phong điền] | [Phong điền] | [Phong điền] | |
-| [Phong điền] | [Phong điền] | [Phong điền] | Vietnamese-speaking? |
-
----
-
-## Nguồn Cập Nhật Rate
-
-**Freddie Mac PMMS** (chuẩn nhất — mỗi thứ Năm):
-- freddiemac.com/pmms → xem rate survey hàng tuần
-- Đây là benchmark được dùng rộng rãi nhất
-
-**Bankrate** (so sánh lenders):
-- bankrate.com/mortgages/mortgage-rates → today's average rates
-- Có breakdown theo loan type và credit score
-
-**Mortgage News Daily** (real-time):
-- mortgagenewsdaily.com → rate movements trong ngày
-- Dùng khi cần update ngay (trước buyer meeting)
+<Note>
+Sherman TX nằm trong vùng USDA eligible — buyer có thể vay 0% down payment qua chương trình USDA Rural Development. Đây là lợi thế lớn so với mua nhà trong DFW Metro.
+</Note>

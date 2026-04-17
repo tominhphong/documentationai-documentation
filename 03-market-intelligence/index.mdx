@@ -1,74 +1,65 @@
 ---
-title: "03. Market Intelligence — Tổng Quan"
-description: "Dữ liệu thị trường nhà đất Sherman TX, Denison, Grayson County. Template theo dõi median price, inventory, DOM, interest rates, và CMA."
+title: "Market Intelligence"
+description: "Trung tâm dữ liệu thị trường bất động sản Sherman TX và DFW Metro"
+icon: "chart-mixed"
+ai_context: "Market Intelligence hub for Sherman TX and DFW Metro real estate data. This department contains: real-time market data from multiple sources (HAR.com, Redfin, Zillow, FRED), price trends, inventory/DOM tracking, neighborhood profiles, CMA methodology, interest rate tracker, DFW comparison, new construction data, and data source methodology. Sherman TX is in Grayson County, part of Sherman-Denison MSA. Current market: buyer-friendly with median sale $290-296K, 7.6 months supply, DOM 58-87 days."
+data_freshness: "Q1 2026"
+keywords_vi: ["market intelligence", "dữ liệu thị trường", "Sherman TX", "DFW Metro", "bất động sản"]
+keywords_en: ["market intelligence", "Sherman TX real estate", "DFW housing market", "market data", "Grayson County"]
 ---
 
-# 03. Market Intelligence
+# Market Intelligence
 
-<Callout kind="info">
-**Phòng này dành cho ai?** Claude sử dụng tài liệu này khi Phong cần số liệu thị trường để tư vấn khách hàng, tạo market update, hoặc chuẩn bị CMA cho buyer/seller.
-</Callout>
+Trung tâm dữ liệu thị trường bất động sản Sherman TX và DFW Metro — cập nhật hàng tháng từ nhiều nguồn đáng tin cậy.
 
-## Cách Claude sử dụng trang này
+## Tình Hình Thị Trường (Q1 2026)
 
-Khi Phong nói:
-- "Thị trường Sherman tháng này thế nào?" → Đọc **Sherman TX Market Data**
-- "Giá nhà khu này tăng hay giảm?" → Đọc **Median Price Trends**
-- "Bao lâu thì nhà bán được?" → Đọc **Inventory & DOM**
-- "Khu nào phù hợp với gia đình này?" → Đọc **Neighborhood Profiles**
-- "CMA cho khách này" → Đọc **CMA & Comparable Sales**
-- "Lãi suất hôm nay bao nhiêu?" → Đọc **Interest Rate Tracker**
+Sherman TX hiện là **thị trường nghiêng về người mua (buyer-friendly):**
 
----
+| Chỉ số chính | Sherman TX | DFW Metro |
+|-------------|-----------|-----------|
+| Median Sale Price | $290,000 - $296,552 | $355,000 |
+| YoY Change | -6.7% đến -10.8% | -3.2% |
+| Days on Market | 58 - 67 ngày | 45 - 55 ngày |
+| Months of Supply | 7.6 | 3.5 - 4.2 |
+| 30yr Fixed Rate | 6.46% | 6.46% |
 
-## Focus Area
+## Các Trang Trong Phòng Ban
 
-| Địa bàn chính | Ghi chú |
-|--------------|---------|
-| **Sherman, TX** | Market chính — West, East, Downtown, Southview |
-| **Denison, TX** | Thị trường liền kề, giá thường thấp hơn Sherman |
-| **Van Alstyne, TX** | Growth market, nhiều new construction |
-| **Howe, TX** | Affordable, ít inventory hơn |
-| **Grayson County** | Overview toàn huyện |
-
----
-
-## Nguồn dữ liệu chuẩn
-
-| Nguồn | Dùng cho |
-|-------|---------|
-| HAR.com | MLS data chính xác nhất |
-| Zillow Research | Trends, historical data |
-| Redfin Data Center | Market analysis, DOM |
-| Freddie Mac PMMS | Lãi suất chuẩn tuần |
-| Bankrate | So sánh lãi suất lender |
-| NTREIS MLS | North Texas local data |
-
-<Callout kind="warning">
-**Quan trọng:** Dữ liệu trong các file này là **template** — cần Phong cập nhật số liệu thực tế hàng tháng. Claude KHÔNG tự bịa số liệu thị trường. Nếu không có số liệu mới, Claude phải nói rõ với khách hàng.
-</Callout>
-
----
-
-## Cấu trúc Phòng 03
-
-<Columns cols={2}>
-  <Card title="Sherman TX Market Data" icon="bar-chart-2" href="/03-market-intelligence/sherman-tx-market-data">
-    Template cập nhật hàng tháng: median price, volume, inventory. Cập nhật từ HAR.com/NTREIS.
+<CardGroup cols={2}>
+  <Card title="Dữ Liệu Thị Trường Sherman TX" icon="chart-bar" href="/03-market-intelligence/sherman-tx-market-data">
+    Tổng hợp data từ HAR.com, Redfin, Zillow, FRED, Realtor.com — closed sales, active listings, rental market.
   </Card>
-  <Card title="Median Price Trends" icon="trending-up" href="/03-market-intelligence/median-price-trends">
-    Bảng theo dõi giá theo quý cho Sherman, Denison, Van Alstyne, Howe. So sánh YoY.
+  <Card title="Xu Hướng Giá Nhà" icon="chart-line" href="/03-market-intelligence/median-price-trends">
+    Biến động giá theo quý, so sánh YoY, phân tích xu hướng dài hạn, dự báo ngắn hạn.
   </Card>
-  <Card title="Inventory & DOM" icon="clock" href="/03-market-intelligence/inventory-dom">
-    Tốc độ bán nhà (Days on Market) và hàng tồn. Chỉ số buyer's vs seller's market.
+  <Card title="Inventory & Days on Market" icon="warehouse" href="/03-market-intelligence/inventory-dom">
+    Số lượng listings, months of supply, absorption rate, phân tích theo phân khúc giá.
   </Card>
-  <Card title="Neighborhood Profiles" icon="map-pin" href="/03-market-intelligence/neighborhood-profiles">
-    Profile từng khu vực: trường học, giá trung bình, đặc điểm, phù hợp với loại buyer nào.
+  <Card title="Theo Dõi Lãi Suất" icon="percent" href="/03-market-intelligence/interest-rate-tracker">
+    Lãi suất mortgage hiện tại, lịch sử, tác động sức mua, so sánh chương trình vay.
   </Card>
-  <Card title="CMA & Comparable Sales" icon="file-text" href="/03-market-intelligence/cma-comparable-sales">
-    Template CMA hoàn chỉnh cho buyer và seller. Comps selection criteria và adjustments.
+  <Card title="Hồ Sơ Khu Vực" icon="map-location-dot" href="/03-market-intelligence/neighborhood-profiles">
+    Subdivisions Sherman, vùng lân cận, school ratings, TI impact, giá theo khu vực.
   </Card>
-  <Card title="Interest Rate Tracker" icon="percent" href="/03-market-intelligence/interest-rate-tracker">
-    Theo dõi lãi suất hàng tuần (Freddie Mac PMMS) và tác động đến purchasing power.
+  <Card title="CMA & Comparable Sales" icon="scale-balanced" href="/03-market-intelligence/cma-comparable-sales">
+    Phương pháp CMA, bảng điều chỉnh Sherman-specific, quy trình 6 bước, ví dụ thực tế.
   </Card>
-</Columns>
+  <Card title="Tổng Quan DFW Metro" icon="city" href="/03-market-intelligence/dfw-metro-overview">
+    So sánh Sherman vs DFW, affordability gap, lý do buyer relocate, sub-markets gần Sherman.
+  </Card>
+  <Card title="Theo Dõi Nhà Xây Mới" icon="hammer" href="/03-market-intelligence/new-construction-tracker">
+    Builders chính, giá new construction, incentives hiện tại, new vs resale comparison.
+  </Card>
+  <Card title="Nguồn Dữ Liệu & Phương Pháp" icon="database" href="/03-market-intelligence/data-sources-methodology">
+    Danh sách nguồn, tần suất cập nhật, lịch update đề xuất, phương pháp tổng hợp.
+  </Card>
+</CardGroup>
+
+## Cách Sử Dụng
+
+- **Tư vấn Buyer:** Dùng data Sherman + DFW comparison để giải thích affordability
+- **Tư vấn Seller:** Dùng price trends + inventory để set pricing expectations
+- **CMA:** Dùng methodology + comps data để định giá listing
+- **Content Marketing:** Dùng market stats cho social media posts (market updates)
+- **AI Agent:** Tất cả data có ai_context frontmatter — AI chatbot có thể trả lời câu hỏi market trực tiếp

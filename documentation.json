@@ -1,8 +1,12 @@
 {
   "name": "Phong To — Realtor Knowledge Base",
   "colors": {
-    "light": { "brand": "#1d4ed8" },
-    "dark": { "brand": "#60a5fa" }
+    "light": {
+      "brand": "#1d4ed8"
+    },
+    "dark": {
+      "brand": "#60a5fa"
+    }
   },
   "navigation": {
     "tabs": [
@@ -15,15 +19,51 @@
             "icon": "handshake",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "01-sales-crm/index", "icon": "home" },
-              { "title": "Hồ Sơ Khách Hàng", "path": "01-sales-crm/ho-so-khach-hang", "icon": "user" },
-              { "title": "Pipeline 7 Giai Đoạn", "path": "01-sales-crm/pipeline-giai-doan", "icon": "git-branch" },
-              { "title": "Scripts Tư Vấn", "path": "01-sales-crm/scripts-tu-van", "icon": "message-circle" },
-              { "title": "Xử Lý Phản Đối", "path": "01-sales-crm/xu-ly-phan-doi", "icon": "shield" },
-              { "title": "Chiến Lược Offer", "path": "01-sales-crm/chien-luoc-offer", "icon": "target" },
-              { "title": "Follow-up System", "path": "01-sales-crm/follow-up-system", "icon": "repeat" },
-              { "title": "Checklist Closing", "path": "01-sales-crm/checklist-closing", "icon": "check-square" },
-              { "title": "Referral Tracking", "path": "01-sales-crm/referral-tracking", "icon": "share-2" }
+              {
+                "title": "Overview",
+                "path": "01-sales-crm/index",
+                "icon": "home"
+              },
+              {
+                "title": "Hồ Sơ Khách Hàng",
+                "path": "01-sales-crm/ho-so-khach-hang",
+                "icon": "user"
+              },
+              {
+                "title": "Pipeline 7 Giai Đoạn",
+                "path": "01-sales-crm/pipeline-giai-doan",
+                "icon": "git-branch"
+              },
+              {
+                "title": "Scripts Tư Vấn",
+                "path": "01-sales-crm/scripts-tu-van",
+                "icon": "message-circle"
+              },
+              {
+                "title": "Xử Lý Phản Đối",
+                "path": "01-sales-crm/xu-ly-phan-doi",
+                "icon": "shield"
+              },
+              {
+                "title": "Chiến Lược Offer",
+                "path": "01-sales-crm/chien-luoc-offer",
+                "icon": "target"
+              },
+              {
+                "title": "Follow-up System",
+                "path": "01-sales-crm/follow-up-system",
+                "icon": "repeat"
+              },
+              {
+                "title": "Checklist Closing",
+                "path": "01-sales-crm/checklist-closing",
+                "icon": "check-square"
+              },
+              {
+                "title": "Referral Tracking",
+                "path": "01-sales-crm/referral-tracking",
+                "icon": "share-2"
+              }
             ]
           },
           {
@@ -31,14 +71,46 @@
             "icon": "megaphone",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "02-marketing-content/index", "icon": "home" },
-              { "title": "Brand Voice Guide", "path": "02-marketing-content/brand-voice-guide", "icon": "mic" },
-              { "title": "Social Media Hooks", "path": "02-marketing-content/social-media-hooks", "icon": "hash" },
-              { "title": "Video Scripts", "path": "02-marketing-content/video-scripts", "icon": "video" },
-              { "title": "Email Templates", "path": "02-marketing-content/email-templates", "icon": "mail" },
-              { "title": "Open House Promo", "path": "02-marketing-content/open-house-promo", "icon": "home" },
-              { "title": "Vietnamese Community", "path": "02-marketing-content/vietnamese-community-outreach", "icon": "users" },
-              { "title": "Content Calendar", "path": "02-marketing-content/content-calendar", "icon": "calendar" }
+              {
+                "title": "Overview",
+                "path": "02-marketing-content/index",
+                "icon": "home"
+              },
+              {
+                "title": "Brand Voice Guide",
+                "path": "02-marketing-content/brand-voice-guide",
+                "icon": "mic"
+              },
+              {
+                "title": "Social Media Hooks",
+                "path": "02-marketing-content/social-media-hooks",
+                "icon": "hash"
+              },
+              {
+                "title": "Video Scripts",
+                "path": "02-marketing-content/video-scripts",
+                "icon": "video"
+              },
+              {
+                "title": "Email Templates",
+                "path": "02-marketing-content/email-templates",
+                "icon": "mail"
+              },
+              {
+                "title": "Open House Promo",
+                "path": "02-marketing-content/open-house-promo",
+                "icon": "home"
+              },
+              {
+                "title": "Vietnamese Community",
+                "path": "02-marketing-content/vietnamese-community-outreach",
+                "icon": "users"
+              },
+              {
+                "title": "Content Calendar",
+                "path": "02-marketing-content/content-calendar",
+                "icon": "calendar"
+              }
             ]
           },
           {
@@ -46,13 +118,56 @@
             "icon": "trending-up",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "03-market-intelligence/index", "icon": "home" },
-              { "title": "Sherman TX Market Data", "path": "03-market-intelligence/sherman-tx-market-data", "icon": "map-pin" },
-              { "title": "Median Price Trends", "path": "03-market-intelligence/median-price-trends", "icon": "trending-up" },
-              { "title": "Inventory & DOM", "path": "03-market-intelligence/inventory-dom", "icon": "activity" },
-              { "title": "Neighborhood Profiles", "path": "03-market-intelligence/neighborhood-profiles", "icon": "map" },
-              { "title": "CMA & Comparable Sales", "path": "03-market-intelligence/cma-comparable-sales", "icon": "file-text" },
-              { "title": "Interest Rate Tracker", "path": "03-market-intelligence/interest-rate-tracker", "icon": "percent" }
+              {
+                "title": "Overview",
+                "path": "03-market-intelligence/index",
+                "icon": "home"
+              },
+              {
+                "title": "Sherman TX Market Data",
+                "path": "03-market-intelligence/sherman-tx-market-data",
+                "icon": "chart-bar"
+              },
+              {
+                "title": "Median Price Trends",
+                "path": "03-market-intelligence/median-price-trends",
+                "icon": "chart-line"
+              },
+              {
+                "title": "Inventory & DOM",
+                "path": "03-market-intelligence/inventory-dom",
+                "icon": "warehouse"
+              },
+              {
+                "title": "Interest Rate Tracker",
+                "path": "03-market-intelligence/interest-rate-tracker",
+                "icon": "percent"
+              },
+              {
+                "title": "Neighborhood Profiles",
+                "path": "03-market-intelligence/neighborhood-profiles",
+                "icon": "map-location-dot"
+              },
+              {
+                "title": "CMA & Comparable Sales",
+                "path": "03-market-intelligence/cma-comparable-sales",
+                "icon": "scale-balanced"
+              },
+              {
+                "title": "DFW Metro Overview",
+                "path": "03-market-intelligence/dfw-metro-overview",
+                "icon": "city"
+              },
+              {
+                "title": "New Construction Tracker",
+                "path": "03-market-intelligence/new-construction-tracker",
+                "icon": "hammer"
+              },
+              {
+                "title": "Data Sources & Methodology",
+                "path": "03-market-intelligence/data-sources-methodology",
+                "icon": "database"
+              }
             ]
           },
           {
@@ -60,14 +175,46 @@
             "icon": "file-signature",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "04-transaction-management/index", "icon": "home" },
-              { "title": "Active Deals Tracker", "path": "04-transaction-management/active-deals-tracker", "icon": "list" },
-              { "title": "Contract Checklist", "path": "04-transaction-management/contract-checklist", "icon": "check-square" },
-              { "title": "Inspection SOP", "path": "04-transaction-management/inspection-sop", "icon": "search" },
-              { "title": "Appraisal SOP", "path": "04-transaction-management/appraisal-sop", "icon": "dollar-sign" },
-              { "title": "Title & Escrow", "path": "04-transaction-management/title-escrow-notes", "icon": "shield" },
-              { "title": "Repair Negotiation", "path": "04-transaction-management/repair-negotiation-scripts", "icon": "tool" },
-              { "title": "Closing Day Checklist", "path": "04-transaction-management/closing-day-checklist", "icon": "key" }
+              {
+                "title": "Overview",
+                "path": "04-transaction-management/index",
+                "icon": "home"
+              },
+              {
+                "title": "Active Deals Tracker",
+                "path": "04-transaction-management/active-deals-tracker",
+                "icon": "list"
+              },
+              {
+                "title": "Contract Checklist",
+                "path": "04-transaction-management/contract-checklist",
+                "icon": "check-square"
+              },
+              {
+                "title": "Inspection SOP",
+                "path": "04-transaction-management/inspection-sop",
+                "icon": "search"
+              },
+              {
+                "title": "Appraisal SOP",
+                "path": "04-transaction-management/appraisal-sop",
+                "icon": "dollar-sign"
+              },
+              {
+                "title": "Title & Escrow",
+                "path": "04-transaction-management/title-escrow-notes",
+                "icon": "shield"
+              },
+              {
+                "title": "Repair Negotiation",
+                "path": "04-transaction-management/repair-negotiation-scripts",
+                "icon": "tool"
+              },
+              {
+                "title": "Closing Day Checklist",
+                "path": "04-transaction-management/closing-day-checklist",
+                "icon": "key"
+              }
             ]
           },
           {
@@ -75,13 +222,41 @@
             "icon": "dollar-sign",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "05-finance-accounting/index", "icon": "home" },
-              { "title": "Commission Tracker", "path": "05-finance-accounting/commission-tracker", "icon": "trending-up" },
-              { "title": "Business Expenses", "path": "05-finance-accounting/business-expenses", "icon": "credit-card" },
-              { "title": "Tax Deduction List", "path": "05-finance-accounting/tax-deduction-list", "icon": "file-minus" },
-              { "title": "Monthly P&L", "path": "05-finance-accounting/monthly-pnl", "icon": "bar-chart" },
-              { "title": "Goal vs Actual", "path": "05-finance-accounting/goal-vs-actual", "icon": "target" },
-              { "title": "Tool Subscriptions", "path": "05-finance-accounting/tool-subscriptions-budget", "icon": "package" }
+              {
+                "title": "Overview",
+                "path": "05-finance-accounting/index",
+                "icon": "home"
+              },
+              {
+                "title": "Commission Tracker",
+                "path": "05-finance-accounting/commission-tracker",
+                "icon": "trending-up"
+              },
+              {
+                "title": "Business Expenses",
+                "path": "05-finance-accounting/business-expenses",
+                "icon": "credit-card"
+              },
+              {
+                "title": "Tax Deduction List",
+                "path": "05-finance-accounting/tax-deduction-list",
+                "icon": "file-minus"
+              },
+              {
+                "title": "Monthly P&L",
+                "path": "05-finance-accounting/monthly-pnl",
+                "icon": "bar-chart"
+              },
+              {
+                "title": "Goal vs Actual",
+                "path": "05-finance-accounting/goal-vs-actual",
+                "icon": "target"
+              },
+              {
+                "title": "Tool Subscriptions",
+                "path": "05-finance-accounting/tool-subscriptions-budget",
+                "icon": "package"
+              }
             ]
           },
           {
@@ -89,13 +264,41 @@
             "icon": "scale",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "06-legal-compliance/index", "icon": "home" },
-              { "title": "TREC License Renewal", "path": "06-legal-compliance/trec-license-renewal", "icon": "award" },
-              { "title": "CE Hours Tracker", "path": "06-legal-compliance/ce-hours-tracker", "icon": "book-open" },
-              { "title": "Fair Housing Rules", "path": "06-legal-compliance/fair-housing-rules", "icon": "shield" },
-              { "title": "TREC Contract Forms", "path": "06-legal-compliance/trec-contract-forms-index", "icon": "file-text" },
-              { "title": "Texas Disclosure Laws", "path": "06-legal-compliance/texas-disclosure-laws", "icon": "alert-circle" },
-              { "title": "NAR Code of Ethics", "path": "06-legal-compliance/nar-code-of-ethics", "icon": "heart" }
+              {
+                "title": "Overview",
+                "path": "06-legal-compliance/index",
+                "icon": "home"
+              },
+              {
+                "title": "TREC License Renewal",
+                "path": "06-legal-compliance/trec-license-renewal",
+                "icon": "award"
+              },
+              {
+                "title": "CE Hours Tracker",
+                "path": "06-legal-compliance/ce-hours-tracker",
+                "icon": "book-open"
+              },
+              {
+                "title": "Fair Housing Rules",
+                "path": "06-legal-compliance/fair-housing-rules",
+                "icon": "shield"
+              },
+              {
+                "title": "TREC Contract Forms",
+                "path": "06-legal-compliance/trec-contract-forms-index",
+                "icon": "file-text"
+              },
+              {
+                "title": "Texas Disclosure Laws",
+                "path": "06-legal-compliance/texas-disclosure-laws",
+                "icon": "alert-circle"
+              },
+              {
+                "title": "NAR Code of Ethics",
+                "path": "06-legal-compliance/nar-code-of-ethics",
+                "icon": "heart"
+              }
             ]
           },
           {
@@ -103,13 +306,41 @@
             "icon": "message-circle",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "07-client-communication/index", "icon": "home" },
-              { "title": "Communication Scripts", "path": "07-client-communication/communication-scripts", "icon": "mic" },
-              { "title": "Email Templates", "path": "07-client-communication/email-templates", "icon": "mail" },
-              { "title": "Follow-Up System", "path": "07-client-communication/follow-up-system", "icon": "repeat" },
-              { "title": "Referral System", "path": "07-client-communication/referral-system", "icon": "users" },
-              { "title": "Client Onboarding", "path": "07-client-communication/client-onboarding-checklist", "icon": "check-square" },
-              { "title": "Objection Handling", "path": "07-client-communication/objection-handling", "icon": "shield" }
+              {
+                "title": "Overview",
+                "path": "07-client-communication/index",
+                "icon": "home"
+              },
+              {
+                "title": "Communication Scripts",
+                "path": "07-client-communication/communication-scripts",
+                "icon": "mic"
+              },
+              {
+                "title": "Email Templates",
+                "path": "07-client-communication/email-templates",
+                "icon": "mail"
+              },
+              {
+                "title": "Follow-Up System",
+                "path": "07-client-communication/follow-up-system",
+                "icon": "repeat"
+              },
+              {
+                "title": "Referral System",
+                "path": "07-client-communication/referral-system",
+                "icon": "users"
+              },
+              {
+                "title": "Client Onboarding",
+                "path": "07-client-communication/client-onboarding-checklist",
+                "icon": "check-square"
+              },
+              {
+                "title": "Objection Handling",
+                "path": "07-client-communication/objection-handling",
+                "icon": "shield"
+              }
             ]
           },
           {
@@ -117,14 +348,46 @@
             "icon": "home",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "08-listing-marketing/index", "icon": "home" },
-              { "title": "Listing Prep Checklist", "path": "08-listing-marketing/listing-prep-checklist", "icon": "check-square" },
-              { "title": "Photography & Staging", "path": "08-listing-marketing/photography-staging-sop", "icon": "camera" },
-              { "title": "MLS Listing SOP", "path": "08-listing-marketing/mls-listing-sop", "icon": "file-text" },
-              { "title": "Marketing Checklist", "path": "08-listing-marketing/marketing-checklist", "icon": "megaphone" },
-              { "title": "Open House SOP", "path": "08-listing-marketing/open-house-sop", "icon": "users" },
-              { "title": "Price Reduction Strategy", "path": "08-listing-marketing/price-reduction-strategy", "icon": "trending-down" },
-              { "title": "Listing Analytics", "path": "08-listing-marketing/listing-analytics", "icon": "bar-chart-2" }
+              {
+                "title": "Overview",
+                "path": "08-listing-marketing/index",
+                "icon": "home"
+              },
+              {
+                "title": "Listing Prep Checklist",
+                "path": "08-listing-marketing/listing-prep-checklist",
+                "icon": "check-square"
+              },
+              {
+                "title": "Photography & Staging",
+                "path": "08-listing-marketing/photography-staging-sop",
+                "icon": "camera"
+              },
+              {
+                "title": "MLS Listing SOP",
+                "path": "08-listing-marketing/mls-listing-sop",
+                "icon": "file-text"
+              },
+              {
+                "title": "Marketing Checklist",
+                "path": "08-listing-marketing/marketing-checklist",
+                "icon": "megaphone"
+              },
+              {
+                "title": "Open House SOP",
+                "path": "08-listing-marketing/open-house-sop",
+                "icon": "users"
+              },
+              {
+                "title": "Price Reduction Strategy",
+                "path": "08-listing-marketing/price-reduction-strategy",
+                "icon": "trending-down"
+              },
+              {
+                "title": "Listing Analytics",
+                "path": "08-listing-marketing/listing-analytics",
+                "icon": "bar-chart-2"
+              }
             ]
           },
           {
@@ -132,14 +395,46 @@
             "icon": "users",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "09-buyer-journey/index", "icon": "users" },
-              { "title": "Buyer Consultation SOP", "path": "09-buyer-journey/buyer-consultation-sop", "icon": "clipboard" },
-              { "title": "Home Search Strategy", "path": "09-buyer-journey/home-search-strategy", "icon": "search" },
-              { "title": "Showing Property SOP", "path": "09-buyer-journey/showing-property-sop", "icon": "key" },
-              { "title": "Offer Strategy", "path": "09-buyer-journey/offer-strategy", "icon": "file-text" },
-              { "title": "Due Diligence Checklist", "path": "09-buyer-journey/due-diligence-checklist", "icon": "check-square" },
-              { "title": "Buyer Financing Guide", "path": "09-buyer-journey/buyer-financing-guide", "icon": "dollar-sign" },
-              { "title": "Vietnamese Buyer Guide", "path": "09-buyer-journey/vietnamese-buyer-guide", "icon": "heart" }
+              {
+                "title": "Overview",
+                "path": "09-buyer-journey/index",
+                "icon": "users"
+              },
+              {
+                "title": "Buyer Consultation SOP",
+                "path": "09-buyer-journey/buyer-consultation-sop",
+                "icon": "clipboard"
+              },
+              {
+                "title": "Home Search Strategy",
+                "path": "09-buyer-journey/home-search-strategy",
+                "icon": "search"
+              },
+              {
+                "title": "Showing Property SOP",
+                "path": "09-buyer-journey/showing-property-sop",
+                "icon": "key"
+              },
+              {
+                "title": "Offer Strategy",
+                "path": "09-buyer-journey/offer-strategy",
+                "icon": "file-text"
+              },
+              {
+                "title": "Due Diligence Checklist",
+                "path": "09-buyer-journey/due-diligence-checklist",
+                "icon": "check-square"
+              },
+              {
+                "title": "Buyer Financing Guide",
+                "path": "09-buyer-journey/buyer-financing-guide",
+                "icon": "dollar-sign"
+              },
+              {
+                "title": "Vietnamese Buyer Guide",
+                "path": "09-buyer-journey/vietnamese-buyer-guide",
+                "icon": "heart"
+              }
             ]
           },
           {
@@ -147,11 +442,31 @@
             "icon": "star",
             "expandable": true,
             "pages": [
-              { "title": "Overview", "path": "10-quality-reviews/index", "icon": "star" },
-              { "title": "Client Testimonials", "path": "10-quality-reviews/client-testimonials", "icon": "message-square" },
-              { "title": "Post-Closing Survey SOP", "path": "10-quality-reviews/post-closing-survey-sop", "icon": "clipboard" },
-              { "title": "Google Review Requests", "path": "10-quality-reviews/google-review-requests", "icon": "thumbs-up" },
-              { "title": "Lessons Learned Log", "path": "10-quality-reviews/lessons-learned-log", "icon": "edit" }
+              {
+                "title": "Overview",
+                "path": "10-quality-reviews/index",
+                "icon": "star"
+              },
+              {
+                "title": "Client Testimonials",
+                "path": "10-quality-reviews/client-testimonials",
+                "icon": "message-square"
+              },
+              {
+                "title": "Post-Closing Survey SOP",
+                "path": "10-quality-reviews/post-closing-survey-sop",
+                "icon": "clipboard"
+              },
+              {
+                "title": "Google Review Requests",
+                "path": "10-quality-reviews/google-review-requests",
+                "icon": "thumbs-up"
+              },
+              {
+                "title": "Lessons Learned Log",
+                "path": "10-quality-reviews/lessons-learned-log",
+                "icon": "edit"
+              }
             ]
           }
         ]
@@ -164,21 +479,57 @@
             "group": "Start Here",
             "icon": "rocket",
             "pages": [
-              { "title": "Introduction", "path": "introduction", "icon": "home" },
-              { "title": "Quickstart", "path": "quickstart", "icon": "zap" },
-              { "title": "Components", "path": "components", "icon": "code" }
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap"
+              },
+              {
+                "title": "Components",
+                "path": "components",
+                "icon": "code"
+              }
             ]
           },
           {
             "group": "Components",
             "icon": "layers",
             "pages": [
-              { "title": "Images", "path": "components/images", "icon": "image" },
-              { "title": "Cards", "path": "components/cards", "icon": "square" },
-              { "title": "Code", "path": "components/code", "icon": "code" },
-              { "title": "Callouts", "path": "components/callouts", "icon": "message-square" },
-              { "title": "Steps", "path": "components/steps", "icon": "list-ordered" },
-              { "title": "Tabs", "path": "components/tabs", "icon": "columns" }
+              {
+                "title": "Images",
+                "path": "components/images",
+                "icon": "image"
+              },
+              {
+                "title": "Cards",
+                "path": "components/cards",
+                "icon": "square"
+              },
+              {
+                "title": "Code",
+                "path": "components/code",
+                "icon": "code"
+              },
+              {
+                "title": "Callouts",
+                "path": "components/callouts",
+                "icon": "message-square"
+              },
+              {
+                "title": "Steps",
+                "path": "components/steps",
+                "icon": "list-ordered"
+              },
+              {
+                "title": "Tabs",
+                "path": "components/tabs",
+                "icon": "columns"
+              }
             ]
           }
         ]
@@ -187,7 +538,11 @@
         "tab": "Changelog",
         "icon": "clock",
         "pages": [
-          { "title": "Changelog", "path": "changelog", "icon": "history" }
+          {
+            "title": "Changelog",
+            "path": "changelog",
+            "icon": "history"
+          }
         ]
       }
     ]

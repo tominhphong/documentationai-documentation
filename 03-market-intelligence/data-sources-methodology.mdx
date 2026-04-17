@@ -1,0 +1,113 @@
+---
+title: "Nguồn Dữ Liệu & Phương Pháp"
+description: "Danh sách nguồn dữ liệu, tần suất cập nhật, và phương pháp thu thập cho market intelligence"
+icon: "database"
+ai_context: "Data sources and methodology for Sherman TX market intelligence. Primary sources: HAR.com (monthly MLS data), Redfin (monthly market trends), Zillow (ZHVI/ZRI monthly), FRED (monthly with 1-2 month lag), Realtor.com (monthly), NTREIS MLS (real-time via agent login), Grayson County CAD (annual appraisals). Update schedule and how-to instructions for each source. Use when questions about data accuracy, freshness, or methodology arise."
+data_freshness: "Apr 2026"
+keywords_vi: ["nguồn dữ liệu", "phương pháp thu thập", "cập nhật data", "MLS data", "market data sources"]
+keywords_en: ["data sources", "methodology", "data collection", "MLS data", "market data update"]
+---
+
+# Nguồn Dữ Liệu & Phương Pháp
+
+Trang này liệt kê tất cả nguồn dữ liệu được sử dụng trong Market Intelligence, tần suất cập nhật, và hướng dẫn cách lấy data mới.
+
+## Tổng Quan Nguồn
+
+| Nguồn | Loại data | Tần suất cập nhật | Độ trễ | Miễn phí |
+|-------|----------|-------------------|--------|---------|
+| NTREIS MLS | Listings, sales, comps | Real-time | 0 ngày | Agent only |
+| HAR.com | Market stats, trends | Hàng tháng | 15-30 ngày | Có |
+| Redfin | Prices, DOM, trends | Hàng tháng | 15-30 ngày | Có |
+| Zillow | ZHVI, ZRI, forecasts | Hàng tháng | 30 ngày | Có |
+| FRED | Listing prices, inventory | Hàng tháng | 30-60 ngày | Có |
+| Realtor.com | Listings, prices, DOM | Hàng tháng | 15-30 ngày | Có |
+| Grayson County CAD | Tax values, ownership | Hàng năm | Varies | Có |
+| Census / ACS | Demographics, income | Hàng năm | 6-12 tháng | Có |
+| TRERC | Texas statewide stats | Hàng quý | 30-60 ngày | Có |
+| Stacker | Annual summaries | Hàng năm | 3-6 tháng | Có |
+
+## Chi Tiết Từng Nguồn
+
+### NTREIS MLS (Nguồn chính)
+- **URL:** ntreis.net (agent login required)
+- **Data:** Active/sold/pending listings, full property details, photos, history
+- **Dùng cho:** CMA, comps, listing research, market activity
+- **Cập nhật:** Real-time — listing mới xuất hiện trong vài giờ
+- **Truy cập:** Cần Texas real estate license + MLS membership
+
+### HAR.com
+- **URL:** har.com/marketdata
+- **Data:** Monthly market stats (closed sales, active listings, prices, DOM, rental)
+- **Dùng cho:** Sherman TX monthly snapshots, rental market data
+- **Cập nhật:** Hàng tháng, thường sẵn vào giữa tháng sau
+- **Cách lấy:** Market Data → MLS Area: Sherman → chọn tháng
+
+### Redfin
+- **URL:** redfin.com/city/18092/TX/Sherman/housing-market
+- **Data:** Median sale price, homes sold, DOM, sale-to-list, price drops
+- **Dùng cho:** YoY comparisons, market trend analysis
+- **Cập nhật:** Hàng tháng, data tháng trước sẵn đầu tháng sau
+- **Download:** Có CSV download cho historical data
+
+### Zillow
+- **URL:** zillow.com/home-values/19095/sherman-tx/
+- **Data:** ZHVI (Home Value Index), ZRI (Rent Index), forecasts
+- **Dùng cho:** Home value trends, rent trends, 1-year forecasts
+- **Cập nhật:** Hàng tháng
+- **Lưu ý:** ZHVI khác median sale price — đo "typical home value" bao gồm cả nhà không bán
+
+### FRED (Federal Reserve)
+- **URL:** fred.stlouisfed.org → search "Sherman-Denison"
+- **Data:** Median listing price, active listing count, new listing count, median DOM
+- **Dùng cho:** MSA-level trends, longer time series
+- **Cập nhật:** Hàng tháng, thường trễ 1-2 tháng
+- **Lưu ý:** Data bao gồm toàn Sherman-Denison MSA, không chỉ thành phố Sherman
+- **Series quan trọng:** MEDLISPRI (listing price), ACTLISCOU (active count), NEWLISCOU (new count)
+
+### Realtor.com
+- **URL:** realtor.com/realestateandhomes-search/Sherman_TX/overview
+- **Data:** Listings, prices, DOM, market trends
+- **Dùng cho:** Cross-reference với các nguồn khác
+- **Cập nhật:** Hàng tháng
+
+### Grayson County CAD
+- **URL:** graysonappraisal.org
+- **Data:** Property tax appraisals, ownership records, legal descriptions
+- **Dùng cho:** Tax value reference, ownership research, lot details
+- **Cập nhật:** Appraisal values cập nhật hàng năm (Jan)
+
+### TRERC (Texas Real Estate Research Center)
+- **URL:** recenter.tamu.edu
+- **Data:** Statewide and MSA-level housing stats
+- **Dùng cho:** Texas context, state vs local comparison
+- **Cập nhật:** Hàng quý
+
+## Lịch Cập Nhật Đề Xuất
+
+| Tuần trong tháng | Việc cần làm |
+|-----------------|-------------|
+| Tuần 1 | Check Redfin, Realtor.com cho data tháng trước |
+| Tuần 2 | Check HAR.com khi data mới release |
+| Tuần 3 | Check Zillow ZHVI/ZRI, FRED data |
+| Tuần 4 | Tổng hợp, update trang Market Data, review trends |
+| Hàng quý | Check TRERC quarterly report |
+| Hàng năm | Update Grayson County CAD values, Census data |
+
+## Phương Pháp Tổng Hợp
+
+### Nguyên tắc
+1. **Dùng nhiều nguồn:** Không dựa vào 1 nguồn duy nhất — cross-reference ít nhất 2-3 nguồn
+2. **Ưu tiên MLS:** NTREIS MLS là nguồn chính xác nhất cho giao dịch thực tế
+3. **Ghi nhận nguồn:** Luôn ghi rõ data đến từ đâu và ngày cập nhật
+4. **Range thay vì exact:** Khi nguồn khác nhau, dùng range (ví dụ: $290K-$296K) thay vì 1 con số
+5. **Cẩn thận so sánh:** Mỗi nguồn có methodology khác — Zillow ZHVI khác median sale price
+
+### Khi Nguồn Mâu Thuẫn
+- Median Sale (Redfin): $290,000 vs HAR.com: $296,552 → **Chênh lệch 2.3% — bình thường**
+- Nếu chênh trên 10%: Check lại methodology, sample size, và time period
+- Khi trình bày: Dùng range hoặc ghi rõ từng nguồn
+
+<Note>
+Market data có tính tham khảo. Cho mọi quyết định giao dịch cụ thể, luôn dùng CMA từ MLS data với comps gần đây nhất.
+</Note>
