@@ -9,6 +9,61 @@ Ghi lại mọi thay đổi, cải tiến, và bài học học được trong q
 
 ---
 
+<Update label="2026-04-21" description="Sprint 2 — Mortgage Calculator App + New Construction + Feng Shui" tags={["sprint-2", "app", "new-construction", "feng-shui", "vietnamese-buyers"]}>
+
+## 🎯 Sprint 2: App + Content (3 priorities Phong đặt)
+
+**Duration:** ~2 giờ parallel (5 Sonnet agents + Brain). **Result:** 8/8 tasks DONE.
+
+### 🚀 Priority 1: Mortgage Comparison Calculator App (NEW)
+
+**Live tool:** [mortgage-compare-app.vercel.app](https://mortgage-compare-qo315c42s-ipodwindcvs12-5841s-projects.vercel.app) — responsive mobile/desktop, Tiếng Việt + English, share URL, print PDF.
+
+**Stack:** Next.js 16 + React 19 + Tailwind v4 + shadcn/ui + Vercel deploy
+**Repo:** https://github.com/tominhphong/mortgage-compare-app
+
+**Features:**
+- So sánh tới 4 scenarios side-by-side (down % vs rate tradeoff)
+- Core math engine: 15 test cases verified (commit `96d46b5`)
+- URL state sync — share link với khách
+- localStorage persistence
+- Print-ready PDF report
+- VN/EN toggle với realtor voice
+
+**Integration page:** [Mortgage Calculator Tool](/09-buyer-journey/mortgage-calculator-tool) — use cases + workflow với khách.
+
+### 📍 Priority 2: Sherman TX Deep Dive — DEFERRED to Sprint 3
+
+Sprint 2 scope đã đủ nặng. Sherman subdivisions, schools, PID/MUD, commute analysis sẽ là Sprint 3 chuyên sâu.
+
+### 🏮 Priority 3: Feng Shui Property Selection (NEW — 542 lines)
+
+Trang toàn diện tại [Feng Shui Property Selection](/09-buyer-journey/feng-shui-property-selection):
+- 15 H2 sections: Bagua cơ bản, hướng nhà (8 directions + Kua number table), cửa chính, bếp, phòng ngủ, cầu thang, WC, water features, property red flags, address numerology, realtor checklist, remediation cures
+- DFW-specific: Texas summer heat + feng shui align (tránh Tây/Tây Bắc)
+- Vietnamese-American cultural context: bring ông bà, translate terms, balance với practical factors
+- Commit `8fbd8fb`
+
+### 🔵 Bonus: Blue Tape Walkthrough (NEW — 213 lines)
+
+Phát hiện gap khi anh Phong hỏi. Verify qua Perplexity → tạo [Blue Tape Walkthrough](/09-buyer-journey/blue-tape-walkthrough):
+- Timeline: Option Period → Inspection → **Blue Tape (1-3 tuần trước closing)** → Final Walkthrough → Closing
+- CHỈ dùng cho new construction (không resale)
+- Full checklist 10+ categories (exterior, kitchen, bathrooms, bedrooms, appliances, smart home)
+- Vietnamese cultural tips + translated terms (punch list = danh sách lỗi, caulk = ron bít)
+- Commit `1288bdd`
+
+### Validation
+- 103 files, 104 internal links, 0 broken
+- pre-commit + check-links PASS
+
+### Sprint 3 candidates
+- **Sherman TX deep dive** (subdivisions, schools, PID/MUD, commute, economic drivers GlobiTech)
+- **Mortgage app v2:** Cloudflare D1 backend (save scenarios cross-device) + biweekly/extra-principal simulators + branded PDF export
+- **last_reviewed + keywords frontmatter** backfill all 103 files (RKB còn thiếu — wiki đã có pattern Sprint 3-4)
+- **Vietnamese buyer journey end-to-end playbook** (chain toàn bộ Sprint 1-2 content)
+</Update>
+
 <Update label="2026-04-21" description="Sprint 1 Deal Intelligence — Negotiation + Calculators + Mortgage Programs" tags={["sprint-1", "negotiation", "mortgage", "calculators", "vietnamese-buyers"]}>
 
 ## 🎯 Sprint 1: Deal Intelligence (4 pain points Realtor Phong)

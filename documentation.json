@@ -451,6 +451,21 @@
                 "icon": "trending-down"
               },
               {
+                "title": "Mortgage Calculator Tool",
+                "path": "09-buyer-journey/mortgage-calculator-tool",
+                "icon": "calculator"
+              },
+              {
+                "title": "Blue Tape Walkthrough",
+                "path": "09-buyer-journey/blue-tape-walkthrough",
+                "icon": "clipboard-check"
+              },
+              {
+                "title": "Feng Shui Property Selection",
+                "path": "09-buyer-journey/feng-shui-property-selection",
+                "icon": "compass"
+              },
+              {
                 "title": "Vietnamese Buyer Guide",
                 "path": "09-buyer-journey/vietnamese-buyer-guide",
                 "icon": "heart"

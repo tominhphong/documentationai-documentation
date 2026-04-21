@@ -1,0 +1,97 @@
+---
+title: "Mortgage Calculator Tool"
+description: "Web app so sánh nhiều phương án mua nhà side-by-side: down payment % vs interest rate. Responsive mobile/desktop, Vietnamese + English, share qua URL, print PDF."
+---
+
+<Callout kind="info">
+Web app này là **tool riêng của Phong** để anh dùng với khách ngay tại showing hoặc qua Zoom. Truy cập bất cứ lúc nào trên iPhone, iPad, laptop.
+</Callout>
+
+## Truy cập tool
+
+**Live URL:** [mortgage-compare-app.vercel.app](https://mortgage-compare-qo315c42s-ipodwindcvs12-5841s-projects.vercel.app)
+
+**Chia sẻ với khách:** copy URL → send qua text/Zalo/email. Khách mở link sẽ xem SAME scenarios vì state được encode trong URL.
+
+## Tính năng chính
+
+<Steps>
+  <Step title="Input 1 scenario">
+    Home price, down payment (dùng $ hoặc %), rate, term (15/20/30 years). Advanced: property tax %, insurance/năm, PMI %, HOA/tháng.
+  </Step>
+  <Step title="So sánh tới 4 scenarios">
+    Add/remove scenarios cạnh nhau. Ví dụ: Scenario A = 10% down @ 7%, Scenario B = 20% down @ 6.5% → xem ngay ai lợi hơn.
+  </Step>
+  <Step title="Decision summary tự động">
+    Tool tự highlight: lowest monthly payment, lowest total interest, smallest down. Plus break-even month khi nào scenario rẻ catch up scenario đắt.
+  </Step>
+  <Step title="Share & Print">
+    Nút "Share" copy link vào clipboard. Nút "Print" in ra PDF-ready report đem cho khách.
+  </Step>
+  <Step title="Tiếng Việt hoặc English">
+    Toggle 🇻🇳/🇺🇸 đầu trang. Default: Tiếng Việt (cho khách Vietnamese-American).
+  </Step>
+</Steps>
+
+## Use cases cụ thể
+
+### Use case 1: Rate buydown vs price reduction
+
+Khách đang chọn giữa:
+- **Scenario A:** $450K @ 6.5% với $15K rate buydown (builder pay)
+- **Scenario B:** $435K @ 7% (builder giảm giá thay buydown)
+
+→ Mở tool, input 2 scenarios, tool tự tính lifetime cost + break-even. Quyết định trong 30 giây.
+
+### Use case 2: Down payment tradeoff
+
+Khách có $80K cash, mua nhà $400K. Chọn:
+- **Scenario A:** Put down $40K (10%), giữ $40K emergency fund, rate 7%
+- **Scenario B:** Put down $80K (20%), cạn cash, no PMI, rate 7%
+
+→ Tool show monthly payment Δ, tổng interest lifetime Δ, LTV. Khách decide dựa trên risk tolerance.
+
+### Use case 3: 15 vs 30 year term
+
+- **Scenario A:** 30 years, $2,400/month, total interest $465K
+- **Scenario B:** 15 years, $3,800/month, total interest $180K
+
+→ Cash flow vs wealth-building tradeoff. Plug vào [Mortgage Payment Strategy](/09-buyer-journey/mortgage-payment-strategy) recast option.
+
+## Workflow with khách
+
+<Steps>
+  <Step title="Trước showing (at home)">
+    Input 2-3 scenarios based on khách's budget. Share link qua text để khách review trước.
+  </Step>
+  <Step title="At showing / tư vấn">
+    Mở tool trên iPad. Khách xem live calculation, ask "what if down payment $X?" → adjust slider, số đổi real-time.
+  </Step>
+  <Step title="Sau showing">
+    Print PDF report với 3-4 scenarios đã discuss, email khách để họ share với partner/family.
+  </Step>
+  <Step title="Decision day">
+    Mở link lại (saved trong Zalo/iMessage), confirm scenario cuối cùng → submit offer với confidence.
+  </Step>
+</Steps>
+
+## Related
+
+- [Deal Comparison Calculator](/09-buyer-journey/deal-comparison-calculator) — framework Net Effective Price, manual math formulas
+- [Builder Promo Analysis](/09-buyer-journey/builder-promo-analysis) — decode builder incentives cần plug vào tool
+- [Mortgage Payment Strategy](/09-buyer-journey/mortgage-payment-strategy) — post-purchase (biweekly, recast)
+- [Buyer Financing Guide](/09-buyer-journey/buyer-financing-guide) — Texas assistance programs (TSAHC, TDHCA)
+
+## Roadmap (upgrade tương lai)
+
+- **Sprint 3:** Save scenarios cross-device qua Cloudflare D1 (khách login, library scenarios cá nhân)
+- **Sprint 3:** Extra principal simulator (what if pay $200/month extra?)
+- **Sprint 3:** Biweekly acceleration compare
+- **Sprint 4:** Embed builder promo value calculator (2-1 buydown NPV, design credit fair value)
+- **Sprint 4:** PDF export với custom branding (eXp Realty logo + Phong contact)
+
+## Feedback
+
+Tool còn đang phát triển. Anh Phong welcome feedback từ khách + đồng nghiệp:
+- Tính năng thiếu → suggest trong Zalo group
+- Bug → report qua GitHub: https://github.com/tominhphong/mortgage-compare-app/issues
