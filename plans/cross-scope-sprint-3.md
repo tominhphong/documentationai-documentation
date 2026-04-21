@@ -2,11 +2,14 @@
 
 ## Pending
 
-### [2026-04-21 HH:MM] [agent-sherman → brain] Add 2 pages to nav
-Patch: documentation.json add 2 entries group "Market Intelligence":
-- 03-market-intelligence/sherman-subdivisions-profile
-- 03-market-intelligence/sherman-school-districts
-Status: pending
+_(empty — all applied, Sprint 3 RKB closed)_
 
 ## Applied
-_(empty)_
+
+### [2026-04-21 18:20] [agent-sherman → brain] Add sherman-subdivisions + sherman-school-districts nav
+Patch: documentation.json add 2 entries group "Market Intelligence"
+Status: **applied**
+
+### [2026-04-21 18:25] [agent-dfw → brain] Add dfw-submarket + pid-mud + commute nav
+Patch: documentation.json add 3 entries group "Market Intelligence"
+Status: **applied**
