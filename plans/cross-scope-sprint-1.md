@@ -6,7 +6,9 @@
 
 ## Pending
 
-_(empty — waiting on workers)_
+### [2026-04-21 09:00] [agent-1 → brain] Add post-deposit-negotiation to nav
+Patch: documentation.json add entry cho `04-transaction-management/post-deposit-negotiation` vào group phù hợp
+Status: pending
 
 ## Applied
 
