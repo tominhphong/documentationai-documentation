@@ -1,0 +1,47 @@
+name: MDX Validate
+
+on:
+  pull_request:
+    paths:
+      - '**/*.mdx'
+      - 'documentation.json'
+      - 'scripts/*.sh'
+      - '.github/workflows/mdx-validate.yml'
+  push:
+    branches:
+      - main
+
+jobs:
+  pre-commit-check:
+    name: Pre-commit (MDX syntax, frontmatter)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pre-commit-check.sh
+        run: bash scripts/pre-commit-check.sh .
+
+  check-links:
+    name: Internal link integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run check-links.sh
+        run: bash scripts/check-links.sh .
+
+  check-frontmatter:
+    name: Frontmatter validation (title, description, last_reviewed)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run check-frontmatter.sh
+        run: bash scripts/check-frontmatter.sh .
+
+  check-stale:
+    name: Stale content detection
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run check-stale.sh
+        run: bash scripts/check-stale.sh --threshold 30 .
