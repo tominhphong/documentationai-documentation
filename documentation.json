@@ -211,6 +211,11 @@
                 "icon": "tool"
               },
               {
+                "title": "Post-Deposit Negotiation",
+                "path": "04-transaction-management/post-deposit-negotiation",
+                "icon": "handshake"
+              },
+              {
                 "title": "Closing Day Checklist",
                 "path": "04-transaction-management/closing-day-checklist",
                 "icon": "key"
@@ -429,6 +434,21 @@
                 "title": "Buyer Financing Guide",
                 "path": "09-buyer-journey/buyer-financing-guide",
                 "icon": "dollar-sign"
+              },
+              {
+                "title": "Deal Comparison Calculator",
+                "path": "09-buyer-journey/deal-comparison-calculator",
+                "icon": "calculator"
+              },
+              {
+                "title": "Builder Promo Analysis",
+                "path": "09-buyer-journey/builder-promo-analysis",
+                "icon": "percent"
+              },
+              {
+                "title": "Mortgage Payment Strategy",
+                "path": "09-buyer-journey/mortgage-payment-strategy",
+                "icon": "trending-down"
               },
               {
                 "title": "Vietnamese Buyer Guide",

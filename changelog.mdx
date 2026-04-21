@@ -9,6 +9,51 @@ Ghi lại mọi thay đổi, cải tiến, và bài học học được trong q
 
 ---
 
+<Update label="2026-04-21" description="Sprint 1 Deal Intelligence — Negotiation + Calculators + Mortgage Programs" tags={["sprint-1", "negotiation", "mortgage", "calculators", "vietnamese-buyers"]}>
+
+## 🎯 Sprint 1: Deal Intelligence (4 pain points Realtor Phong)
+
+**Duration:** ~1.5 giờ parallel (3 Sonnet agents + Brain). **Result:** 8/8 tasks DONE, +2617 lines content.
+
+### Focus Phong's 4 pain points
+
+1. **Quy trình đàm phán PRE vs POST deposit**
+2. **Calculator so sánh deal (rate/promo/bonus với builder/seller)**
+3. **Chương trình hỗ trợ mortgage cho Vietnamese buyers**
+4. **Chiến lược thanh toán mortgage hàng tháng sau mua**
+
+### Deliverables — 4 new pages + 2 major expansions
+
+**Negotiation (Agent 1):**
+- [Chiến Lược Offer — Pre-Deposit Negotiation](/01-sales-crm/chien-luoc-offer) — expand 181 → **509 lines**. BATNA/ZOPA, leverage points, competitive offer tactics, Chris Voss tactical empathy cho Vietnamese buyers, Builder vs Resale comparison.
+- [Post-Deposit Negotiation](/04-transaction-management/post-deposit-negotiation) — **367 lines**, NEW. Option period TREC 40-10, inspection 3 paths (credit/seller-fix/price-reduction), appraisal gap clause, repair decision matrix, Vietnamese scripts.
+
+**Deal Calculators (Agent 2):**
+- [Deal Comparison Calculator](/09-buyer-journey/deal-comparison-calculator) — **273 lines**, NEW. Net Effective Price framework, 4 incentive types (permanent buydown, 2-1 temp buydown, closing credit, price reduction), real DFW $450K example with full math.
+- [Builder Promo Analysis](/09-buyer-journey/builder-promo-analysis) — **277 lines**, NEW. DFW Big 5 builders profile (Pulte, Lennar, DR Horton, KB, Beazer), 5 incentive types decoded, timing strategy (end of quarter/year), negotiation scripts.
+
+**Mortgage (Agent 3):**
+- [Buyer Financing Guide](/09-buyer-journey/buyer-financing-guide) — expand 327 → **704 lines**. Thêm TSAHC Home Sweet Texas, TDHCA My First Texas Home, MCC federal tax credit, FHA/VA/USDA/Conv97, builder-backed assistance, stacking strategy với $350K worked example.
+- [Mortgage Payment Strategy](/09-buyer-journey/mortgage-payment-strategy) — **487 lines**, NEW. Biweekly acceleration, extra principal, recast vs refinance, PMI removal (conv + FHA MIP workaround), property tax protest, escrow optimization, 3 payoff scenarios (aggressive/invest/hybrid).
+
+### Infrastructure bootstrap
+
+Ported từ documentationai-wiki (5 sprints experience):
+- 4 validation scripts (pre-commit, check-links, check-frontmatter, check-stale)
+- GitHub Actions CI workflow (4 parallel jobs)
+- Multi-agent worktree pattern (sprint-1-negotiation, -calculators, -mortgage)
+- `plans/task-board-sprint-1.md` + `plans/cross-scope-sprint-1.md`
+
+### Validation
+pre-commit PASS · check-links 99 files / 92 links / 0 broken · content scope untouched outside designated pages
+
+### Next Sprint candidates
+- Backfill `last_reviewed` + `keywords` frontmatter on 99 files (currently missing)
+- Vietnamese buyer journey end-to-end playbook (chain đủ các steps)
+- Calculator SVG/embed tools (Google Sheets integration)
+- Sherman TX / Grayson County-specific programs deep dive
+</Update>
+
 <Update label="2026-04-20" description="Cập nhật toàn bộ KB — SB 1968, dữ liệu thị trường 2026, IRS 2026, data_freshness tags" tags={["compliance", "market-data", "legal", "finance"]}>
 
 ## 🔄 Full Knowledge Base Update — Verified 04/2026
