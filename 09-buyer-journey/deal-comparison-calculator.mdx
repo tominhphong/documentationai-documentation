@@ -1,0 +1,273 @@
+---
+title: "Deal Comparison Calculator"
+description: "Framework tính toán so sánh deal: rate buydown vs cash incentive vs closing cost credit vs price discount. Formula + real DFW examples cho Vietnamese buyers."
+data_freshness: "2026-04 (verified 04/21)"
+keywords_vi: ["so sánh deal", "rate buydown", "closing cost credit", "price reduction", "net effective price", "builder incentive"]
+keywords_en: ["deal comparison", "rate buydown calculator", "closing cost credit", "net effective price", "builder incentives DFW"]
+---
+
+# Deal Comparison Calculator
+
+## Tại Sao Cần Calculator Này?
+
+Builder và seller thường present nhiều options khác nhau cùng lúc — "$10K closing cost credit," "2-1 buydown," "$15K price reduction" — và khách Vietnam thường chọn theo cảm tính thay vì tính toán thực tế. Mỗi loại incentive có value thực sự khác nhau phụ thuộc vào hoàn cảnh của khách. Realtor giỏi phải convert tất cả các loại incentive về cùng một thước đo — **effective dollar value** hoặc **total cost of ownership** — để so sánh fair và giúp khách ra quyết định đúng.
+
+---
+
+## Core Concept — Net Effective Price (NEP)
+
+**Công thức cơ bản:**
+
+```
+NEP = Contract Price − Sum of all incentives (at present value)
+```
+
+Nghe có vẻ đơn giản, nhưng có 3 điểm quan trọng:
+
+- **Không phải mọi incentive = $1 giảm giá.** Closing cost credit = $1:$1 ngay lập tức. Rate buydown chỉ có giá trị nếu giữ loan đủ lâu (break-even có thể 5+ năm). Nếu refinance sớm, rate buydown trở thành waste.
+- **Price reduction = $1:$1 NHƯNG có thêm lợi ích dài hạn.** Giảm loan amount → giảm P&I monthly payment suốt 30 năm, giảm DTI ratio, giảm property tax basis, giảm insurance cost.
+- **Timing matters.** Cash in hand today (closing credit) worth more than equivalent cash spread over 5 năm (buydown savings) do time value of money.
+
+<Callout type="info">
+**Khi nào dùng present value?** Nếu khách plan refinance trong 3-5 năm, luôn discount future savings về present value. Discount rate đơn giản: dùng 5% (conservative bond-equivalent). Nếu khách plan hold 30 năm, dùng face value.
+</Callout>
+
+---
+
+## 4 Loại Incentive Phổ Biến — Deep Dive
+
+### Loại 1: Permanent Rate Buydown
+
+Builder hoặc seller trả "points" (upfront fee) cho lender để giảm interest rate vĩnh viễn suốt đời loan.
+
+**Ví dụ cụ thể:**
+- Loan: $400,000, 30-year fixed
+- Market rate: 7.00%
+- Builder trả 2 points = $8,000 để giảm rate xuống 6.50%
+- Monthly P&I at 7.00%: $2,661
+- Monthly P&I at 6.50%: $2,528
+- **Monthly saving: $133/month**
+
+**Break-even analysis:**
+```
+Break-even = Upfront cost ÷ Monthly saving
+           = $8,000 ÷ $133
+           = 60 months = 5 years
+```
+
+Nếu khách giữ loan hơn 5 năm → permanent buydown có lợi. Refinance trong vòng 5 năm → mất tiền. Với market hiện tại (rates elevated, nhiều người expect refinance khi rates drop), break-even 5 năm là rủi ro cao.
+
+**Present value của buydown (hold 5 năm, discount rate 5%):**
+
+Savings $133/month × 60 tháng, discounted at 5% annually = khoảng **$6,900**. Thấp hơn $8,000 đã trả. Chỉ win nếu hold hơn 5 năm.
+
+<Callout type="warning">
+**Permanent buydown thường lợi cho builder hơn khách.** Builder trả $8K để lock khách vào preferred lender, tránh khách shop rate bên ngoài. Nếu khách refinance trong 3 năm khi rates drop, toàn bộ $8K buydown bị mất.
+</Callout>
+
+---
+
+### Loại 2: 2-1 Temporary Buydown
+
+Rate được giảm tạm thời trong 2 năm đầu, sau đó về market rate. Builder/seller trả lump sum vào escrow để bù difference.
+
+**Cấu trúc:**
+- Year 1: Rate − 2% (ví dụ 5.00% nếu market rate 7.00%)
+- Year 2: Rate − 1% (6.00%)
+- Year 3+: Market rate (7.00%)
+
+**Ví dụ cụ thể ($400K loan, 7% market rate):**
+
+| Năm | Rate áp dụng | Monthly P&I | Monthly saving |
+|-----|--------------|-------------|----------------|
+| Year 1 | 5.00% | $2,147 | $514/month |
+| Year 2 | 6.00% | $2,398 | $263/month |
+| Year 3+ | 7.00% | $2,661 | $0 |
+
+- Total cash saved years 1-2: ($514 × 12) + ($263 × 12) = $6,168 + $3,156 = **$9,324**
+- Cost to fund buydown: khoảng $9,324 (builder escrow)
+- **Net value = $9,324 (full face value, no discount needed vì realized trong 2 năm)**
+
+**Gotcha quan trọng:** Nếu rates drop đủ mạnh trong year 1-2, khách sẽ refinance ra khỏi buydown → phần remaining buydown escrow bị forfeit (goes back to lender). Khách không được refund.
+
+**Best for:** Khách Vietnamese mới start business, cần cash flow tốt cho 1-2 năm đầu. Parents cover down payment nhưng monthly tight. Cần "runway" để stabilize income.
+
+---
+
+### Loại 3: Closing Cost Credit
+
+Seller hoặc builder trả một khoản tiền tại closing để cover phần hoặc toàn bộ closing costs của buyer.
+
+**Math đơn giản nhất:**
+```
+$1 closing cost credit = $1 cash value (immediate)
+```
+
+Closing costs thường là 2-3% of loan amount. Với $400K loan:
+- Closing costs ước tính: $8,000–$12,000
+- Builder offer $10K credit → khách giữ lại $10K cash trong túi
+
+**Best for:** Khách cash-constrained tại closing. Đã có income ổn nhưng cần maximize cash on hand để move in, furniture, emergency fund, hoặc business investment.
+
+<Callout type="info">
+**Lưu ý về preferred lender requirement:** Hầu hết builder credit yêu cầu dùng preferred lender. Nếu lender đó charge rate cao hơn market 0.25%, với $400K loan = $67/month extra = $800/year. Nếu giữ loan 5 năm, $4,000 lost vs $10,000 credit — vẫn net positive. Nhưng nếu rate premium lớn hơn (0.5%), cần tính kỹ hơn.
+</Callout>
+
+---
+
+### Loại 4: Price Reduction
+
+Seller đồng ý giảm list price. Đây là loại incentive có nhiều hidden benefits nhất mà khách hay underestimate.
+
+**Ví dụ: $10K price reduction trên $400K home → $390K:**
+- Loan amount giảm $10K (assuming 20% down, loan $320K → $312K)
+- Monthly P&I saving at 7%: $320K vs $312K = **$53/month**
+- Raw lifetime savings: $53 × 360 = $19,080
+- Present value (5 năm, 5% discount): **$2,819/5yr** | **$11,400 lifetime present value**
+
+**Hidden benefits của price reduction:**
+1. **Thấp hơn một bước trong loan amount** — có thể tránh jumbo threshold
+2. **Lower DTI** — giúp với loan approval nếu debt-to-income tight
+3. **Lower property tax basis** — Texas ad valorem tax dựa trên appraised value, lower purchase price = lower basis year 1
+4. **Lower homeowner's insurance** — insured value thấp hơn
+5. **Comps impact** — nếu khách resell sau 3-5 năm, lower purchase price = lower cost basis for capital gains purpose (less relevant do primary home exclusion)
+
+---
+
+## Bảng So Sánh Tổng Hợp
+
+| Incentive | Face Value | 5-Year Present Value | Best For | Rủi ro chính |
+|-----------|------------|---------------------|----------|--------------|
+| $10K Closing Cost Credit | $10,000 | $10,000 | Cash-tight buyer | Rate premium nếu dùng preferred lender |
+| 2-1 Buydown (2yr) | $9,324 | $9,324 | Cash flow years 1-2 | Refinance sớm = forfeit remaining escrow |
+| 2pt Perm Buydown ($8K) | $8,000 | $6,900 (5yr hold) | Long-term owner, no refinance plan | Break-even 5yr, waste nếu refi |
+| $10K Price Reduction | $10,000 | $11,400+ (lifetime NPV) | DTI optimization, long-term value | None major |
+
+**Winner cho phần lớn Vietnamese buyers (theo thứ tự):**
+
+1. **Price reduction** — best lifetime value + multiple hidden benefits
+2. **Closing cost credit** — immediate cash, no strings
+3. **2-1 buydown** — useful nếu cash flow tight năm đầu
+4. **Permanent buydown** — chỉ nếu khách CHẮC CHẮN giữ loan 7+ năm
+
+<Callout type="warning">
+**Exception quan trọng:** Nếu khách mua builder home và đang compare với resale, closing credit thường win vì: (1) builder không hạ price (ảnh hưởng comps), (2) credit là "real money" negotiation. Nhưng với resale, luôn push price reduction first.
+</Callout>
+
+---
+
+## Real DFW Example — Full Calculation
+
+**Property:** Pulte home, Frisco TX 75036, $450,000 list price
+
+**Option A: Full price + incentive package**
+- Contract price: $450,000
+- Builder offer: $15K closing cost credit + 2-1 temporary buydown funded
+- Rate via Pulte Mortgage: 5.99% advertised (2-1 buydown: Year 1 = 3.99%, Year 2 = 4.99%)
+
+**Option B: Negotiated price reduction**
+- Contract price: $435,000 (−$15K)
+- No closing cost credit, no buydown
+- Rate via outside lender: 6.99% market rate
+
+---
+
+### Option A Payment Schedule (20% down = $90K down, loan $360K):
+
+| Năm | Rate | Monthly P&I | Tax + Insurance est. | Total Monthly |
+|-----|------|-------------|----------------------|---------------|
+| Year 1 | 3.99% | $1,718 | $850 | $2,568 |
+| Year 2 | 4.99% | $1,933 | $850 | $2,783 |
+| Year 3+ | 5.99% | $2,159 | $850 | $3,009 |
+
+- Option A Year 1-2 cash flow advantage: year 1 saves $441/month vs Option B
+- Need $90K down payment. Receive back $15K credit at closing → effective out of pocket $75K + closing costs covered
+
+### Option B Payment Schedule (20% down = $87K down, loan $348K):
+
+| Year | Rate | Monthly P&I | Tax + Insurance est. | Total Monthly |
+|------|------|-------------|----------------------|---------------|
+| Year 1+ | 6.99% | $2,315 | $822 | $3,137 |
+
+- Stable payment throughout
+- Down payment $3K less ($87K vs $90K)
+- Tax basis lower (HCAD appraisal typically follows purchase price in year 1)
+
+---
+
+### Side-by-Side Decision Analysis
+
+| Metric | Option A | Option B | Better |
+|--------|----------|----------|--------|
+| Year 1 monthly payment | $2,568 | $3,137 | **A** |
+| Year 3+ monthly payment | $3,009 | $3,137 | **A** (modest) |
+| Total interest (30yr, no refi) | $427,800 | $383,400 | **B** |
+| Cash needed at closing | ~$87K after credit | ~$90K | **A** |
+| Monthly if refinance to 6% year 3 | $2,159 | $2,088 | **B** (similar) |
+| Property tax year 1 basis | $450K | $435K | **B** |
+| Flexibility with lender | Low (Pulte preferred) | High | **B** |
+
+**Decision framework:**
+
+- Khách **plan refinance trong 2-3 năm** khi rates drop → **Option A** wins. Cash flow year 1-2 tốt hơn $500+/month, và năm 3+ refinance ra buydown.
+- Khách **plan hold 10+ năm without refinance** → **Option B** wins. Total interest thấp hơn $44K over 30 năm.
+- Khách **đang strain cash at closing** → **Option A** wins. $15K credit = real relief.
+- Khách **cần DTI headroom** → **Option B** wins. Lower loan amount = lower payment = better DTI.
+
+---
+
+## Template Tham Khảo — Google Sheets Structure
+
+Nếu muốn tự build calculator, đây là các inputs và outputs cần thiết:
+
+**Inputs:**
+- Contract price
+- Down payment %
+- Interest rate (base / with buydown)
+- Loan term (30yr default)
+- Incentive type và amount
+- Estimated hold period (years)
+- Discount rate for present value (default 5%)
+
+**Outputs:**
+- Monthly P&I (each scenario)
+- Total interest paid (each scenario)
+- Net Effective Price
+- Break-even months
+- 5-year present value of incentive
+- Lifetime present value
+
+<Callout type="note">
+Phong sẽ build Google Sheets template riêng cho buyer consultation. Inputs: 5 fields. Output: side-by-side comparison tự động. Link sẽ được cập nhật trong trang này khi có.
+</Callout>
+
+---
+
+## Red Flags — Deal Quá Tốt Cần Cẩn Thận
+
+Vietnamese buyers đôi khi bị attract bởi "deal quá tốt" mà không check underlying price. Một số pattern nguy hiểm:
+
+- **"$40K incentive stack!"** nhưng list price cao hơn comps $50K → incentive thực ra là "trả lại" tiền đã inflate
+- **"No closing costs + no down payment"** (DPA programs) + price trên market → builder đang monetize qua inflated price
+- **Builder rebate phức tạp** — nhiều strings attached, phụ thuộc dùng preferred lender, preferred title, preferred contractor
+- **Gift of equity** trong gia đình non-arm's-length — underwriter sẽ scrutinize kỹ, có thể appraisal issue
+- **Design center credit "use or lose"** với deadline ngắn — ép khách upgrade những thứ không cần, inflating true cost
+
+<Callout type="warning">
+**Script cho Vietnamese buyers:** "Nếu builder offer stack lớn hơn 5% of purchase price, anh chị cần check comps trong subdivision trước khi excited. Hãy để em pull sold data 90 ngày gần nhất cùng subdivision để verify giá đang fair."
+</Callout>
+
+---
+
+## Cheat Sheet — Quyết Định Nhanh
+
+| Tình huống khách | Recommend incentive |
+|-----------------|---------------------|
+| Cash tight at closing | Closing cost credit |
+| Tight monthly budget year 1-2 | 2-1 buydown |
+| Plan to hold 7+ năm, stable | Permanent buydown (nếu break-even fits) |
+| Maximize long-term equity | Price reduction |
+| DTI đang borderline | Price reduction (giảm loan = giảm DTI) |
+| Plan refinance within 3 năm | Closing cost credit hoặc 2-1 buydown |
+| First-time buyer, nervous về costs | Closing cost credit |
+| Investor mindset (IRR thinking) | Price reduction |
