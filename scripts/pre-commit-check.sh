@@ -10,12 +10,15 @@ ERRORS=0
 
 echo "=== Pre-commit check for: $TARGET ==="
 
+# NOTE: Update [X/N] counters below if adding new gotchas.
+
 # Strip fenced code blocks AND inline code spans before pattern-matching.
 # Docs about bad patterns (like mdx-gotchas.mdx) intentionally contain example
 # bad strings inside code fences/spans — those should not be flagged.
 strip_code_content() {
+  # Match ``` even when indented (inside numbered lists, blockquotes, etc.)
   awk 'BEGIN{in_block=0}
-    /^```/{in_block=!in_block; next}
+    /^[[:space:]]*```/{in_block=!in_block; next}
     !in_block{gsub(/`[^`]*`/, "INLINE_CODE"); print}' "$1"
 }
 
@@ -87,9 +90,31 @@ else
   echo "PASS: All MDX files have title + description."
 fi
 
-# Gotcha 4 — Vietnamese ASCII (heuristic: warning only, does not fail build)
+# Gotcha 4 — HTML comments inside JSX (MDX v3 parse error)
+# Sprint 7 lesson: SVG <!-- --> comments cause "Unexpected character !" on deploy.
+# Use JSX comment syntax {/* */} instead.
 echo ""
-echo "[4/4] Quick heuristic for ASCII-only Vietnamese (low-confidence)..."
+echo "[4/5] Checking for HTML comments <!-- --> in MDX..."
+HITS=""
+for f in "${MDX_FILES[@]}"; do
+  MATCH=$(strip_code_content "$f" | grep -nE "<!--" || true)
+  if [ -n "$MATCH" ]; then
+    while IFS= read -r line; do
+      HITS="${HITS}${f}:${line}"$'\n'
+    done <<< "$MATCH"
+  fi
+done
+if [ -n "$HITS" ]; then
+  echo "FAIL: Found HTML comments — replace <!-- X --> with {/* X */} for MDX v3:"
+  echo "$HITS"
+  ERRORS=$((ERRORS + 1))
+else
+  echo "PASS: No HTML comments (MDX v3 JSX-safe)."
+fi
+
+# Gotcha 5 — Vietnamese ASCII (heuristic: warning only, does not fail build)
+echo ""
+echo "[5/5] Quick heuristic for ASCII-only Vietnamese (low-confidence)..."
 WARN=""
 for f in "${MDX_FILES[@]}"; do
   MATCH=$(strip_code_content "$f" | grep -nE "phong ngu|Ho tro|Tu [A-Z]|Gia [0-9]" || true)
