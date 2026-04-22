@@ -112,9 +112,32 @@ else
   echo "PASS: No HTML comments (MDX v3 JSX-safe)."
 fi
 
-# Gotcha 5 — Vietnamese ASCII (heuristic: warning only, does not fail build)
+# Gotcha 5 — Markdown emphasis chars inside SVG <text> (MDX parse error)
+# Sprint 7 lesson 2: '*' inside <text>...</text> triggers markdown emphasis parsing,
+# spans across tags, breaks closing. Use &#42; (HTML entity) for literal asterisk.
 echo ""
-echo "[5/5] Quick heuristic for ASCII-only Vietnamese (low-confidence)..."
+echo "[5/6] Checking for * or ** inside SVG <text> tags..."
+HITS=""
+for f in "${MDX_FILES[@]}"; do
+  # Flag any <text>...*...</text> pattern (single line)
+  MATCH=$(grep -nE '<text[^>]*>[^<]*\*[^<]*</text>' "$f" || true)
+  if [ -n "$MATCH" ]; then
+    while IFS= read -r line; do
+      HITS="${HITS}${f}:${line}"$'\n'
+    done <<< "$MATCH"
+  fi
+done
+if [ -n "$HITS" ]; then
+  echo "FAIL: Found '*' inside <text> — escape as &#42; to avoid MDX emphasis parse:"
+  echo "$HITS"
+  ERRORS=$((ERRORS + 1))
+else
+  echo "PASS: No '*' in SVG <text> tags."
+fi
+
+# Gotcha 6 — Vietnamese ASCII (heuristic: warning only, does not fail build)
+echo ""
+echo "[6/6] Quick heuristic for ASCII-only Vietnamese (low-confidence)..."
 WARN=""
 for f in "${MDX_FILES[@]}"; do
   MATCH=$(strip_code_content "$f" | grep -nE "phong ngu|Ho tro|Tu [A-Z]|Gia [0-9]" || true)
