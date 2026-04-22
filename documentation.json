@@ -494,6 +494,16 @@
                 "title": "Vietnamese Buyer Guide",
                 "path": "09-buyer-journey/vietnamese-buyer-guide",
                 "icon": "heart"
+              },
+              {
+                "title": "Vietnamese Buyer End-to-End Playbook",
+                "path": "09-buyer-journey/vietnamese-buyer-end-to-end-playbook",
+                "icon": "map"
+              },
+              {
+                "title": "40 Days Cheatsheet",
+                "path": "09-buyer-journey/40-days-cheatsheet",
+                "icon": "clipboard-list"
               }
             ]
           },
