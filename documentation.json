@@ -167,6 +167,31 @@
                 "title": "Data Sources & Methodology",
                 "path": "03-market-intelligence/data-sources-methodology",
                 "icon": "database"
+              },
+              {
+                "title": "Sherman Subdivisions Profile",
+                "path": "03-market-intelligence/sherman-subdivisions-profile",
+                "icon": "map-pin"
+              },
+              {
+                "title": "Sherman School Districts",
+                "path": "03-market-intelligence/sherman-school-districts",
+                "icon": "graduation-cap"
+              },
+              {
+                "title": "DFW Submarket Comparison",
+                "path": "03-market-intelligence/dfw-submarket-comparison",
+                "icon": "bar-chart-3"
+              },
+              {
+                "title": "Sherman PID/MUD/CDD Taxes",
+                "path": "03-market-intelligence/sherman-pid-mud-taxes",
+                "icon": "receipt"
+              },
+              {
+                "title": "Sherman Commute & Economy",
+                "path": "03-market-intelligence/sherman-commute-economy",
+                "icon": "car"
               }
             ]
           },

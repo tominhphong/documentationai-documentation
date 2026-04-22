@@ -1,6 +1,7 @@
 ---
 title: Changelog
 description: Lịch sử các thay đổi trong Realtor Knowledge Base của Phong To — ghi lại từng update theo ngày.
+last_reviewed: 2026-04-21
 ---
 
 # Changelog
@@ -8,6 +9,49 @@ description: Lịch sử các thay đổi trong Realtor Knowledge Base của Pho
 Ghi lại mọi thay đổi, cải tiến, và bài học học được trong quá trình xây dựng và vận hành KB này.
 
 ---
+
+<Update label="2026-04-21" description="Sprint 3 — Sherman Deep Dive + App Financial Advisor Mode + Infra" tags={["sprint-3", "sherman", "app-v2", "dark-mode", "infra"]}>
+
+## 🎯 Sprint 3: 3 priorities (Phong approved)
+
+**Duration:** ~2 giờ parallel (5 Sonnet agents + Brain). **Result:** 8+ tasks DONE.
+
+### 1. Sherman TX + DFW Deep Dive — 5 new pages
+
+- [Sherman Subdivisions Profile](/03-market-intelligence/sherman-subdivisions-profile) — **477 lines**. 6 subdivisions (Silver Ridge, Mallard Lakes, Legacy Ridge, Windmill Ridge, Woodlands, Post Oak) với price, HOA, builders, schools
+- [Sherman School Districts](/03-market-intelligence/sherman-school-districts) — **319 lines**. Sherman ISD vs Pottsboro vs Van Alstyne vs Howe, Vietnamese tutoring gap
+- [DFW Submarket Comparison](/03-market-intelligence/dfw-submarket-comparison) — **346 lines**. Frisco vs McKinney vs Plano vs Prosper vs Allen vs Sherman vs Little Elm vs Celina. Vietnamese density ratings.
+- [Sherman PID/MUD/CDD Taxes](/03-market-intelligence/sherman-pid-mud-taxes) — **278 lines**. Hidden costs $100-250/month impact
+- [Sherman Commute & Economy](/03-market-intelligence/sherman-commute-economy) — **262 lines**. I-75 times, GlobiTech $5B semiconductor impact, appreciation forecast
+
+### 2. Mortgage App v2 — Financial Advisor Mode
+
+**Live:** [mortgage-compare-70a3y5ya5-ipodwindcvs12-5841s-projects.vercel.app](https://mortgage-compare-70a3y5ya5-ipodwindcvs12-5841s-projects.vercel.app)
+
+Researched qua Perplexity → added 12+ financial advisor-level criteria:
+
+- **Dark Mode** toggle (next-themes)
+- **Affordability Panel:** DTI front-end 28% + back-end 36% + QM 43% + reserves months check + max home price
+- **TCO Panel:** 5/10/30 year hold period, inflation-adjusted maintenance/utilities, net equity
+- **Tax Panel:** MID $750K cap, SALT $10K cap, MCC tax credit, standard vs itemize recommendation, effective after-tax rate
+- **Rent vs Buy Panel:** break-even year with rent growth, opportunity cost S&P 7%
+- **Advanced Panel (5 tabs):** PMI removal timeline (78/80 LTV + appreciation + FHA workaround), Holding costs (HOA/MUD/PID/maintenance/utilities), Acceleration (extra monthly/biweekly/annual lump), Refinance break-even, Opportunity cost
+
+### 3. RKB Infrastructure
+
+- `last_reviewed: 2026-04-21` backfilled on **all 107 MDX files**
+- CI workflow `check-stale` job active (weekly detect pages > 30 days old)
+
+### Validation
+- 107 MDX files, all frontmatter valid
+- check-links + pre-commit PASS
+
+### Sprint 4 candidates
+- `keywords: [...]` SEO frontmatter backfill on 107 files
+- Calculator Cloudflare D1 backend (save scenarios per user)
+- Vietnamese buyer journey end-to-end playbook
+- SVG diagrams for Sherman + Feng Shui pages
+</Update>
 
 <Update label="2026-04-21" description="Sprint 2 — Mortgage Calculator App + New Construction + Feng Shui" tags={["sprint-2", "app", "new-construction", "feng-shui", "vietnamese-buyers"]}>
 
